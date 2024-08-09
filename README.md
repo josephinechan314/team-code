@@ -18,3 +18,9 @@ Still confused? That's completely fine! GitHub can take a while to get used to. 
  * https://youtu.be/mJ-qvsxPHpY?si=OLF0ym5EBcETW-iq
  * https://youtu.be/ueQs5pQ8ZMM?si=DsrzVcW27cHL04Xn
  * https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+
+# Closing Remarks
+That's all for now! I know we will do amazing things as a team, and I hope that GitHub helps us get there!
+
+Love,
+Jo
