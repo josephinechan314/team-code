@@ -4,7 +4,7 @@ Hey Sabers! This is the shared repository (aka "repo") that we will use to manag
 # Using GitHub
 GitHub is an online platform that programmers use to share code. It shouldn't be confused with git, which is a memory card that comes pre-installed on all Mac computers (Windows users will need to add it manually).
 
-To get a copy of the code onto your computer, open a new terminal and go into whatever folder you want to put the code in. Then, run the command "git clone git@github.com:josephinechan314/team-code.git". The last long chunk of the command comes from copying the repo's URL, which you can find by pressing the green "Code" button at the top right of the repo. You should now have a copy of the code stored locally on your computer!
+To get a copy of the code onto your computer, open a new terminal and go into whatever folder you want to put the code in. Then, run the command "git clone" followed by the repo's URL, which you can find by pressing the green "Code" button at the top right of the repo. You should now have a copy of the code stored locally on your computer!
 
 Now let's say you add some code and want to upload your new version of the code onto GitHub so everyone will have access to it. To do this, run the following commands:
  * git add . --> Saves your edited version of the code. If you only want to save a certain part of the code, you can replace the period with the file name you changed (best to just save everything, though).
