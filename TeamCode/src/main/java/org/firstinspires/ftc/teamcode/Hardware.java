@@ -17,10 +17,10 @@ public class Hardware{
         hwMap = ahwMap;
 
         // Define and initialize everything
-        lf = hwMap.get(DcMotorEx.class, "Left Front Motor");
-        lb = hwMap.get(DcMotorEx.class, "Left Back Motor");
-        rf = hwMap.get(DcMotorEx.class, "Right Front Motor");
-        rb = hwMap.get(DcMotorEx.class, "Right Back Motor");
+        lf = hwMap.get(DcMotorEx.class, "Front_left_drive");
+        lb = hwMap.get(DcMotorEx.class, "Back_left_drive");
+        rf = hwMap.get(DcMotorEx.class, "Front_right_drive");
+        rb = hwMap.get(DcMotorEx.class, "Back_right_drive");
 
         // Set direction of the motor. Set direction to REVERSE if using AndyMark motors
         lf.setDirection(DcMotorEx.Direction.REVERSE);
