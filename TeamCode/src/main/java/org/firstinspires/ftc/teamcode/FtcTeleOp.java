@@ -37,7 +37,7 @@ public class FtcTeleOp extends LinearOpMode {
         robot.right_out.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
         robot.right_out.setPower(0);
-        robot.left_out.setPower(0);
+        robot.left_out.setPower(0); //djfdjaslf
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
