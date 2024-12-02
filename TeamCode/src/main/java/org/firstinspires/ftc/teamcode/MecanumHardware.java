@@ -32,7 +32,8 @@ public class MecanumHardware {
     private ElapsedTime period = new ElapsedTime();
 
     // Constructor:
-    public MecanumHardware() {}
+    public MecanumHardware() {
+    }
 
     // Initialize standard Hardware interfaces.
     public void init(HardwareMap ahwMap) {

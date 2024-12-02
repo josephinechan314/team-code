@@ -23,15 +23,15 @@ public class Teleop extends LinearOpMode{
         // Send telemetry message to signify robot waiting
         telemetry.addData("Hi", "I'm [name]");
 
-        robot.rf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.lf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.lb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.rb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.fr.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.fl.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.bl.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.br.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-        robot.lf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.lb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.rf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.fl.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.bl.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.fr.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.br.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -52,19 +52,19 @@ public class Teleop extends LinearOpMode{
                 y = 0;
             }
 
-            telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.lf, robot.rf,
-                    robot.lb, robot.rb, x, y, yaw * driver_rotation_scalar, driver_scalar));
-            telemetry.addData("FL: ", robot.lf.getCurrentPosition());
-            telemetry.addData("BL: ", robot.lb.getCurrentPosition());
-            telemetry.addData("FR: ", robot.rf.getCurrentPosition());
-            telemetry.addData("BR: ", robot.rb.getCurrentPosition());
+            telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.fl, robot.fr,
+                    robot.bl, robot.br, x, y, yaw * driver_rotation_scalar, driver_scalar));
+            telemetry.addData("FL: ", robot.fl.getCurrentPosition());
+            telemetry.addData("BL: ", robot.bl.getCurrentPosition());
+            telemetry.addData("FR: ", robot.fr.getCurrentPosition());
+            telemetry.addData("BR: ", robot.br.getCurrentPosition());
             telemetry.update();
 
             // Stop robot
-            robot.lf.setPower(0);
-            robot.lb.setPower(0);
-            robot.rf.setPower(0);
-            robot.rb.setPower(0);
+            robot.fl.setPower(0);
+            robot.bl.setPower(0);
+            robot.fr.setPower(0);
+            robot.br.setPower(0);
         }
     }
     public ArrayList<java.lang.Double> driveByMatrix(DcMotor front_l, DcMotor front_r, DcMotor back_l, DcMotor back_r,

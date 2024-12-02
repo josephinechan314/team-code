@@ -123,7 +123,7 @@ public class FtcTeleOp extends LinearOpMode {
                 robot.servo_out.setPosition(-1);
             }
 
-            // Gamepad 2: controls misumi slides
+            // Gamepad 2: controls Misumi slides
             if (gamepad2.b){
                 robot.misumi.setPower(0.6);
             } else if (gamepad2.x){
