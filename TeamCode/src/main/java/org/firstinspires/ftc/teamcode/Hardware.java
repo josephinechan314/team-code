@@ -22,19 +22,19 @@ public class Hardware{
         hwMap = ahwMap;
 
         // Define and initialize everything
-        lf = hwMap.get(DcMotorEx.class, "front_left_drive");
-        lb = hwMap.get(DcMotorEx.class, "back_left_drive");
-        rf = hwMap.get(DcMotorEx.class, "front_right_drive");
-        rb = hwMap.get(DcMotorEx.class, "back_right_drive");
-        llinkage = hwMap.get(DcMotorEx.class, "linkage_left");
-        rlinkage = hwMap.get(DcMotorEx.class, "linkage_right");
-        lspool = hwMap.get(DcMotorEx.class,"spool_left");
-        rspool = hwMap.get(DcMotorEx.class,"spool_right");
-        lbarm = hwMap.get(CRServo.class,"left_arm_servo");
-        rbarm = hwMap.get(CRServo.class,"right_arm_servo");
-        cbarm = hwMap.get(Servo.class,"center_arm_servo");
-        spinclaw = hwMap.get(CRServo.class,"spin_claw");
-        claw = hwMap.get(Servo.class,"claw");
+        lf = hwMap.get(DcMotorEx.class, "leftFront");
+        lb = hwMap.get(DcMotorEx.class, "leftBack");
+        rf = hwMap.get(DcMotorEx.class, "rightFront");
+        rb = hwMap.get(DcMotorEx.class, "rightBack");
+        llinkage = hwMap.get(DcMotorEx.class, "LeftLinkageMotor");
+        rlinkage = hwMap.get(DcMotorEx.class, "RightLinkageMotor");
+        lspool = hwMap.get(DcMotorEx.class,"LeftSpoolMotor");
+        rspool = hwMap.get(DcMotorEx.class,"RightSpoolMotor");
+        lbarm = hwMap.get(CRServo.class,"LeftArmServo");
+        rbarm = hwMap.get(CRServo.class,"RightArmServo");
+        cbarm = hwMap.get(Servo.class,"CenterArmServo");
+        spinclaw = hwMap.get(CRServo.class,"SpinServo");
+        claw = hwMap.get(Servo.class,"ClawServo");
 
         // Set direction of the motor. Set direction to REVERSE if using AndyMark motors
         lf.setDirection(DcMotorEx.Direction.REVERSE);
