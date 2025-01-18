@@ -14,7 +14,7 @@ public class FtcTeleOp extends LinearOpMode {
     public static final double sensitivity_scalar = 0.2;
     public double driver_scalar = 0.95; //'public double' might need to be changed, not sure of syntax
     public static final double driver_rotation_scalar = 0.7;
-    MecanumHardware robot = new MecanumHardware();
+    Hardware robot = new Hardware();
 
     @Override
     public void runOpMode() {
@@ -23,21 +23,21 @@ public class FtcTeleOp extends LinearOpMode {
         // Send telemetry message to signify robot waiting
         telemetry.addData("Hi", "I'm EVE");
 
-        robot.FR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.FL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.BL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.BR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.lf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.lb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-        robot.FR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.FL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.BL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.BR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.rf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.lf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.lb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
-        robot.left_out.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.right_out.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.lspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.rspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
-        robot.right_out.setPower(0);
-        robot.left_out.setPower(0); //djfdjaslf
+        robot.lspool.setPower(0);
+        robot.rspool.setPower(0); //djfdjaslf
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -63,84 +63,76 @@ public class FtcTeleOp extends LinearOpMode {
                 y1 = 0;
             }
 
-            telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.FL, robot.FR,
-                    robot.BL, robot.BR, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar));
+            telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.lf, robot.rf,
+                    robot.lb, robot.rb, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar));
             telemetry.update();
 
-            // Gamepad 1: controls the Gobilda slides for outtake
-            if (gamepad1.left_stick_y > 0) { // Lifts slides
-                robot.left_out.setPower(0.5);
-                robot.right_out.setPower(0.5);
-            } else if (gamepad1.left_stick_y < 0) { // Lowers slides
-                robot.left_out.setPower(-0.5);
-                robot.right_out.setPower(-0.5);
+
+
+            // Gamepad 2: controls the linear slides and claw
+
+            //slides
+            if (gamepad2.left_stick_y > 0) { // Lifts slides
+                robot.lspool.setPower(0.5);
+                robot.rspool.setPower(0.5);
+            } else if (gamepad2.left_stick_y < 0) { // Lowers slides
+                robot.lspool.setPower(-0.5);
+                robot.rspool.setPower(-0.5);
             }
 
-//            // Gamepad 1: controls the Gobilda slides for suspension
-//            if (gamepad1.a) { // Locks slides
-//                robot.left_out.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-//                robot.right_out.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-//
-//                robot.left_out.setPower(-0.5);
-//                robot.right_out.setPower(-0.5);
-//
-//                robot.left_out.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-//                robot.right_out.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-//            }
-
-//            // Gamepad 2: controls outtake/suspension for Gobilda slides
-//            if (gamepad2.left_stick_y > 0) {
-//                robot.right_out.setPower(0.5);
-//                robot.left_out.setPower(0.5);
-//            } else if (gamepad2.left_stick_y < 0) {
-//                robot.right_out.setPower(-0.5);
-//                robot.left_out.setPower(-0.5);
-//            }
-
-            // Gamepad 2: controls spinning servo for intake
-            if (gamepad2.right_trigger > 0) { // Grab piece
-                robot.spin_in_servo.setPower(1);
-            }
-            else if (gamepad2.left_trigger > 0) { // Deposit piece
-                robot.spin_in_servo.setPower(-1);
+            //pivot
+            if (gamepad2.left_trigger > 0) {
+                robot.llinkage.setPower(0.5);
+                robot.rlinkage.setPower(0.5);
+            } else if (gamepad2.right_trigger > 0) {
+                robot.llinkage.setPower(-0.5);
+                robot.rlinkage.setPower(-0.5);
             }
 
-            // Gamepad 2: flip the intake up or down
-            if (gamepad2.right_bumper) { // Flip intake back towards robot
-                robot.total_in_servo_left.setPosition(0.1);
-                robot.total_in_servo_right.setPosition(0.1);
-            }
-            else if (gamepad2.left_bumper) { // Flip intake forward away from robot
-                robot.total_in_servo_left.setPosition(0.9);
-                robot.total_in_servo_right.setPosition(0.9);
-            }
-
-            // Gamepad 2: controls outtake servo
-            if (gamepad2.y) { // Push piece into bucket
-                robot.servo_out.setPosition(1);
-            }
-            else if (gamepad2.a) { // Return servo to original position
-                robot.servo_out.setPosition(-1);
+            //claw
+            if (gamepad2.x) { // Grab piece
+                if (robot.claw.getPosition() != 1){
+                    robot.claw.setPosition(1);
+                } else {
+                    robot.claw.setPosition(0);
+                }
             }
 
-            // Gamepad 2: controls misumi slides
-            if (gamepad2.b){
-                robot.misumi.setPower(0.6);
-            } else if (gamepad2.x){
-                robot.misumi.setPower(-0.6);
+            //arm up vs down
+            if (gamepad2.left_bumper){
+                robot.lbarm.setPower(1);
+                robot.rbarm.setPower(1);
+            } else if (gamepad2.right_bumper) {
+                robot.lbarm.setPower(-1);
+                robot.rbarm.setPower(-1);
+            }
+
+            //claw spin
+            if (gamepad2.right_stick_x < 0) {
+                robot.spinclaw.setPower(-1);
+            } else if (gamepad2.right_stick_x > 0) {
+                robot.spinclaw.setPower(1);
+            }
+
+            //claw up vs down
+            if (gamepad2.y) {
+                robot.cbarm.setPosition(0);
+            } else if (gamepad2.a) {
+                robot.cbarm.setPosition(1);
             }
 
             // Stop robot
-            robot.FL.setPower(0);
-            robot.BL.setPower(0);
-            robot.FR.setPower(0);
-            robot.BR.setPower(0);
-            robot.right_out.setPower(0.5);
-            robot.left_out.setPower(0.5);
-            robot.total_in_servo_left.setPosition(0.5);
-            robot.total_in_servo_right.setPosition(0.5);
-            robot.spin_in_servo.setPower(0);
-            robot.misumi.setPower(0);
+            robot.lf.setPower(0);
+            robot.lb.setPower(0);
+            robot.rf.setPower(0);
+            robot.rb.setPower(0);
+            robot.rspool.setPower(0);
+            robot.lspool.setPower(0);
+            robot.llinkage.setPower(0);
+            robot.rlinkage.setPower(0);
+            robot.lbarm.setPower(0);
+            robot.rbarm.setPower(0);
+            robot.spinclaw.setPower(0);
         }
     }
 
