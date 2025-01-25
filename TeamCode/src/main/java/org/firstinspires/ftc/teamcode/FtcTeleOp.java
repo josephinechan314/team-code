@@ -67,8 +67,6 @@ public class FtcTeleOp extends LinearOpMode {
                     robot.lb, robot.rb, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar));
             telemetry.update();
 
-
-
             // Gamepad 2: controls the linear slides and claw
 
             //slides

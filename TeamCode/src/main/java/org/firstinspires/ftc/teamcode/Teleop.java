@@ -1,3 +1,4 @@
+/**
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -106,4 +107,4 @@ public class Teleop extends LinearOpMode{
 
         return motor_power;
     }
-}
+}**/

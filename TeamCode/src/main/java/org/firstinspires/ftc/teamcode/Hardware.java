@@ -26,13 +26,17 @@ public class Hardware{
         lb = hwMap.get(DcMotorEx.class, "leftBack");
         rf = hwMap.get(DcMotorEx.class, "rightFront");
         rb = hwMap.get(DcMotorEx.class, "rightBack");
+
         llinkage = hwMap.get(DcMotorEx.class, "LeftLinkageMotor");
         rlinkage = hwMap.get(DcMotorEx.class, "RightLinkageMotor");
+
         lspool = hwMap.get(DcMotorEx.class,"LeftSpoolMotor");
         rspool = hwMap.get(DcMotorEx.class,"RightSpoolMotor");
+
         lbarm = hwMap.get(CRServo.class,"LeftArmServo");
         rbarm = hwMap.get(CRServo.class,"RightArmServo");
         cbarm = hwMap.get(Servo.class,"CenterArmServo");
+
         spinclaw = hwMap.get(CRServo.class,"SpinServo");
         claw = hwMap.get(Servo.class,"ClawServo");
 
@@ -41,28 +45,36 @@ public class Hardware{
         lb.setDirection(DcMotorEx.Direction.REVERSE);
         rf.setDirection(DcMotorEx.Direction.FORWARD);
         rb.setDirection(DcMotorEx.Direction.REVERSE);
-        llinkage.setDirection(DcMotorEx.Direction.FORWARD);
-        rlinkage.setDirection(DcMotorEx.Direction.FORWARD);
+
         lspool.setDirection(DcMotorEx.Direction.FORWARD);
         rspool.setDirection(DcMotorEx.Direction.FORWARD);
+
         lbarm.setDirection(CRServo.Direction.FORWARD);
         rbarm.setDirection(CRServo.Direction.FORWARD);
         cbarm.setDirection(Servo.Direction.FORWARD);
+
         spinclaw.setDirection(CRServo.Direction.FORWARD);
         claw.setDirection(Servo.Direction.FORWARD);
+
+        llinkage.setDirection(DcMotorEx.Direction.FORWARD);
+        rlinkage.setDirection(DcMotorEx.Direction.FORWARD);
 
         // Set all motors to zero power so they start turned off
         lf.setPower(0);
         lb.setPower(0);
         rf.setPower(0);
         rb.setPower(0);
+
         llinkage.setPower(0);
         rlinkage.setPower(0);
+
         lspool.setPower(0);
         rspool.setPower(0);
+
         lbarm.setPower(0);
         rbarm.setPower(0);
         cbarm.setPosition(0);
+
         spinclaw.setPower(0);
         claw.setPosition(0);
 
@@ -71,18 +83,23 @@ public class Hardware{
         lb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         rf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        llinkage.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        rlinkage.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+
         lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+
+        // Revisit this
+        llinkage.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        rlinkage.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         // After stopping, the motor brakes, actively resisting any external attempts to move the motor
         lf.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         lb.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rf.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rb.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+
         llinkage.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rlinkage.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+
         lspool.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rspool.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
     }
