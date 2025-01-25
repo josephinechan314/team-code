@@ -16,6 +16,7 @@ public class FtcTeleOp extends LinearOpMode {
     public static final double driver_rotation_scalar = 0.7;
     public double lbarmpos;
     public double rbarmpos;
+    public double cbarmpos = 0.5;
     Hardware robot = new Hardware();
 
     @Override
@@ -41,10 +42,14 @@ public class FtcTeleOp extends LinearOpMode {
 //        robot.rspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
         robot.lspool.setPower(0);
-        robot.rspool.setPower(0); //djfdjaslf
+        robot.rspool.setPower(0);
 
-        lbarmpos = robot.lbarm.getPosition();
-        rbarmpos = robot.rbarm.getPosition();
+//        robot.cbarm.setPosition(0.5);
+
+        telemetry.addData("init cbarm: ", robot.cbarm.getPosition());
+        telemetry.update();
+
+//        cbarmpos = robot.cbarm.getPosition();
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -55,6 +60,7 @@ public class FtcTeleOp extends LinearOpMode {
 
         // Run until the end of the match (driver press STOP)
         while (opModeIsActive()) {
+
             // Gamepad 1: drives the robot
             double x1 = gamepad1.right_stick_x;
             double y1 = -gamepad1.right_stick_y;
@@ -77,11 +83,11 @@ public class FtcTeleOp extends LinearOpMode {
 
             //slides
             if (gamepad2.left_stick_y > 0) { // Lifts slides
-                robot.lspool.setPower(0.5);
-                robot.rspool.setPower(0.5);
+                robot.lspool.setPower(0.8);
+                robot.rspool.setPower(0.8);
             } else if (gamepad2.left_stick_y < 0) { // Lowers slides
-                robot.lspool.setPower(-0.5);
-                robot.rspool.setPower(-0.5);
+                robot.lspool.setPower(-0.8);
+                robot.rspool.setPower(-0.8);
             }
 
             //pivot
@@ -91,15 +97,16 @@ public class FtcTeleOp extends LinearOpMode {
             } else if (gamepad2.right_trigger > 0) {
                 robot.llinkage.setPower(-0.75);
                 robot.rlinkage.setPower(-0.75);
+            } else {
+                robot.llinkage.setPower(0);
+                robot.rlinkage.setPower(0);
             }
 
             //claw
             if (gamepad2.x) { // Grab piece
-                if (robot.claw.getPosition() != 1){
                     robot.claw.setPosition(1);
-                } else {
-                    robot.claw.setPosition(0);
-                }
+            } else if (gamepad2.b){
+                robot.claw.setPosition(0);
             }
 
             //arm up vs down
@@ -117,17 +124,29 @@ public class FtcTeleOp extends LinearOpMode {
 
             //claw spin
             if (gamepad2.right_stick_x < 0) {
-                robot.spinclaw.setPower(-1);
+                robot.spinclaw.setPower(-0.2);
             } else if (gamepad2.right_stick_x > 0) {
-                robot.spinclaw.setPower(1);
+                robot.spinclaw.setPower(0.2);
             }
 
             //claw up vs down
             if (gamepad2.y) {
-                robot.cbarm.setPosition(0);
+                cbarmpos -= 0.001;
             } else if (gamepad2.a) {
-                robot.cbarm.setPosition(1);
+                cbarmpos += 0.001;
             }
+
+            if (cbarmpos < 0){
+                cbarmpos = 0;
+            } else if (cbarmpos > 1){
+                cbarmpos = 1;
+            }
+
+            robot.cbarm.setPosition(cbarmpos);
+
+            telemetry.addData("cbarm: ", robot.cbarm.getPosition());
+            telemetry.addData("cbarmpos: ", cbarmpos);
+
             //test drive motors direction
 //            if (gamepad1.y){
 //                robot.lf.setPower(1);
@@ -152,6 +171,7 @@ public class FtcTeleOp extends LinearOpMode {
 //            robot.lbarm.setPower(0);
 //            robot.rbarm.setPower(0);
             robot.spinclaw.setPower(0);
+            telemetry.update();
         }
     }
 

@@ -49,7 +49,7 @@ public class Hardware{
         rspool.setDirection(DcMotor.Direction.FORWARD);
         lbarm.setDirection(Servo.Direction.FORWARD);
         rbarm.setDirection(Servo.Direction.FORWARD);
-        cbarm.setDirection(Servo.Direction.FORWARD);
+//        cbarm.setDirection(Servo.Direction.FORWARD);
         spinclaw.setDirection(CRServo.Direction.FORWARD);
         claw.setDirection(Servo.Direction.FORWARD);
 
@@ -64,7 +64,6 @@ public class Hardware{
         rspool.setPower(0);
 //        lbarm.setPower(0);
 //        rbarm.setPower(0);
-        cbarm.setPosition(0);
         spinclaw.setPower(0);
         claw.setPosition(0);
 
