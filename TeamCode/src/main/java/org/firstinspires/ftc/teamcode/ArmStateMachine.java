@@ -2,13 +2,14 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.DcMotorEx;
+import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp(name = "ArmStateMachine", group = "MecanumHardware")
 public class ArmStateMachine extends LinearOpMode {
 
     public enum ArmState {
         PICK_UP,
+        MIDDLE,
         PLACE,
         STOP,
     };
@@ -28,25 +29,30 @@ public class ArmStateMachine extends LinearOpMode {
         while (opModeIsActive()) {
             switch (armState) {
                 case PICK_UP:
-                    // Waiting for some input
                     if (gamepad1.y) {
-                        robot.lbarm.setPosition(0);
-                        robot.rbarm.setPosition(0);
-
-                        armState = ArmState.PLACE;
+                        robot.lbarm.setPosition(1);
+                        robot.rbarm.setPosition(1);
                     }
+                    armState = ArmState.MIDDLE;
+                    break;
+                case MIDDLE:
+                    if (gamepad1.y) {
+                        robot.lbarm.setPosition(0.5);
+                        robot.rbarm.setPosition(0.5);
+                    }
+                    armState = ArmState.PLACE;
                     break;
                 case PLACE:
                     if (gamepad1.a) {
-                        robot.lbarm.setPosition(1);
-                        robot.rbarm.setPosition(1);
-
-                        armState = ArmState.STOP;
+                        robot.lbarm.setPosition(0);
+                        robot.rbarm.setPosition(0);
                     }
+                    armState = ArmState.STOP;
                     break;
                 case STOP:
-                    robot.lbarm.setPosition(0.5);
-                    robot.rbarm.setPosition(0.5);
+                    telemetry.addData("Left arm position: ", robot.lbarm.getPosition());
+                    telemetry.addData("Right arm position: ", robot.rbarm.getPosition());
+                    telemetry.update();
                     break;
                 default:
                     // Should never be reached, as liftState should never be null
