@@ -10,15 +10,15 @@ import com.qualcomm.robotcore.hardware.Servo;
 public class Hardware{
     // Declare OpMode members
     public DcMotorEx lf, lb, rf, rb, llinkage, rlinkage, lspool, rspool = null;
-    public Servo cbarm, claw, lbarm, rbarm = null;
-    public CRServo spinclaw = null;
+    public Servo cbarm, claw = null;
+    public CRServo lbarm, rbarm, spinclaw = null;
 
     // HardwareMap, which connects motors in program to real ones on the robot
     HardwareMap hwMap = null;
 
     // Initialize standard Hardware interfaces
     public void init(HardwareMap ahwMap) {
-        // Save reference to Hardware map
+//         Save reference to Hardware map
         hwMap = ahwMap;
 
         // Define and initialize everything
@@ -33,8 +33,8 @@ public class Hardware{
         lspool = hwMap.get(DcMotorEx.class,"LeftSpoolMotor");
         rspool = hwMap.get(DcMotorEx.class,"RightSpoolMotor");
 
-        lbarm = hwMap.get(Servo.class,"LeftArmServo");
-        rbarm = hwMap.get(Servo.class,"RightArmServo");
+        lbarm = hwMap.get(CRServo.class,"LeftArmServo");
+        rbarm = hwMap.get(CRServo.class,"RightArmServo");
         cbarm = hwMap.get(Servo.class,"CenterArmServo");
 
         spinclaw = hwMap.get(CRServo.class,"SpinServo");
