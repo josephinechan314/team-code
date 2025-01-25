@@ -109,7 +109,7 @@ public class FtcTeleOp extends LinearOpMode {
                 robot.claw.setPosition(0);
             }
 
-            //arm up vs down
+//            arm up vs down
 //            if (gamepad2.left_bumper){
 //                robot.lbarm.setPosition(lbarmpos);
 //                robot.rbarm.setPosition(rbarmpos);
