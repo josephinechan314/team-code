@@ -107,3 +107,68 @@ public class Teleop extends LinearOpMode{
         return motor_power;
     }
 }
+
+/*package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotorEx;
+
+@TeleOp(name = "MecanumHardware: ArmTest", group = "MecanumHardware")
+public class ArmTest extends LinearOpMode {
+
+    // A list of system States.
+    private enum State
+    {
+        PICK_UP,
+        PLACE,
+        STOP,
+    }
+
+    Hardware robot = new Hardware();
+    double lencoder;
+    double rencoder;
+
+    @Override
+    public void runOpMode() {
+        robot.init(hardwareMap);
+
+        telemetry.addData("Hi", "EVE");
+
+        // Wait for the game to start (driver presses PLAY)
+        waitForStart();
+
+        // Run until the end of the match (driver press STOP)
+        while (opModeIsActive()) {
+            // code!
+        }
+    }
+}
+    /*
+        Determines if the current path is complete
+        As each segment completes, the next segment is started unless there are no more.
+        Returns true if the last leg has completed and the robot is stopped.
+     */
+    /*private boolean pathComplete()
+    {
+        // Wait for this Segement to end and then see what's next.
+        if (moveComplete())
+        {
+            // Start next Segement if there is one.
+            if (mCurrentSeg < mCurrentPath.length)
+            {
+                startSeg();
+            }
+            else  // Otherwise, stop and return done
+            {
+                mCurrentPath = null;
+                mCurrentSeg = 0;
+                setDriveSpeed(0, 0);
+                useConstantSpeed();
+                return true;
+            }
+        }
+        return false;
+    }
+}
+*/
