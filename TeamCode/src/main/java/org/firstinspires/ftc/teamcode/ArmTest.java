@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode;
+/*package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
@@ -74,7 +74,7 @@ public class A2818_StateMachine extends OpMode
     final double RANGE_THRESHOLD = 0.5 ;
     final double CLIMBER_RETRACT = 0.1 ;
     final double CLIMBER_DEPLOY  = 1.0 ;
-
+// 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
     //--------------------------------------------------------------------------
     // Robot device Objects
     //--------------------------------------------------------------------------
@@ -466,7 +466,7 @@ public class A2818_StateMachine extends OpMode
         Begin the first leg of the path array that is passed in.
         Calls startSeg() to actually load the encoder targets.
      */
-    private void startPath(PathSeg[] path)
+   /* private void startPath(PathSeg[] path)
     {
         mCurrentPath = path;    // Initialize path array
         mCurrentSeg = 0;
@@ -482,7 +482,7 @@ public class A2818_StateMachine extends OpMode
         By not reading and using the actual encoder values, this avoids accumulating errors.
         Increments the leg number after loading the current encoder targets
      */
-    private void startSeg()
+    /*private void startSeg()
     {
         int Left;
         int Right;
@@ -504,7 +504,7 @@ public class A2818_StateMachine extends OpMode
         As each segment completes, the next segment is started unless there are no more.
         Returns true if the last leg has completed and the robot is stopped.
      */
-    private boolean pathComplete()
+    /*private boolean pathComplete()
     {
         // Wait for this Segement to end and then see what's next.
         if (moveComplete())
@@ -530,7 +530,7 @@ public class A2818_StateMachine extends OpMode
 /**
  * Define a "PathSegment" object, used for building a path for the robot to follow.
  */
-class PathSeg
+/*class PathSeg
 {
     public double mLeft;
     public double mRight;
@@ -543,4 +543,4 @@ class PathSeg
         mRight = Right;
         mSpeed = Speed;
     }
-}
+} */
