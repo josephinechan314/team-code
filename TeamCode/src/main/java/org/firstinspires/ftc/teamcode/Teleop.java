@@ -1,4 +1,3 @@
-/**
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -15,7 +14,7 @@ public class Teleop extends LinearOpMode{
     public static final double sensitivity_scalar = 0.2;
     public static final double driver_scalar = 0.95;
     public static final double driver_rotation_scalar = 0.7;
-    Hardware robot = new Hardware();
+    MecanumHardware robot = new MecanumHardware();
 
     @Override
     public void runOpMode(){
@@ -24,15 +23,15 @@ public class Teleop extends LinearOpMode{
         // Send telemetry message to signify robot waiting
         telemetry.addData("Hi", "I'm [name]");
 
-        robot.fr.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.fl.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.bl.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.br.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.FR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.FL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.BL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.BR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-        robot.fl.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.bl.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.fr.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.br.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.FL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.BL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.FR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.BR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -53,19 +52,19 @@ public class Teleop extends LinearOpMode{
                 y = 0;
             }
 
-            telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.fl, robot.fr,
-                    robot.bl, robot.br, x, y, yaw * driver_rotation_scalar, driver_scalar));
-            telemetry.addData("FL: ", robot.fl.getCurrentPosition());
-            telemetry.addData("BL: ", robot.bl.getCurrentPosition());
-            telemetry.addData("FR: ", robot.fr.getCurrentPosition());
-            telemetry.addData("BR: ", robot.br.getCurrentPosition());
+            telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.FL, robot.FR,
+                    robot.BL, robot.BR, x, y, yaw * driver_rotation_scalar, driver_scalar));
+            telemetry.addData("FL: ", robot.FL.getCurrentPosition());
+            telemetry.addData("BL: ", robot.BL.getCurrentPosition());
+            telemetry.addData("FR: ", robot.FR.getCurrentPosition());
+            telemetry.addData("BR: ", robot.BR.getCurrentPosition());
             telemetry.update();
 
             // Stop robot
-            robot.fl.setPower(0);
-            robot.bl.setPower(0);
-            robot.fr.setPower(0);
-            robot.br.setPower(0);
+            robot.FL.setPower(0);
+            robot.BL.setPower(0);
+            robot.FR.setPower(0);
+            robot.BR.setPower(0);
         }
     }
     public ArrayList<java.lang.Double> driveByMatrix(DcMotor front_l, DcMotor front_r, DcMotor back_l, DcMotor back_r,
@@ -107,4 +106,4 @@ public class Teleop extends LinearOpMode{
 
         return motor_power;
     }
-}**/
+}

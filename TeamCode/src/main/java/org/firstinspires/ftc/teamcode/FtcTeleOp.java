@@ -11,9 +11,11 @@ import java.util.ArrayList;
 public class FtcTeleOp extends LinearOpMode {
 
     // Declare OpMode members.
-    public static final double sensitivity_scalar = 0.2;
+    public static final double sensitivity_scalar = 0.15;
     public double driver_scalar = 0.95; //'public double' might need to be changed, not sure of syntax
     public static final double driver_rotation_scalar = 0.7;
+    public double lbarmpos;
+    public double rbarmpos;
     Hardware robot = new Hardware();
 
     @Override
@@ -27,17 +29,22 @@ public class FtcTeleOp extends LinearOpMode {
         robot.lf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.lb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.rb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+//        robot.lspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+//        robot.rspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
         robot.rf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         robot.lf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         robot.lb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         robot.rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
-        robot.lspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.rspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+//        robot.lspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+//        robot.rspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
         robot.lspool.setPower(0);
         robot.rspool.setPower(0); //djfdjaslf
+
+        lbarmpos = robot.lbarm.getPosition();
+        rbarmpos = robot.rbarm.getPosition();
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -63,9 +70,8 @@ public class FtcTeleOp extends LinearOpMode {
                 y1 = 0;
             }
 
-            telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.lf, robot.rf,
-                    robot.lb, robot.rb, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar));
-            telemetry.update();
+            // motors
+            driveByMatrix(robot.lf, robot.rf, robot.lb, robot.rb, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar);
 
             // Gamepad 2: controls the linear slides and claw
 
@@ -80,11 +86,11 @@ public class FtcTeleOp extends LinearOpMode {
 
             //pivot
             if (gamepad2.left_trigger > 0) {
-                robot.llinkage.setPower(0.5);
-                robot.rlinkage.setPower(0.5);
+                robot.llinkage.setPower(0.75);
+                robot.rlinkage.setPower(0.75);
             } else if (gamepad2.right_trigger > 0) {
-                robot.llinkage.setPower(-0.5);
-                robot.rlinkage.setPower(-0.5);
+                robot.llinkage.setPower(-0.75);
+                robot.rlinkage.setPower(-0.75);
             }
 
             //claw
@@ -98,11 +104,15 @@ public class FtcTeleOp extends LinearOpMode {
 
             //arm up vs down
             if (gamepad2.left_bumper){
-                robot.lbarm.setPower(1);
-                robot.rbarm.setPower(1);
+                robot.lbarm.setPosition(lbarmpos);
+                robot.rbarm.setPosition(rbarmpos);
+                lbarmpos += 0.01;
+                rbarmpos += 0.01;
             } else if (gamepad2.right_bumper) {
-                robot.lbarm.setPower(-1);
-                robot.rbarm.setPower(-1);
+                robot.lbarm.setPosition(lbarmpos);
+                robot.rbarm.setPosition(rbarmpos);
+                lbarmpos -= 0.01;
+                rbarmpos -= 0.01;
             }
 
             //claw spin
@@ -118,18 +128,29 @@ public class FtcTeleOp extends LinearOpMode {
             } else if (gamepad2.a) {
                 robot.cbarm.setPosition(1);
             }
+            //test drive motors direction
+//            if (gamepad1.y){
+//                robot.lf.setPower(1);
+//            } else if (gamepad1.b){
+//                robot.lb.setPower(1);
+//            } else if (gamepad1.a){
+//                robot.rb.setPower(1);
+//            } else if (gamepad1.x){
+//                robot.rf.setPower(1);
+//            } else {
+//                robot.lf.setPower(0);
+//                robot.lb.setPower(0);
+//                robot.rb.setPower(0);
+//                robot.rf.setPower(0);
+//            }
+//
 
-            // Stop robot
-            robot.lf.setPower(0);
-            robot.lb.setPower(0);
-            robot.rf.setPower(0);
-            robot.rb.setPower(0);
             robot.rspool.setPower(0);
             robot.lspool.setPower(0);
             robot.llinkage.setPower(0);
             robot.rlinkage.setPower(0);
-            robot.lbarm.setPower(0);
-            robot.rbarm.setPower(0);
+//            robot.lbarm.setPower(0);
+//            robot.rbarm.setPower(0);
             robot.spinclaw.setPower(0);
         }
     }
