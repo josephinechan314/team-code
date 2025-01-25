@@ -110,17 +110,17 @@ public class FtcTeleOp extends LinearOpMode {
             }
 
             //arm up vs down
-            if (gamepad2.left_bumper){
-                robot.lbarm.setPosition(lbarmpos);
-                robot.rbarm.setPosition(rbarmpos);
-                lbarmpos += 0.01;
-                rbarmpos += 0.01;
-            } else if (gamepad2.right_bumper) {
-                robot.lbarm.setPosition(lbarmpos);
-                robot.rbarm.setPosition(rbarmpos);
-                lbarmpos -= 0.01;
-                rbarmpos -= 0.01;
-            }
+//            if (gamepad2.left_bumper){
+//                robot.lbarm.setPosition(lbarmpos);
+//                robot.rbarm.setPosition(rbarmpos);
+//                lbarmpos += 0.01;
+//                rbarmpos += 0.01;
+//            } else if (gamepad2.right_bumper) {
+//                robot.lbarm.setPosition(lbarmpos);
+//                robot.rbarm.setPosition(rbarmpos);
+//                lbarmpos -= 0.01;
+//                rbarmpos -= 0.01;
+//            }
 
             //claw spin
             if (gamepad2.right_stick_x < 0) {
