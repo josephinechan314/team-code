@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
 import java.util.ArrayList;
-
+//push test
 @TeleOp(name = "MecanumHardware: Teleop!!", group = "MecanumHardware")
 public class Teleop extends LinearOpMode {
 
@@ -17,8 +17,8 @@ public class Teleop extends LinearOpMode {
 
     //MecanumHardware robot = new MecanumHardware();
 
-    public double lbarmpos;
-    public double rbarmpos;
+//    public double lbarmpos;
+//    public double rbarmpos;
     public double cbarmpos = 0.5;
     Hardware robot = new Hardware();
 
