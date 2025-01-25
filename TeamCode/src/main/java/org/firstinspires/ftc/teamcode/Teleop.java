@@ -8,20 +8,19 @@ import com.qualcomm.robotcore.hardware.DcMotorEx;
 import java.util.ArrayList;
 
 @TeleOp(name = "MecanumHardware: Teleop!!", group = "MecanumHardware")
-public class FtcTeleOp extends LinearOpMode {
+public class Teleop extends LinearOpMode {
 
     // Declare OpMode members.
     public static final double sensitivity_scalar = 0.15;
     public double driver_scalar = 0.95; //'public double' might need to be changed, not sure of syntax
     public static final double driver_rotation_scalar = 0.7;
-<<<<<<< HEAD
-    MecanumHardware robot = new MecanumHardware();
-=======
+
+    //MecanumHardware robot = new MecanumHardware();
+
     public double lbarmpos;
     public double rbarmpos;
     public double cbarmpos = 0.5;
     Hardware robot = new Hardware();
->>>>>>> df33a0a62573c18b2746cf9d8666b0a72913711d
 
     @Override
     public void runOpMode() {
@@ -30,8 +29,7 @@ public class FtcTeleOp extends LinearOpMode {
         // Send telemetry message to signify robot waiting
         telemetry.addData("Hi", "I'm EVE");
 
-<<<<<<< HEAD
-        robot.FR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        /*robot.FR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.FL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.BL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.BR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
@@ -40,7 +38,7 @@ public class FtcTeleOp extends LinearOpMode {
         robot.BL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         robot.FR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         robot.BR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-=======
+*/
         robot.rf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.lf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.lb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
@@ -65,7 +63,6 @@ public class FtcTeleOp extends LinearOpMode {
         telemetry.update();
 
 //        cbarmpos = robot.cbarm.getPosition();
->>>>>>> df33a0a62573c18b2746cf9d8666b0a72913711d
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -92,8 +89,8 @@ public class FtcTeleOp extends LinearOpMode {
                 y1 = 0;
             }
 
-<<<<<<< HEAD
-            telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.FL, robot.FR,
+
+            /*telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.FL, robot.FR,
                     robot.BL, robot.BR, x, y, yaw * driver_rotation_scalar, driver_scalar));
             telemetry.addData("FL: ", robot.FL.getCurrentPosition());
             telemetry.addData("BL: ", robot.BL.getCurrentPosition());
@@ -105,8 +102,8 @@ public class FtcTeleOp extends LinearOpMode {
             robot.FL.setPower(0);
             robot.BL.setPower(0);
             robot.FR.setPower(0);
-            robot.BR.setPower(0);
-=======
+            robot.BR.setPower(0);*/
+
             // motors
             driveByMatrix(robot.lf, robot.rf, robot.lb, robot.rb, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar);
 
@@ -203,7 +200,6 @@ public class FtcTeleOp extends LinearOpMode {
 //            robot.rbarm.setPower(0);
             robot.spinclaw.setPower(0);
             telemetry.update();
->>>>>>> df33a0a62573c18b2746cf9d8666b0a72913711d
         }
     }
 
