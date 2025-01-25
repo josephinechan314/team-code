@@ -9,6 +9,7 @@
         </block>
       </value>
     </block>
+<<<<<<< HEAD
     <block type="variables_set">
       <comment pinned="false" h="150" w="325">Create a VisionPortal, with the specified builtin camera direction and TensorFlow Object Detection processor, and assign it to a variable.
       </comment>
@@ -32,3 +33,5 @@
         </block>
       </value>
     </block>
+=======
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

@@ -23,6 +23,16 @@ anim btn_radio_to_off_mtrl_ring_outer_path_animation
 anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
+<<<<<<< HEAD
+=======
+anim fragment_fast_out_extra_slow_in
+animator fragment_close_enter
+animator fragment_close_exit
+animator fragment_fade_enter
+animator fragment_fade_exit
+animator fragment_open_enter
+animator fragment_open_exit
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 array app_theme_colors
 array app_theme_ids
 array app_theme_names
@@ -30,6 +40,10 @@ array app_theme_tokens
 array choice_array_legacy_module
 array lynx_module_options_array
 array networkTypes
+<<<<<<< HEAD
+=======
+array servo_hub_options_array
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 array wifi_direct_channels
 attr actionBarDivider
 attr actionBarItemBackground
@@ -49,6 +63,10 @@ attr actionMenuTextAppearance
 attr actionMenuTextColor
 attr actionModeBackground
 attr actionModeCloseButtonStyle
+<<<<<<< HEAD
+=======
+attr actionModeCloseContentDescription
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr actionModeCloseDrawable
 attr actionModeCopyDrawable
 attr actionModeCutDrawable
@@ -59,6 +77,10 @@ attr actionModeSelectAllDrawable
 attr actionModeShareDrawable
 attr actionModeSplitBackground
 attr actionModeStyle
+<<<<<<< HEAD
+=======
+attr actionModeTheme
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr actionModeWebSearchDrawable
 attr actionOverflowButtonStyle
 attr actionOverflowMenuStyle
@@ -110,6 +132,12 @@ attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
 attr camera_id
+<<<<<<< HEAD
+=======
+attr checkMarkCompat
+attr checkMarkTint
+attr checkMarkTintMode
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr checkboxStyle
 attr checkedTextViewStyle
 attr closeIcon
@@ -168,6 +196,10 @@ attr editTextBackground
 attr editTextColor
 attr editTextStyle
 attr elevation
+<<<<<<< HEAD
+=======
+attr emojiCompatEnabled
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr expandActivityOverflowButtonDrawable
 attr feedbackBackground
 attr feedbackBorder
@@ -181,6 +213,10 @@ attr fontProviderFetchStrategy
 attr fontProviderFetchTimeout
 attr fontProviderPackage
 attr fontProviderQuery
+<<<<<<< HEAD
+=======
+attr fontProviderSystemFontFamily
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr fontStyle
 attr fontVariationSettings
 attr fontWeight
@@ -199,6 +235,10 @@ attr indeterminateProgressStyle
 attr initialActivityCount
 attr isLightTheme
 attr itemPadding
+<<<<<<< HEAD
+=======
+attr lStar
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr lastBaselineToBottomHeight
 attr layout
 attr lineBright
@@ -228,6 +268,10 @@ attr multiChoiceItemLayout
 attr navigationContentDescription
 attr navigationIcon
 attr navigationMode
+<<<<<<< HEAD
+=======
+attr nestedScrollViewStyle
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr numericModifiers
 attr overlapAnchor
 attr paddingBottomNoButtons
@@ -245,6 +289,10 @@ attr progressBarPadding
 attr progressBarStyle
 attr queryBackground
 attr queryHint
+<<<<<<< HEAD
+=======
+attr queryPatterns
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr radioButtonStyle
 attr ratingBarStyle
 attr ratingBarStyleIndicator
@@ -255,6 +303,10 @@ attr searchViewStyle
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+<<<<<<< HEAD
+=======
+attr shortcutMatchRequired
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 attr showAsAction
 attr showDividers
 attr showText
@@ -352,7 +404,10 @@ attr zxing_viewfinder_laser
 attr zxing_viewfinder_laser_visibility
 attr zxing_viewfinder_mask
 bool abc_action_bar_embed_tabs
+<<<<<<< HEAD
 bool abc_allow_stacked_button_bar
+=======
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 bool abc_config_actionMenuItemAllCaps
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
@@ -415,6 +470,11 @@ color bright_teal
 color button_material_dark
 color button_material_light
 color c_gray
+<<<<<<< HEAD
+=======
+color call_notification_answer_color
+color call_notification_decline_color
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 color d_gray
 color dark_blue
 color dark_green
@@ -593,6 +653,12 @@ dimen abc_search_view_preferred_width
 dimen abc_seekbar_track_background_height_material
 dimen abc_seekbar_track_progress_height_material
 dimen abc_select_dialog_padding_start_material
+<<<<<<< HEAD
+=======
+dimen abc_star_big
+dimen abc_star_medium
+dimen abc_star_small
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 dimen abc_switch_padding
 dimen abc_text_size_body_1_material
 dimen abc_text_size_body_2_material
@@ -686,12 +752,15 @@ drawable abc_ic_menu_paste_mtrl_am_alpha
 drawable abc_ic_menu_selectall_mtrl_alpha
 drawable abc_ic_menu_share_mtrl_alpha
 drawable abc_ic_search_api_material
+<<<<<<< HEAD
 drawable abc_ic_star_black_16dp
 drawable abc_ic_star_black_36dp
 drawable abc_ic_star_black_48dp
 drawable abc_ic_star_half_black_16dp
 drawable abc_ic_star_half_black_36dp
 drawable abc_ic_star_half_black_48dp
+=======
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 drawable abc_ic_voice_search_api_material
 drawable abc_item_background_holo_dark
 drawable abc_item_background_holo_light
@@ -722,17 +791,28 @@ drawable abc_seekbar_tick_mark_material
 drawable abc_seekbar_track_material
 drawable abc_spinner_mtrl_am_alpha
 drawable abc_spinner_textfield_background_material
+<<<<<<< HEAD
+=======
+drawable abc_star_black_48dp
+drawable abc_star_half_black_48dp
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 drawable abc_switch_thumb_material
 drawable abc_switch_track_mtrl_alpha
 drawable abc_tab_indicator_material
 drawable abc_tab_indicator_mtrl_alpha
 drawable abc_text_cursor_material
+<<<<<<< HEAD
 drawable abc_text_select_handle_left_mtrl_dark
 drawable abc_text_select_handle_left_mtrl_light
 drawable abc_text_select_handle_middle_mtrl_dark
 drawable abc_text_select_handle_middle_mtrl_light
 drawable abc_text_select_handle_right_mtrl_dark
 drawable abc_text_select_handle_right_mtrl_light
+=======
+drawable abc_text_select_handle_left_mtrl
+drawable abc_text_select_handle_middle_mtrl
+drawable abc_text_select_handle_right_mtrl
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 drawable abc_textfield_activated_mtrl_alpha
 drawable abc_textfield_default_mtrl_alpha
 drawable abc_textfield_search_activated_mtrl_alpha
@@ -753,12 +833,25 @@ drawable centerstage_background
 drawable feedback_shape_orange
 drawable freightfrenzy_background
 drawable ic_arrow_back_black_24dp
+<<<<<<< HEAD
+=======
+drawable ic_call_answer
+drawable ic_call_answer_low
+drawable ic_call_answer_video
+drawable ic_call_answer_video_low
+drawable ic_call_decline
+drawable ic_call_decline_low
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 drawable ic_check_circle
 drawable ic_error
 drawable ic_launcher
 drawable ic_warning
 drawable icon_menu
 drawable icon_robotcontroller
+<<<<<<< HEAD
+=======
+drawable intothedeep_background
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -767,12 +860,20 @@ drawable notification_bg_low_pressed
 drawable notification_bg_normal
 drawable notification_bg_normal_pressed
 drawable notification_icon_background
+<<<<<<< HEAD
+=======
+drawable notification_oversize_large_icon_bg
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable powerplay_background
 drawable skystone_background
+<<<<<<< HEAD
+=======
+drawable test_level_drawable
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable ultimategoal_background
@@ -919,9 +1020,18 @@ id dropdown_layout
 id editTextResult
 id edit_controller_btn
 id edit_query
+<<<<<<< HEAD
 id empty_filelist
 id end
 id entire_screen
+=======
+id edit_text_id
+id empty_filelist
+id end
+id entire_screen
+id ethernetDeviceIpAddress
+id ethernetDeviceName
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 id expand_activities_button
 id expanded_menu
 id explanationText
@@ -942,11 +1052,19 @@ id fitCenter
 id fitXY
 id fixButton
 id forever
+<<<<<<< HEAD
+=======
+id fragment_container_view_tag
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 id front
 id groupList
 id group_divider
 id header
 id header_error_message
+<<<<<<< HEAD
+=======
+id hide_ime_id
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 id holds_buttons
 id home
 id homeAsUp
@@ -971,6 +1089,10 @@ id infoButton
 id info_btn
 id inspectionRootLayout
 id invalidQr
+<<<<<<< HEAD
+=======
+id ipAddressExplanationLabel
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 id isDSInstalled
 id isDefaultPassword
 id isDefaultPassword_img
@@ -1039,6 +1161,10 @@ id progress_horizontal
 id radio
 id rcPasswordLayout
 id readOnlyExplanation
+<<<<<<< HEAD
+=======
+id report_drawn
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 id right_icon
 id right_side
 id robotIcon
@@ -1067,6 +1193,10 @@ id showCustom
 id showHome
 id showTitle
 id spacer
+<<<<<<< HEAD
+=======
+id special_effects_controller_view_tag
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 id spinnerChooseAddress
 id split_action_bar
 id src_atop
@@ -1084,10 +1214,22 @@ id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
 id tag_accessibility_pane_title
+<<<<<<< HEAD
 id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+=======
+id tag_on_apply_window_listener
+id tag_on_receive_content_listener
+id tag_on_receive_content_mime_types
+id tag_screen_reader_focusable
+id tag_state_description
+id tag_transition_group
+id tag_unhandled_key_event_manager
+id tag_unhandled_key_listeners
+id tag_window_insets_animation_callback
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 id templateList
 id templateListCaption
 id templateNameText
@@ -1134,6 +1276,14 @@ id unchecked
 id uniform
 id up
 id useLogo
+<<<<<<< HEAD
+=======
+id view_tree_lifecycle_owner
+id view_tree_on_back_pressed_dispatcher_owner
+id view_tree_saved_state_registry_owner
+id view_tree_view_model_store_owner
+id visible_removing_fragment_view_tag
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 id webView
 id webViewBlocksRuntime
 id wifiConnected
@@ -1226,6 +1376,10 @@ layout digital_device
 layout digital_device_lynx
 layout digital_devices
 layout empty
+<<<<<<< HEAD
+=======
+layout ethernet_device
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 layout feedback
 layout file_info
 layout fragment_wifi_mute
@@ -1233,6 +1387,11 @@ layout gray_line
 layout header
 layout i2c_device
 layout i2cs
+<<<<<<< HEAD
+=======
+layout ime_base_split_test_activity
+layout ime_secondary_split_test_activity
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 layout info_button
 layout item_list_parent
 layout loading_indicator_overlay
@@ -1368,6 +1527,10 @@ string alertLynxFirmwareUpdateTimedout
 string alertMessageNoActionGetContent
 string alertTitleRobotControllerConsole
 string androidVersionLabel
+<<<<<<< HEAD
+=======
+string androidx_startup
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 string anotherDsIsConnectedError
 string appDsIsObsoleteContext
 string appNameDriverStation
@@ -1428,6 +1591,16 @@ string buttonNameScan
 string buttonNameSwap
 string buttonWirelessApSettingsLabel
 string bytesPerSecondLabel
+<<<<<<< HEAD
+=======
+string call_notification_answer_action
+string call_notification_answer_video_action
+string call_notification_decline_action
+string call_notification_hang_up_action
+string call_notification_incoming_text
+string call_notification_ongoing_text
+string call_notification_screening_text
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 string captionAvailableSwapDevices
 string captionAvailableUsbDevices
 string ch_updater_not_supported
@@ -1508,6 +1681,10 @@ string counted_camera_name
 string counted_imu_name
 string counted_lynx_module_name
 string counted_lynx_usb_device_name
+<<<<<<< HEAD
+=======
+string counted_servo_hub_name
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 string currentApLabel
 string defaultOpModeName
 string defaultPasswordContext
@@ -1540,6 +1717,10 @@ string edit_analog_input_devices_activity_lynx
 string edit_controller
 string edit_digital_devices_activity
 string edit_digital_devices_activity_lynx
+<<<<<<< HEAD
+=======
+string edit_ethernet_devices_activity
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 string edit_i2c_devices_activity
 string edit_lynx_module_controller_activity
 string edit_lynx_usb_device_activity
@@ -1584,6 +1765,10 @@ string input_name_hint
 string input_name_label
 string inspection_activity
 string inspection_mode_menu_item
+<<<<<<< HEAD
+=======
+string ip_address_prompt_text
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 string launch_wifi_settings
 string led_description
 string library_zxingandroidembedded_author
@@ -1852,6 +2037,11 @@ string restart_robot_menu_item
 string restore_settings
 string rev_20_hd_hex_name
 string rev_40_hd_hex_name
+<<<<<<< HEAD
+=======
+string rev_9_axis_imu_description
+string rev_9_axis_imu_name
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 string rev_blinkin_description
 string rev_blinkin_name
 string rev_color_sensor_v3_description
@@ -1913,6 +2103,11 @@ string setWifiChannelFailure
 string setWifiChannelSuccess
 string settings_activity
 string settings_menu_item
+<<<<<<< HEAD
+=======
+string sparkfun_led_stick_description
+string sparkfun_led_stick_name
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 string sparkfun_optical_odometry_description
 string sparkfun_optical_odometry_name
 string standard_servo_description
@@ -2428,6 +2623,7 @@ styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listI
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
 styleable AnimatedStateListDrawableTransition android_drawable android_toId android_fromId android_reversible
+<<<<<<< HEAD
 styleable AppCompatImageView android_src srcCompat tint tintMode
 styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
@@ -2441,6 +2637,26 @@ styleable CompoundButton android_button buttonCompat buttonTint buttonTintMode
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
+=======
+styleable AppCompatEmojiHelper
+styleable AppCompatImageView android_src srcCompat tint tintMode
+styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
+styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
+styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat emojiCompatEnabled firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale
+styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseContentDescription actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeTheme actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listChoiceIndicatorMultipleAnimated listChoiceIndicatorSingleAnimated listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingEnd listPreferredItemPaddingLeft listPreferredItemPaddingRight listPreferredItemPaddingStart panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
+styleable ButtonBarLayout allowStacking
+styleable CameraBridgeViewBase camera_id show_fps
+styleable Capability queryPatterns shortcutMatchRequired
+styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
+styleable ColorListPreference colors
+styleable ColorStateListItem android_color android_alpha android_lStar alpha lStar
+styleable CompoundButton android_button buttonCompat buttonTint buttonTintMode
+styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
+styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
+styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
+styleable Fragment android_name android_id android_tag
+styleable FragmentContainerView android_name android_tag
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers

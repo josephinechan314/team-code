@@ -1066,6 +1066,16 @@ Blockly.Blocks['sparkFunOTOS_calibrateImu_withArgs'] = {
                     'gyroscope offsets. The maximum number of samples is 255. Each sample ' +
                     'takes about 2.4ms, so fewer samples can be taken for faster calibration. ' +
                     'Returns true if the calibration was successful, false otherwise.');
+<<<<<<< HEAD
+=======
+    this.getFtcJavaInputType = function(inputName) {
+      switch (inputName) {
+        case 'NUM_SAMPLES':
+          return 'int';
+      }
+      return '';
+    };
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     Blockly.Extensions.apply('toggle_output_boolean', this, true);
   }
 };

@@ -61,6 +61,12 @@
         <item>"Wi-Fi Direct"</item>
         <item>"Control Hub"</item>
     </string-array>
+<<<<<<< HEAD
+=======
+    <string-array name="servo_hub_options_array">
+    <item>Servos|EDIT_SERVO_LIST</item>
+  </string-array>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string-array name="wifi_direct_channels">
         <item>Auto – device selects channel|0</item>
         
@@ -108,6 +114,10 @@
     <attr format="boolean" name="isLightTheme"/>
     <attr format="color" name="lineBright"/>
     <attr format="color" name="lineLight"/>
+<<<<<<< HEAD
+=======
+    <attr format="reference" name="nestedScrollViewStyle"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <attr format="color" name="textBright"/>
     <attr format="color" name="textLight"/>
     <attr format="color" name="textMedium"/>
@@ -120,7 +130,10 @@
     <attr format="color" name="textWhite"/>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
+<<<<<<< HEAD
     <bool name="abc_allow_stacked_button_bar">false</bool>
+=======
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
@@ -163,6 +176,11 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="c_gray">#cccccc</color>
+<<<<<<< HEAD
+=======
+    <color name="call_notification_answer_color">#1d873b</color>
+    <color name="call_notification_decline_color">#d93025</color>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <color name="d_gray">#dddddd</color>
     <color name="dark_blue">#06014e</color>
     <color name="dark_green">#014b01</color>
@@ -339,6 +357,12 @@
     <dimen name="abc_seekbar_track_background_height_material">2dp</dimen>
     <dimen name="abc_seekbar_track_progress_height_material">2dp</dimen>
     <dimen name="abc_select_dialog_padding_start_material">20dp</dimen>
+<<<<<<< HEAD
+=======
+    <dimen name="abc_star_big">48dp</dimen>
+    <dimen name="abc_star_medium">36dp</dimen>
+    <dimen name="abc_star_small">16dp</dimen>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <dimen name="abc_switch_padding">3dp</dimen>
     <dimen name="abc_text_size_body_1_material">14sp</dimen>
     <dimen name="abc_text_size_body_2_material">14sp</dimen>
@@ -385,7 +409,11 @@
     <dimen name="notification_main_column_padding_top">10dp</dimen>
     <dimen name="notification_media_narrow_margin">@dimen/notification_content_margin_start</dimen>
     <dimen name="notification_right_icon_size">16dp</dimen>
+<<<<<<< HEAD
     <dimen name="notification_right_side_padding_top">2dp</dimen>
+=======
+    <dimen name="notification_right_side_padding_top">4dp</dimen>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <dimen name="notification_small_icon_background_padding">3dp</dimen>
     <dimen name="notification_small_icon_size_as_large">24dp</dimen>
     <dimen name="notification_subtext_size">13sp</dimen>
@@ -438,24 +466,53 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+<<<<<<< HEAD
+=======
+    <item name="fragment_container_view_tag" type="id"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <item name="home" type="id"/>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+<<<<<<< HEAD
+=======
+    <item name="report_drawn" type="id"/>
+    <item name="special_effects_controller_view_tag" type="id"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <item name="split_action_bar" type="id"/>
     <item name="tag_accessibility_actions" type="id"/>
     <item name="tag_accessibility_clickable_spans" type="id"/>
     <item name="tag_accessibility_heading" type="id"/>
     <item name="tag_accessibility_pane_title" type="id"/>
+<<<<<<< HEAD
     <item name="tag_screen_reader_focusable" type="id"/>
     <item name="tag_transition_group" type="id"/>
     <item name="tag_unhandled_key_event_manager" type="id"/>
     <item name="tag_unhandled_key_listeners" type="id"/>
+=======
+    <item name="tag_on_apply_window_listener" type="id"/>
+    <item name="tag_on_receive_content_listener" type="id"/>
+    <item name="tag_on_receive_content_mime_types" type="id"/>
+    <item name="tag_screen_reader_focusable" type="id"/>
+    <item name="tag_state_description" type="id"/>
+    <item name="tag_transition_group" type="id"/>
+    <item name="tag_unhandled_key_event_manager" type="id"/>
+    <item name="tag_unhandled_key_listeners" type="id"/>
+    <item name="tag_window_insets_animation_callback" type="id"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
     <item name="title" type="id"/>
     <item name="up" type="id"/>
+<<<<<<< HEAD
+=======
+    <id name="view_tree_lifecycle_owner"/>
+    <id name="view_tree_on_back_pressed_dispatcher_owner"/>
+    <id name="view_tree_saved_state_registry_owner"/>
+    <id name="view_tree_view_model_store_owner"/>
+    <item name="visible_removing_fragment_view_tag" type="id"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <item name="zxing_back_button" type="id"/>
     <item name="zxing_camera_closed" type="id"/>
     <item name="zxing_camera_error" type="id"/>
@@ -536,6 +593,10 @@
     <string name="alertMessageNoActionGetContent">Your device lacks system support for selecting files.</string>
     <string name="alertTitleRobotControllerConsole">Robot Controller Console</string>
     <string name="androidVersionLabel">Android Version:</string>
+<<<<<<< HEAD
+=======
+    <string name="androidx_startup" translatable="false">androidx.startup</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="anotherDsIsConnectedError">Another Driver Station is already connected to the Robot Controller.</string>
     <string name="appDsIsObsoleteContext">The Driver Station app is obsolete.</string>
     <string name="appNameDriverStation">Driver Station</string>
@@ -599,6 +660,16 @@
     <string name="buttonNameSwap">Swap</string>
     <string name="buttonWirelessApSettingsLabel">Wi-Fi Settings</string>
     <string name="bytesPerSecondLabel">Bytes Per Second:</string>
+<<<<<<< HEAD
+=======
+    <string name="call_notification_answer_action">Answer</string>
+    <string name="call_notification_answer_video_action">Video</string>
+    <string name="call_notification_decline_action">Decline</string>
+    <string name="call_notification_hang_up_action">Hang Up</string>
+    <string name="call_notification_incoming_text">Incoming call</string>
+    <string name="call_notification_ongoing_text">Ongoing call</string>
+    <string name="call_notification_screening_text">Screening an incoming call</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="captionAvailableSwapDevices">Available USB controllers to swap with:</string>
     <string name="captionAvailableUsbDevices">USB Devices in configuration:</string>
     <string name="ch_updater_not_supported">This device does not include the ControlHubUpdater.</string>
@@ -679,6 +750,10 @@
     <string name="counted_imu_name">imu %d</string>
     <string name="counted_lynx_module_name">Expansion Hub %d</string>
     <string name="counted_lynx_usb_device_name">Expansion Hub Portal %d</string>
+<<<<<<< HEAD
+=======
+    <string name="counted_servo_hub_name">Servo Hub %d</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="currentApLabel">Current Robot Controller: </string>
     <string name="defaultOpModeName">Stop Robot</string>
     <string name="defaultPasswordContext">The Control Hub is using its factory default password. This is extremely insecure and could result in a malicious actor deleting all Blocks and OBJ opmodes.</string>
@@ -716,6 +791,10 @@
     <string name="edit_controller">Edit Controller</string>
     <string name="edit_digital_devices_activity">Edit Digital Devices</string>
     <string name="edit_digital_devices_activity_lynx">Edit Digital Devices (Expansion Hub)</string>
+<<<<<<< HEAD
+=======
+    <string name="edit_ethernet_devices_activity">Edit Ethernet Devices</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="edit_i2c_devices_activity">Edit I2c Devices</string>
     <string name="edit_lynx_module_controller_activity">Edit Expansion Hub</string>
     <string name="edit_lynx_usb_device_activity">Edit Expansion Hub Portal</string>
@@ -760,6 +839,10 @@
     <string name="input_name_label">Device name</string>
     <string name="inspection_activity">Inspection Mode</string>
     <string name="inspection_mode_menu_item">Self Inspect</string>
+<<<<<<< HEAD
+=======
+    <string name="ip_address_prompt_text">Enter the ip address of the target device</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="launch_wifi_settings">Wi-Fi Settings...</string>
     <string name="led_description">an LED</string>
     <string name="library_zxingandroidembedded_author" translatable="false">JourneyApps</string>
@@ -772,7 +855,11 @@
     <string name="library_zxingandroidembedded_licenseId" translatable="false">apache_2_0</string>
     <string name="library_zxingandroidembedded_repositoryLink" translatable="false">https://github.com/journeyapps/zxing-android-embedded</string>
     <string name="load_menu_item">Load Configuration File</string>
+<<<<<<< HEAD
     <string name="locationEnabledContext">Turn off location services in settings.</string>
+=======
+    <string name="locationEnabledContext">Turn on location services in settings.</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="locationLabel">Location services:</string>
     <string name="locationServices">The Driver Station has detected that it can not find any Wi-Fi Direct peers and Location Services is
     turned off at a System Level.  Google\'s Android operating system, Oreo and above, requires Locations Services to be on in order to scan
@@ -800,7 +887,11 @@
     <string name="lynx_address_format_module_address">Expansion Hub w/ address %d</string>
     <string name="lynx_address_format_new_module_address">New address: %d</string>
     <string name="lynx_address_format_no_change">&lt;No change></string>
+<<<<<<< HEAD
     <string name="lynx_address_instructions_static">Each Expansion Hub must have an address which is unique among all Expansion Hubs connected to the same portal (USB connection or Control Hub). This screen allows these addresses to be changed.\n\nYour configuration file will no longer work if the new hub addresses no longer match it.\n\nIf multiple hubs connected to a portal have the same address, only one or neither of them will show up.</string>
+=======
+    <string name="lynx_address_instructions_static">Each Expansion Hub and Servo Hub must have an address which is unique among all Expansion Hubs and Servo Hubs connected to the same portal (USB connection or Control Hub).\n\nThis screen allows Expansion Hub addresses to be changed. Changing the address of a Servo Hub can only be done through the REV Hardware Client at this time.\n\nYour configuration file will no longer work if the new hub addresses no longer match it.\n\nIf multiple hubs connected to a portal have the same address, only one or neither of them will show up.</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="lynx_address_no_devices">No Expansion Hubs are connected. Please connect one or more Expansion Hubs and try again.</string>
     <string name="lynx_embedded_bhi260ap_imu_name">REV internal IMU (BHI260AP)</string>
     <string name="lynx_embedded_bno055_imu_name">REV internal IMU (BNO055)</string>
@@ -815,7 +906,11 @@
     <string name="lynx_fw_instructions_no_devices">No Expansion Hubs are connected. Please connect one or more Expansion Hubs via USB, and try again.</string>
     <string name="lynx_fw_instructions_serial">Serial number: %s</string>
     <string name="lynx_fw_instructions_update">REV Hubs that will be updated:</string>
+<<<<<<< HEAD
     <string name="lynx_fw_instructions_update_post">Note that Expansion Hubs are only available for firmware update if they are plugged in directly via USB (not RS485).\n\nWARNING: While the firmware update is in progress, do not unplug hubs or restart the robot, or a hub may need to be updated again before it can be used.</string>
+=======
+    <string name="lynx_fw_instructions_update_post">Note that Expansion Hubs are only available for firmware update if they are plugged in directly via USB (not RS485). Updating a Servo Hub is only supported via the REV Hardware Client.\n\nWARNING: While the firmware update is in progress, do not unplug hubs or restart the robot, or a hub may need to be updated again before it can be used.</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="manage_page_no_network">Unavailable. Is Wi-Fi on?</string>
     <string name="manual_control_op_mode_display_name">Manual Control</string>
     <string name="matchesDSVersionLabel">Matches DS version:</string>
@@ -1048,6 +1143,11 @@
     <string name="restore_settings">Restore Saved Wi-Fi Settings</string>
     <string name="rev_20_hd_hex_name">REV Robotics 20:1 HD Hex Motor</string>
     <string name="rev_40_hd_hex_name">REV Robotics 40:1 HD Hex Motor</string>
+<<<<<<< HEAD
+=======
+    <string name="rev_9_axis_imu_description">a REV 9-Axis IMU</string>
+    <string name="rev_9_axis_imu_name">REV 9-Axis IMU</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="rev_blinkin_description">a REV Blinkin LED Driver</string>
     <string name="rev_blinkin_name">REV Blinkin LED Driver</string>
     <string name="rev_color_sensor_v3_description">a REV Color Sensor V3</string>
@@ -1095,7 +1195,11 @@
     <string name="saveChangesMessageScreen">Save your changes before exiting this screen? If you click \'Exit Without Saving\' your changes will be lost.</string>
     <string name="saveChangesTitle">Save Changes?</string>
     <string name="save_configuration">Save Configuration</string>
+<<<<<<< HEAD
     <string name="sdkVersionMismatchContext">The Robot Controller SDK %1$s and the Driver Station %2$s do not match. Reinstall clean, latest versions of both.</string>
+=======
+    <string name="sdkVersionMismatchContext">The Robot Controller SDK %1$s and the Driver Station %2$s do not match. For best results install matching, latest, versions of both.</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="search_menu_title">Search</string>
     <string name="serialNumberNotAttached">" (not attached)"</string>
     <string name="server_not_ok">Server not OK.</string>
@@ -1109,6 +1213,11 @@
     <string name="setWifiChannelSuccess">Changed Wi-Fi Direct channel to \'%s\'</string>
     <string name="settings_activity">Settings</string>
     <string name="settings_menu_item">Settings</string>
+<<<<<<< HEAD
+=======
+    <string name="sparkfun_led_stick_description" ns2:ignore="ExtraTranslation">a SparkFun QWIIC LED Stick</string>
+    <string name="sparkfun_led_stick_name" ns2:ignore="ExtraTranslation">SparkFun QWIIC LED Stick</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="sparkfun_optical_odometry_description" ns2:ignore="ExtraTranslation">a SparkFun optical odometry sensor</string>
     <string name="sparkfun_optical_odometry_name" ns2:ignore="ExtraTranslation">SparkFun Optical Odometry Sensor</string>
     <string name="standard_servo_description">a servo</string>
@@ -1125,7 +1234,11 @@
     <string name="summaryWarnAbout2_4GhzBand">Show warning when the Robot Controller access point is on the 2.4 GHz Wi-Fi band, and both the Robot Controller and Driver Station support 5 GHz</string>
     <string name="summaryWarnAboutIncorrectClocks">Show warning when the Robot Controller and/or Driver Station clocks are known to be incorrect</string>
     <string name="summaryWarnAboutMismatchedAppVersions">Show warning when the Robot Controller and Driver Station are not the same version, which is not allowed at a competition</string>
+<<<<<<< HEAD
     <string name="summaryWarnAboutObsoleteSoftware">Show warning when software that is no longer legal for use in the current FTC competition season is detected</string>
+=======
+    <string name="summaryWarnAboutObsoleteSoftware">Show warning when software that is no longer recommended for use in the current FTC competition season is detected</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="swapPrompt">Choose the USB controller you want to swap \'%s\' with, or press \'Cancel\'</string>
     <string name="system_op_mode_display_name">%s (System)</string>
     <string name="templateConfigurationInstructions">To configure your robot using %1$s, attach the following devices, then press the \'Config\' button:\n%2$s</string>
@@ -1217,7 +1330,11 @@
     <string name="warningDsClockBehind">The Driver Station\'s clock is behind. Please set the clock to the correct time.</string>
     <string name="warningDuplicateOpMode">An OpMode with the name \'%s\' is already registered; renaming the duplicate OpMode.</string>
     <string name="warningI2cCommError">Error communicating with I2C device(s) </string>
+<<<<<<< HEAD
     <string name="warningMismatchedAppVersions">The Robot Controller and Driver Station app versions do not match, which is required for competition. You should update the %s app.</string>
+=======
+    <string name="warningMismatchedAppVersions">The Robot Controller and Driver Station app versions do not match, which is recommended for competition. You should update the %s app.</string>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <string name="warningProblemCommunicatingWithUSBDevice">Problem communicating with %s.</string>
     <string name="warningRcAppObsolete">The Robot Controller app is obsolete. You should install the new version for this FTC season.</string>
     <string name="warningRcClockBehind">The Robot Controller\'s clock is behind. Please set the clock to the correct time.</string>
@@ -1677,6 +1794,10 @@
         <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+<<<<<<< HEAD
+=======
+        <item name="actionModeTheme">?attr/actionBarTheme</item>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 
         
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
@@ -1810,9 +1931,17 @@
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
 
         
+<<<<<<< HEAD
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
         <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
+=======
+        <item name="actionModeTheme">?attr/actionBarTheme</item>
+        <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
+        <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
+        <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
+        <item name="actionModeCloseContentDescription">@string/abc_action_mode_done</item>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         <item name="actionModeCloseDrawable">@drawable/abc_ic_ab_back_material</item>
         <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode</item>
 
@@ -1893,6 +2022,10 @@
 
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
 
+<<<<<<< HEAD
+=======
+        <item name="checkedTextViewStyle">?android:attr/checkedTextViewStyle</item>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         <item name="checkboxStyle">@style/Widget.AppCompat.CompoundButton.CheckBox</item>
         <item name="radioButtonStyle">@style/Widget.AppCompat.CompoundButton.RadioButton</item>
         <item name="switchStyle">@style/Widget.AppCompat.CompoundButton.Switch</item>
@@ -2002,9 +2135,17 @@
         <item name="actionMenuTextColor">?android:attr/textColorPrimaryDisableOnly</item>
 
         
+<<<<<<< HEAD
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
         <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
+=======
+        <item name="actionModeTheme">?attr/actionBarTheme</item>
+        <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
+        <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
+        <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
+        <item name="actionModeCloseContentDescription">@string/abc_action_mode_done</item>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         <item name="actionModeCloseDrawable">@drawable/abc_ic_ab_back_material</item>
         <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode</item>
 
@@ -2216,7 +2357,13 @@
         <item name="contentInsetStart">16dp</item>
         <item name="contentInsetStartWithNavigation">@dimen/abc_action_bar_content_inset_with_nav</item>
         <item name="android:paddingLeft">@dimen/abc_action_bar_default_padding_start_material</item>
+<<<<<<< HEAD
         <item name="android:paddingRight">@dimen/abc_action_bar_default_padding_end_material</item>
+=======
+        <item name="android:paddingStart">@dimen/abc_action_bar_default_padding_start_material</item>
+        <item name="android:paddingRight">@dimen/abc_action_bar_default_padding_end_material</item>
+        <item name="android:paddingEnd">@dimen/abc_action_bar_default_padding_end_material</item>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     </style>
     <style name="Base.Widget.AppCompat.ActionBar" parent="">
         <item name="displayOptions">showTitle</item>
@@ -2296,6 +2443,20 @@
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
         <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle</item>
         <item name="closeItemLayout">@layout/abc_action_mode_close_item_material</item>
+<<<<<<< HEAD
+=======
+
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="titleMargin">4dp</item>
+        <item name="maxButtonHeight">@dimen/abc_action_bar_default_height_material</item>
+        <item name="buttonGravity">top</item>
+        <item name="contentInsetStart">16dp</item>
+        <item name="contentInsetStartWithNavigation">@dimen/abc_action_bar_content_inset_with_nav</item>
+        <item name="android:paddingLeft">@dimen/abc_action_bar_default_padding_start_material</item>
+        <item name="android:paddingStart">@dimen/abc_action_bar_default_padding_start_material</item>
+        <item name="android:paddingRight">@dimen/abc_action_bar_default_padding_end_material</item>
+        <item name="android:paddingEnd">@dimen/abc_action_bar_default_padding_end_material</item>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     </style>
     <style name="Base.Widget.AppCompat.ActivityChooserView" parent="">
         <item name="android:gravity">center</item>
@@ -2604,9 +2765,15 @@
         <item name="android:actionModePasteDrawable">?actionModePasteDrawable</item>
         <item name="android:actionModeSelectAllDrawable">?actionModeSelectAllDrawable</item>
 
+<<<<<<< HEAD
         <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl_dark</item>
         <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_dark</item>
         <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl_dark</item>
+=======
+        <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl</item>
+        <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl</item>
+        <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl</item>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     </style>
     <style name="Platform.AppCompat.Light" parent="android:Theme.Holo.Light">
         <item name="android:windowNoTitle">true</item>
@@ -2674,9 +2841,15 @@
         <item name="android:actionModePasteDrawable">?actionModePasteDrawable</item>
         <item name="android:actionModeSelectAllDrawable">?actionModeSelectAllDrawable</item>
 
+<<<<<<< HEAD
         <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl_light</item>
         <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl_light</item>
         <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl_light</item>
+=======
+        <item name="android:textSelectHandle">@drawable/abc_text_select_handle_middle_mtrl</item>
+        <item name="android:textSelectHandleLeft">@drawable/abc_text_select_handle_left_mtrl</item>
+        <item name="android:textSelectHandleRight">@drawable/abc_text_select_handle_right_mtrl</item>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     </style>
     <style name="Platform.ThemeOverlay.AppCompat" parent=""/>
     <style name="Platform.ThemeOverlay.AppCompat.Dark">
@@ -3114,6 +3287,12 @@
         
         <attr name="android:reversible"/>
     </declare-styleable>
+<<<<<<< HEAD
+=======
+    <declare-styleable name="AppCompatEmojiHelper">
+
+    </declare-styleable>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <declare-styleable name="AppCompatImageView">
         <attr name="android:src"/>
         
@@ -3240,6 +3419,11 @@
                  result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
+<<<<<<< HEAD
+=======
+        
+        <attr format="boolean" name="emojiCompatEnabled"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     </declare-styleable>
     <declare-styleable name="AppCompatTheme">
 
@@ -3297,6 +3481,11 @@
         
         <attr format="reference" name="actionBarTheme"/>
         
+<<<<<<< HEAD
+=======
+        <attr format="reference" name="actionModeTheme"/>
+        
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         <attr format="reference" name="actionBarWidgetTheme"/>
         
         <attr format="dimension" name="actionBarSize">
@@ -3341,8 +3530,15 @@
         <attr format="reference" name="actionModeWebSearchDrawable"/>
 
         
+<<<<<<< HEAD
         <attr format="reference" name="actionModePopupWindowStyle"/>
 
+=======
+        <attr format="string" name="actionModeCloseContentDescription"/>
+
+        
+        <attr format="reference" name="actionModePopupWindowStyle"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 
         
         
@@ -3595,9 +3791,15 @@
         <eat-comment/>
 
         
+<<<<<<< HEAD
         <attr format="reference" name="listChoiceIndicatorMultipleAnimated"/>
         
         <attr format="reference" name="listChoiceIndicatorSingleAnimated"/>
+=======
+        <attr format="reference" name="listChoiceIndicatorSingleAnimated"/>
+        
+        <attr format="reference" name="listChoiceIndicatorMultipleAnimated"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 
     </declare-styleable>
     <declare-styleable name="ButtonBarLayout">
@@ -3612,6 +3814,43 @@
           <enum name="front" value="98"/>
        </attr>
     </declare-styleable>
+<<<<<<< HEAD
+=======
+    <declare-styleable name="Capability">
+        
+        <attr format="reference" name="queryPatterns"/>
+        
+        <attr format="boolean" name="shortcutMatchRequired"/>
+    </declare-styleable>
+    <declare-styleable name="CheckedTextView">
+        <attr name="android:checkMark"/>
+        
+        <attr format="reference" name="checkMarkCompat"/>
+        
+        <attr format="color" name="checkMarkTint"/>
+
+        
+        <attr name="checkMarkTintMode">
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            <enum name="src_over" value="3"/>
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            <enum name="src_in" value="5"/>
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            <enum name="src_atop" value="9"/>
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
+            <enum name="multiply" value="14"/>
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            <enum name="screen" value="15"/>
+            <!-- Combines the tint and icon color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
+            <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <declare-styleable name="ColorListPreference">
         <attr format="reference" name="colors"/>
     </declare-styleable>
@@ -3621,6 +3860,12 @@
         
         <attr format="float" name="alpha"/>
         <attr name="android:alpha"/>
+<<<<<<< HEAD
+=======
+        
+        <attr format="float" name="lStar"/>
+        <attr name="android:lStar"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     </declare-styleable>
     <declare-styleable name="CompoundButton">
         <attr name="android:button"/>
@@ -3698,6 +3943,11 @@
               timeout and wait until a reply is received from the font provider. -->
             <enum name="forever" value="-1"/>
         </attr>
+<<<<<<< HEAD
+=======
+        
+        <attr format="string" name="fontProviderSystemFontFamily"/>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     </declare-styleable>
     <declare-styleable name="FontFamilyFont">
         
@@ -3720,6 +3970,18 @@
         <attr name="android:fontVariationSettings"/>
         <attr name="android:ttcIndex"/>
     </declare-styleable>
+<<<<<<< HEAD
+=======
+    <declare-styleable name="Fragment">
+        <attr name="android:name"/>
+        <attr name="android:id"/>
+        <attr name="android:tag"/>
+    </declare-styleable>
+    <declare-styleable name="FragmentContainerView">
+        <attr name="android:name"/>
+        <attr name="android:tag"/>
+    </declare-styleable>
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <declare-styleable name="GradientColor">
         
         <attr name="android:startColor"/>

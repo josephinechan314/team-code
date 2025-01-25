@@ -213,7 +213,21 @@ function knownTypeToClassName(type) {
       return 'com.qualcomm.hardware.dfrobot.' + type;
     case 'CachingOctoQuad':
     case 'OctoQuadBase':
+<<<<<<< HEAD
       return 'com.qualcomm.hardware.digitalchickenlabs.' + type;
+=======
+    case 'OctoQuad':
+      return 'com.qualcomm.hardware.digitalchickenlabs.' + type;
+    case 'Limelight3A':
+    case 'LLResult':
+    case 'LLResultTypes':
+    case 'LLResultTypes.FiducialResult':
+    case 'LLResultTypes.ColorResult':
+    case 'LLStatus':
+      return 'com.qualcomm.hardware.limelightvision.' + type;
+    case 'MaxSonarI2CXL':
+      return 'com.qualcomm.hardware.maxbotix.' + type;
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     case 'ModernRoboticsI2cCompassSensor':
     case 'ModernRoboticsI2cGyro':
     case 'ModernRoboticsI2cGyro.HeadingMode':
@@ -224,7 +238,15 @@ function knownTypeToClassName(type) {
     case 'RevHubOrientationOnRobot':
     case 'RevHubOrientationOnRobot.LogoFacingDirection':
     case 'RevHubOrientationOnRobot.UsbFacingDirection':
+<<<<<<< HEAD
       return 'com.qualcomm.hardware.rev.' + type;
+=======
+    case 'Rev9AxisImuOrientationOnRobot':
+    case 'Rev9AxisImuOrientationOnRobot.I2cPortFacingDirection':
+    case 'Rev9AxisImuOrientationOnRobot.LogoFacingDirection':
+      return 'com.qualcomm.hardware.rev.' + type;
+    case 'SparkFunLEDStick':
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     case 'SparkFunOTOS':
     case 'SparkFunOTOS.Pose2D':
     case 'SparkFunOTOS.SelfTestConfig':
@@ -294,6 +316,10 @@ function knownTypeToClassName(type) {
     case 'Range':
     case 'ReadWriteFile':
     case 'RobotLog':
+<<<<<<< HEAD
+=======
+    case 'SortOrder':
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
       return 'com.qualcomm.robotcore.util.' + type;
     case 'Boolean':
     case 'Byte':
@@ -324,8 +350,17 @@ function knownTypeToClassName(type) {
     case 'AprilTagPoseRaw':
     case 'AprilTagProcessor':
       return 'org.firstinspires.ftc.vision.apriltag.' + type;
+<<<<<<< HEAD
     case 'TfodProcessor':
       return 'org.firstinspires.ftc.vision.tfod.' + type;
+=======
+    case 'ColorBlobLocatorProcessor':
+    case 'ColorRange':
+    case 'ColorSpace':
+    case 'ImageRegion':
+    case 'PredominantColorProcessor':
+      return 'org.firstinspires.ftc.vision.opencv.' + type;
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     case 'ClassFactory':
     case 'JavaUtil':
     case 'Telemetry':
@@ -361,6 +396,10 @@ function knownTypeToClassName(type) {
     case 'Acceleration':
     case 'AngleUnit':
     case 'AngularVelocity':
+<<<<<<< HEAD
+=======
+    case 'Pose3D':
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     case 'AxesOrder':
     case 'AxesReference':
     case 'Axis':
@@ -378,10 +417,22 @@ function knownTypeToClassName(type) {
       return 'org.firstinspires.ftc.robotcore.external.navigation.' + type;
     case 'CameraStreamServer':
       return 'org.firstinspires.ftc.robotcore.external.stream.' + type;
+<<<<<<< HEAD
     case 'Recognition':
       return 'org.firstinspires.ftc.robotcore.external.tfod.' + type;
     case 'AppUtil':
       return 'org.firstinspires.ftc.robotcore.internal.system.' + type;
+=======
+    case 'AppUtil':
+      return 'org.firstinspires.ftc.robotcore.internal.system.' + type;
+    case 'RotatedRect':
+    case 'Scalar':
+      return 'org.opencv.core.' + type;
+    case 'org.opencv.core.Point':
+    case 'org.opencv.core.Rect':
+    case 'org.opencv.core.Size':
+      return type;
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   }
   return knownTypeToClassNameObsolete(type);
 }

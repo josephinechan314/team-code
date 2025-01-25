@@ -380,6 +380,10 @@ function initializeSplit() {
 
 // Initialize global variables & blockly itself
 function initializeBlockly() {
+<<<<<<< HEAD
+=======
+  addReservedWordsForJavaScriptRuntime();
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   addReservedWordsForJavaScript();
   addReservedWordsForFtcJava();
   addReservedWordsForFtcJavaObsolete();
@@ -525,6 +529,41 @@ function initializeBlockly() {
   });
 }
 
+<<<<<<< HEAD
+=======
+function addReservedWordsForJavaScriptRuntime() {
+  Blockly.JavaScript.addReservedWords('orientation'); // Fixes ftc_sdk issue #2779.
+
+  // Identifiers from runtime.js.
+  Blockly.JavaScript.addReservedWords('currentBlockLabel');
+  Blockly.JavaScript.addReservedWords('callRunOpMode');
+  Blockly.JavaScript.addReservedWords('startBlockExecution');
+  Blockly.JavaScript.addReservedWords('endBlockExecution');
+  Blockly.JavaScript.addReservedWords('telemetryAddTextData');
+  Blockly.JavaScript.addReservedWords('telemetrySpeak');
+  Blockly.JavaScript.addReservedWords('callJava');
+  Blockly.JavaScript.addReservedWords('callJava_boolean');
+  Blockly.JavaScript.addReservedWords('callJava_String');
+  Blockly.JavaScript.addReservedWords('callHardware');
+  Blockly.JavaScript.addReservedWords('callHardware_boolean');
+  Blockly.JavaScript.addReservedWords('callHardware_String');
+  Blockly.JavaScript.addReservedWords('listLength');
+  Blockly.JavaScript.addReservedWords('listIsEmpty');
+  Blockly.JavaScript.addReservedWords('nullOrJson');
+  Blockly.JavaScript.addReservedWords('evalIfTruthy');
+  Blockly.JavaScript.addReservedWords('objectCache');
+  Blockly.JavaScript.addReservedWords('getObjectViaJson');
+  Blockly.JavaScript.addReservedWords('updateObjectViaJson');
+  Blockly.JavaScript.addReservedWords('getJavaObject');
+  Blockly.JavaScript.addReservedWords('colorBlobsFilterByArea');
+  Blockly.JavaScript.addReservedWords('colorBlobsSortByArea');
+  Blockly.JavaScript.addReservedWords('colorBlobsFilterByDensity');
+  Blockly.JavaScript.addReservedWords('colorBlobsSortByDensity');
+  Blockly.JavaScript.addReservedWords('colorBlobsFilterByAspectRatio');
+  Blockly.JavaScript.addReservedWords('colorBlobsSortByAspectRatio');
+}
+
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 function resizeBlocklyArea() {
   // Compute the absolute coordinates and dimensions of blocklyArea.
   var x = 0;
@@ -787,9 +826,12 @@ function checkBlock(block) {
             'work correctly.\n\n' +
             'Please replace or remove this block, or restore the Java method it refers to.');
       }
+<<<<<<< HEAD
     } else if (isTfod(block)) {
       warningText = addWarning(warningText,
           'This block is deprecated and will be removed in v10.0.');
+=======
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     }
 
     // If warningText is null, the following will clear a previous warning.
@@ -812,6 +854,7 @@ function checkBlock(block) {
   return warningBits;
 }
 
+<<<<<<< HEAD
 // TODO(lizlooney): for v10.0:
 //   Move tfod_recognition.js and tensor_flow.js to obsolete subdirectory.
 //   In obsolete.js:
@@ -843,6 +886,8 @@ function isTfod(block) {
   return false;
 }
 
+=======
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 function addWarning(warningText, textToAdd) {
   if (warningText == null) {
     warningText = '';

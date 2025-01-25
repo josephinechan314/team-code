@@ -6,16 +6,19 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
 import java.util.ArrayList;
-
+//push test
 @TeleOp(name = "MecanumHardware: Teleop!!", group = "MecanumHardware")
-public class FtcTeleOp extends LinearOpMode {
+public class Teleop extends LinearOpMode {
 
     // Declare OpMode members.
     public static final double sensitivity_scalar = 0.15;
     public double driver_scalar = 0.95; //'public double' might need to be changed, not sure of syntax
     public static final double driver_rotation_scalar = 0.7;
-    public double lbarmpos;
-    public double rbarmpos;
+
+    //MecanumHardware robot = new MecanumHardware();
+
+//    public double lbarmpos;
+//    public double rbarmpos;
     public double cbarmpos = 0.5;
     Hardware robot = new Hardware();
 
@@ -26,6 +29,16 @@ public class FtcTeleOp extends LinearOpMode {
         // Send telemetry message to signify robot waiting
         telemetry.addData("Hi", "I'm EVE");
 
+        /*robot.FR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.FL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.BL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.BR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+
+        robot.FL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.BL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.FR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.BR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+*/
         robot.rf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.lf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.lb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
@@ -75,6 +88,21 @@ public class FtcTeleOp extends LinearOpMode {
             if (Math.abs(y1) < sensitivity_scalar) {
                 y1 = 0;
             }
+
+
+            /*telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.FL, robot.FR,
+                    robot.BL, robot.BR, x, y, yaw * driver_rotation_scalar, driver_scalar));
+            telemetry.addData("FL: ", robot.FL.getCurrentPosition());
+            telemetry.addData("BL: ", robot.BL.getCurrentPosition());
+            telemetry.addData("FR: ", robot.FR.getCurrentPosition());
+            telemetry.addData("BR: ", robot.BR.getCurrentPosition());
+            telemetry.update();
+
+            // Stop robot
+            robot.FL.setPower(0);
+            robot.BL.setPower(0);
+            robot.FR.setPower(0);
+            robot.BR.setPower(0);*/
 
             // motors
             driveByMatrix(robot.lf, robot.rf, robot.lb, robot.rb, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar);

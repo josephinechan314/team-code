@@ -51,6 +51,7 @@ Blockly.Blocks['octoquad_constant_Number'] = {
     // Assign 'this' to a variable for use in the closures below.
     var thisBlock = this;
     var TOOLTIPS = [
+<<<<<<< HEAD
         ['OCTOQUAD_CHIP_ID', 'The constant OctoQuadBase.OCTOQUAD_CHIP_ID, whose value is ' + getOctoQuadConstant('OCTOQUAD_CHIP_ID') + '.'],
         ['SUPPORTED_FW_VERSION_MAJ', 'The constant OctoQuadBase.SUPPORTED_FW_VERSION_MAJ, whose value is ' + getOctoQuadConstant('SUPPORTED_FW_VERSION_MAJ') + '.'],
         ['ENCODER_FIRST', 'The constant OctoQuadBase.ENCODER_FIRST, whose value is ' + getOctoQuadConstant('ENCODER_FIRST') + '.'],
@@ -63,6 +64,20 @@ Blockly.Blocks['octoquad_constant_Number'] = {
         ['MIN_PULSE_WIDTH_US', 'The constant OctoQuadBase.MIN_PULSE_WIDTH_US, whose value is ' +
             getOctoQuadConstant('MIN_PULSE_WIDTH_US') + ' microseconds. The symbol for microseconds is μs, but is sometimes simplified to us.'],
         ['MAX_PULSE_WIDTH_US', 'The constant OctoQuadBase.MAX_PULSE_WIDTH_US, whose value is ' +
+=======
+        ['OCTOQUAD_CHIP_ID', 'The constant OctoQuad.OCTOQUAD_CHIP_ID, whose value is ' + getOctoQuadConstant('OCTOQUAD_CHIP_ID') + '.'],
+        ['SUPPORTED_FW_VERSION_MAJ', 'The constant OctoQuad.SUPPORTED_FW_VERSION_MAJ, whose value is ' + getOctoQuadConstant('SUPPORTED_FW_VERSION_MAJ') + '.'],
+        ['ENCODER_FIRST', 'The constant OctoQuad.ENCODER_FIRST, whose value is ' + getOctoQuadConstant('ENCODER_FIRST') + '.'],
+        ['ENCODER_LAST', 'The constant OctoQuad.ENCODER_LAST, whose value is ' + getOctoQuadConstant('ENCODER_LAST') + '.'],
+        ['NUM_ENCODERS', 'The constant OctoQuad.NUM_ENCODERS, whose value is ' + getOctoQuadConstant('NUM_ENCODERS') + '.'],
+        ['MIN_VELOCITY_MEASUREMENT_INTERVAL_MS', 'The constant OctoQuad.MIN_VELOCITY_MEASUREMENT_INTERVAL_MS, whose value is ' +
+            getOctoQuadConstant('MIN_VELOCITY_MEASUREMENT_INTERVAL_MS') + ' milliseconds.'],
+        ['MAX_VELOCITY_MEASUREMENT_INTERVAL_MS', 'The constant OctoQuad.MAX_VELOCITY_MEASUREMENT_INTERVAL_MS, whose value is ' +
+            getOctoQuadConstant('MAX_VELOCITY_MEASUREMENT_INTERVAL_MS') + 'milliseconds.'],
+        ['MIN_PULSE_WIDTH_US', 'The constant OctoQuad.MIN_PULSE_WIDTH_US, whose value is ' +
+            getOctoQuadConstant('MIN_PULSE_WIDTH_US') + ' microseconds. The symbol for microseconds is μs, but is sometimes simplified to us.'],
+        ['MAX_PULSE_WIDTH_US', 'The constant OctoQuad.MAX_PULSE_WIDTH_US, whose value is ' +
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
             getOctoQuadConstant('MAX_PULSE_WIDTH_US') + ' microseconds. The symbol for microseconds is μs, but is sometimes simplified to us.'],
     ];
     this.setTooltip(function() {
@@ -101,8 +116,13 @@ Blockly.JavaScript['octoquad_constant_Number'] = function(block) {
 
 Blockly.FtcJava['octoquad_constant_Number'] = function(block) {
   var constant = block.getFieldValue('CONSTANT');
+<<<<<<< HEAD
   var code = 'OctoQuadBase.' + constant;
   Blockly.FtcJava.generateImport_('OctoQuadBase');
+=======
+  var code = 'OctoQuad.' + constant;
+  Blockly.FtcJava.generateImport_('OctoQuad');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
@@ -267,7 +287,11 @@ Blockly.Blocks['octoquad_typedEnum_encoderDirection'] = {
         ['FORWARD', 'FORWARD'],
         ['REVERSE', 'REVERSE'],
     ];
+<<<<<<< HEAD
     this.setOutput(true, 'OctoQuadBase.EncoderDirection');
+=======
+    this.setOutput(true, 'OctoQuad.EncoderDirection');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     this.appendDummyInput()
         .appendField(createNonEditableField('EncoderDirection'))
         .appendField('.')
@@ -276,8 +300,13 @@ Blockly.Blocks['octoquad_typedEnum_encoderDirection'] = {
     // Assign 'this' to a variable for use in the tooltip closure below.
     var thisBlock = this;
     var TOOLTIPS = [
+<<<<<<< HEAD
         ['FORWARD', 'The OctoQuadBase.EncoderDirection value FORWARD'],
         ['REVERSE', 'The OctoQuadBase.EncoderDirection value REVERSE'],
+=======
+        ['FORWARD', 'The OctoQuad.EncoderDirection value FORWARD'],
+        ['REVERSE', 'The OctoQuad.EncoderDirection value REVERSE'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('ENCODER_DIRECTION');
@@ -297,8 +326,13 @@ Blockly.JavaScript['octoquad_typedEnum_encoderDirection'] = function(block) {
 };
 
 Blockly.FtcJava['octoquad_typedEnum_encoderDirection'] = function(block) {
+<<<<<<< HEAD
   var code = 'OctoQuadBase.EncoderDirection.' + block.getFieldValue('ENCODER_DIRECTION');
   Blockly.FtcJava.generateImport_('OctoQuadBase');
+=======
+  var code = 'OctoQuad.EncoderDirection.' + block.getFieldValue('ENCODER_DIRECTION');
+  Blockly.FtcJava.generateImport_('OctoQuad');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
@@ -312,7 +346,11 @@ Blockly.Blocks['octoquad_setSingleEncoderDirection'] = {
     this.appendValueInput('INDEX').setCheck('Number')
         .appendField('index')
         .setAlign(Blockly.ALIGN_RIGHT);
+<<<<<<< HEAD
     this.appendValueInput('DIRECTION').setCheck('OctoQuadBase.EncoderDirection')
+=======
+    this.appendValueInput('DIRECTION').setCheck('OctoQuad.EncoderDirection')
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         .appendField('direction')
         .setAlign(Blockly.ALIGN_RIGHT);
     this.setPreviousStatement(true);
@@ -350,7 +388,11 @@ Blockly.FtcJava['octoquad_setSingleEncoderDirection'] = function(block) {
 
 Blockly.Blocks['octoquad_getSingleEncoderDirection'] = {
   init: function() {
+<<<<<<< HEAD
     this.setOutput(true, 'OctoQuadBase.EncoderDirection');
+=======
+    this.setOutput(true, 'OctoQuad.EncoderDirection');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     this.appendDummyInput()
         .appendField('call')
         .appendField(createOctoQuadDropdown(), 'IDENTIFIER')
@@ -602,7 +644,11 @@ Blockly.Blocks['octoquad_typedEnum_channelBankConfig'] = {
         ['ALL_PULSE_WIDTH', 'ALL_PULSE_WIDTH'],
         ['BANK1_QUADRATURE_BANK2_PULSE_WIDTH', 'BANK1_QUADRATURE_BANK2_PULSE_WIDTH'],
     ];
+<<<<<<< HEAD
     this.setOutput(true, 'OctoQuadBase.ChannelBankConfig');
+=======
+    this.setOutput(true, 'OctoQuad.ChannelBankConfig');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     this.appendDummyInput()
         .appendField(createNonEditableField('ChannelBankConfig'))
         .appendField('.')
@@ -611,9 +657,15 @@ Blockly.Blocks['octoquad_typedEnum_channelBankConfig'] = {
     // Assign 'this' to a variable for use in the tooltip closure below.
     var thisBlock = this;
     var TOOLTIPS = [
+<<<<<<< HEAD
         ['ALL_QUADRATURE', 'The OctoQuadBase.ChannelBankConfig value ALL_QUADRATURE'],
         ['ALL_PULSE_WIDTH', 'The OctoQuadBase.ChannelBankConfig value ALL_PULSE_WIDTH'],
         ['BANK1_QUADRATURE_BANK2_PULSE_WIDTH', 'The OctoQuadBase.ChannelBankConfig value BANK1_QUADRATURE_BANK2_PULSE_WIDTH'],
+=======
+        ['ALL_QUADRATURE', 'The OctoQuad.ChannelBankConfig value ALL_QUADRATURE'],
+        ['ALL_PULSE_WIDTH', 'The OctoQuad.ChannelBankConfig value ALL_PULSE_WIDTH'],
+        ['BANK1_QUADRATURE_BANK2_PULSE_WIDTH', 'The OctoQuad.ChannelBankConfig value BANK1_QUADRATURE_BANK2_PULSE_WIDTH'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('CHANNEL_BANK_CONFIG');
@@ -633,8 +685,13 @@ Blockly.JavaScript['octoquad_typedEnum_channelBankConfig'] = function(block) {
 };
 
 Blockly.FtcJava['octoquad_typedEnum_channelBankConfig'] = function(block) {
+<<<<<<< HEAD
   var code = 'OctoQuadBase.ChannelBankConfig.' + block.getFieldValue('CHANNEL_BANK_CONFIG');
   Blockly.FtcJava.generateImport_('OctoQuadBase');
+=======
+  var code = 'OctoQuad.ChannelBankConfig.' + block.getFieldValue('CHANNEL_BANK_CONFIG');
+  Blockly.FtcJava.generateImport_('OctoQuad');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
@@ -643,7 +700,11 @@ Blockly.Blocks['octoquad_setProperty_ChannelBankConfig'] = {
     var PROPERTY_CHOICES = [
         ['ChannelBankConfig', 'ChannelBankConfig'],
     ];
+<<<<<<< HEAD
     this.appendValueInput('VALUE').setCheck('OctoQuadBase.ChannelBankConfig')
+=======
+    this.appendValueInput('VALUE').setCheck('OctoQuad.ChannelBankConfig')
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         .appendField('set')
         .appendField(createOctoQuadDropdown(), 'IDENTIFIER')
         .appendField('.')
@@ -691,7 +752,11 @@ Blockly.Blocks['octoquad_getProperty_ChannelBankConfig'] = {
     var PROPERTY_CHOICES = [
         ['ChannelBankConfig', 'ChannelBankConfig'],
     ];
+<<<<<<< HEAD
     this.setOutput(true, 'OctoQuadBase.ChannelBankConfig');
+=======
+    this.setOutput(true, 'OctoQuad.ChannelBankConfig');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     this.appendDummyInput()
         .appendField(createOctoQuadDropdown(), 'IDENTIFIER')
         .appendField('.')
@@ -735,7 +800,11 @@ Blockly.Blocks['octoquad_typedEnum_i2cRecoveryMode'] = {
         ['MODE_1_PERIPH_RST_ON_FRAME_ERR', 'MODE_1_PERIPH_RST_ON_FRAME_ERR'],
         ['MODE_2_M1_PLUS_SCL_IDLE_ONESHOT_TGL', 'MODE_2_M1_PLUS_SCL_IDLE_ONESHOT_TGL'],
     ];
+<<<<<<< HEAD
     this.setOutput(true, 'OctoQuadBase.I2cRecoveryMode');
+=======
+    this.setOutput(true, 'OctoQuad.I2cRecoveryMode');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     this.appendDummyInput()
         .appendField(createNonEditableField('I2cRecoveryMode'))
         .appendField('.')
@@ -744,9 +813,15 @@ Blockly.Blocks['octoquad_typedEnum_i2cRecoveryMode'] = {
     // Assign 'this' to a variable for use in the tooltip closure below.
     var thisBlock = this;
     var TOOLTIPS = [
+<<<<<<< HEAD
         ['NONE', 'The OctoQuadBase.I2cRecoveryMode value NONE'],
         ['MODE_1_PERIPH_RST_ON_FRAME_ERR', 'The OctoQuadBase.I2cRecoveryMode value MODE_1_PERIPH_RST_ON_FRAME_ERR'],
         ['MODE_2_M1_PLUS_SCL_IDLE_ONESHOT_TGL', 'The OctoQuadBase.I2cRecoveryMode value MODE_2_M1_PLUS_SCL_IDLE_ONESHOT_TGL'],
+=======
+        ['NONE', 'The OctoQuad.I2cRecoveryMode value NONE'],
+        ['MODE_1_PERIPH_RST_ON_FRAME_ERR', 'The OctoQuad.I2cRecoveryMode value MODE_1_PERIPH_RST_ON_FRAME_ERR'],
+        ['MODE_2_M1_PLUS_SCL_IDLE_ONESHOT_TGL', 'The OctoQuad.I2cRecoveryMode value MODE_2_M1_PLUS_SCL_IDLE_ONESHOT_TGL'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('I2C_RECOVERY_MODE');
@@ -766,8 +841,13 @@ Blockly.JavaScript['octoquad_typedEnum_i2cRecoveryMode'] = function(block) {
 };
 
 Blockly.FtcJava['octoquad_typedEnum_i2cRecoveryMode'] = function(block) {
+<<<<<<< HEAD
   var code = 'OctoQuadBase.I2cRecoveryMode.' + block.getFieldValue('I2C_RECOVERY_MODE');
   Blockly.FtcJava.generateImport_('OctoQuadBase');
+=======
+  var code = 'OctoQuad.I2cRecoveryMode.' + block.getFieldValue('I2C_RECOVERY_MODE');
+  Blockly.FtcJava.generateImport_('OctoQuad');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
@@ -776,7 +856,11 @@ Blockly.Blocks['octoquad_setProperty_I2cRecoveryMode'] = {
     var PROPERTY_CHOICES = [
         ['I2cRecoveryMode', 'I2cRecoveryMode'],
     ];
+<<<<<<< HEAD
     this.appendValueInput('VALUE').setCheck('OctoQuadBase.I2cRecoveryMode')
+=======
+    this.appendValueInput('VALUE').setCheck('OctoQuad.I2cRecoveryMode')
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         .appendField('set')
         .appendField(createOctoQuadDropdown(), 'IDENTIFIER')
         .appendField('.')
@@ -824,7 +908,11 @@ Blockly.Blocks['octoquad_getProperty_I2cRecoveryMode'] = {
     var PROPERTY_CHOICES = [
         ['I2cRecoveryMode', 'I2cRecoveryMode'],
     ];
+<<<<<<< HEAD
     this.setOutput(true, 'OctoQuadBase.I2cRecoveryMode');
+=======
+    this.setOutput(true, 'OctoQuad.I2cRecoveryMode');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     this.appendDummyInput()
         .appendField(createOctoQuadDropdown(), 'IDENTIFIER')
         .appendField('.')
@@ -903,7 +991,11 @@ Blockly.Blocks['octoquad_typedEnum_cachingMode'] = {
     var TOOLTIPS = [
         ['NONE', 'The CachingOctoQuad.CachingMode value NONE'],
         ['MANUAL', 'The CachingOctoQuad.CachingMode value MANUAL'],
+<<<<<<< HEAD
         ['AUTO', 'The CachingOctoQuadOctoQuadBase.CachingMode value AUTO'],
+=======
+        ['AUTO', 'The CachingOctoQuad.CachingMode value AUTO'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('CACHING_MODE');
@@ -924,7 +1016,11 @@ Blockly.JavaScript['octoquad_typedEnum_cachingMode'] = function(block) {
 
 Blockly.FtcJava['octoquad_typedEnum_cachingMode'] = function(block) {
   var code = 'CachingOctoQuad.CachingMode.' + block.getFieldValue('CACHING_MODE');
+<<<<<<< HEAD
   Blockly.FtcJava.generateImport_('OctoQuadBase');
+=======
+  Blockly.FtcJava.generateImport_('CachingOctoQuad');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 

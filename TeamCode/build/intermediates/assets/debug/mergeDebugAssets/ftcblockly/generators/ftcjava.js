@@ -1111,10 +1111,18 @@ Blockly.FtcJava.generateImport_ = function(type) {
   if (type.endsWith('[]')) {
     type = type.substring(0, type.length - 2); // 2 is length of []
   }
+<<<<<<< HEAD
   // For inner classes, only import the outer class.
   var dot = type.indexOf('.');
   if (dot > -1) {
     type = type.substring(0, dot);
+=======
+  // Some classes are fully specified (not imported) because the class name conflicts with other classes.
+  if (type == "org.opencv.core.Size" ||   // conflicts with android.util.Size
+      type == "org.opencv.core.Point" ||  // conflicts with android.graphics.Point
+      type == "org.opencv.core.Rect") {   // conflicts with android.graphics.Rect
+    return;
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   }
   var matches = type.match(/^List<(.*)>$/);
   if (matches) {
@@ -1122,6 +1130,14 @@ Blockly.FtcJava.generateImport_ = function(type) {
     Blockly.FtcJava.generateImport_(matches[1]);
     return;
   }
+<<<<<<< HEAD
+=======
+  // For inner classes, only import the outer class.
+  var dot = type.indexOf('.');
+  if (dot > -1) {
+    type = type.substring(0, dot);
+  }
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 
   // Use knownTypeToClassName (in vars.js) to get the full class name of a type that used in blocks.
   var className = knownTypeToClassName(type);

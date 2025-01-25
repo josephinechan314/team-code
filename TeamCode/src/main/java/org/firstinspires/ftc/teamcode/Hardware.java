@@ -10,8 +10,8 @@ import com.qualcomm.robotcore.hardware.Servo;
 public class Hardware{
     // Declare OpMode members
     public DcMotorEx lf, lb, rf, rb, llinkage, rlinkage, lspool, rspool = null;
-    public Servo cbarm, claw = null;
-    public CRServo lbarm, rbarm, spinclaw = null;
+    public Servo cbarm, claw, lbarm, rbarm= null;
+    public CRServo spinclaw = null;
 
     // HardwareMap, which connects motors in program to real ones on the robot
     HardwareMap hwMap = null;
@@ -33,8 +33,8 @@ public class Hardware{
         lspool = hwMap.get(DcMotorEx.class,"LeftSpoolMotor");
         rspool = hwMap.get(DcMotorEx.class,"RightSpoolMotor");
 
-        lbarm = hwMap.get(CRServo.class,"LeftArmServo");
-        rbarm = hwMap.get(CRServo.class,"RightArmServo");
+        lbarm = hwMap.get(Servo.class,"LeftArmServo");
+        rbarm = hwMap.get(Servo.class,"RightArmServo");
         cbarm = hwMap.get(Servo.class,"CenterArmServo");
 
         spinclaw = hwMap.get(CRServo.class,"SpinServo");
@@ -49,8 +49,8 @@ public class Hardware{
         lspool.setDirection(DcMotorEx.Direction.FORWARD);
         rspool.setDirection(DcMotorEx.Direction.FORWARD);
 
-        lbarm.setDirection(CRServo.Direction.FORWARD);
-        rbarm.setDirection(CRServo.Direction.FORWARD);
+        lbarm.setDirection(Servo.Direction.FORWARD);
+        rbarm.setDirection(Servo.Direction.FORWARD);
         cbarm.setDirection(Servo.Direction.FORWARD);
 
         spinclaw.setDirection(CRServo.Direction.FORWARD);
@@ -71,8 +71,6 @@ public class Hardware{
         lspool.setPower(0);
         rspool.setPower(0);
 
-        lbarm.setPower(0);
-        rbarm.setPower(0);
         cbarm.setPosition(0);
 
         spinclaw.setPower(0);

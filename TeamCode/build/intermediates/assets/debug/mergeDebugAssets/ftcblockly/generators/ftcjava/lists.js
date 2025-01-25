@@ -147,8 +147,13 @@ Blockly.FtcJava['lists_getIndex'] = function(block) {
 
   var remove = (mode == 'GET') ? false : true;
   Blockly.FtcJava.generateImport_('JavaUtil');
+<<<<<<< HEAD
   var code = 'JavaUtil.inListGet(' + list + ', JavaUtil.AtMode.' + where + ', ' +
       at + ', ' + remove + ')';
+=======
+  var code = 'JavaUtil.inListGet(' + list +
+      ', JavaUtil.AtMode.' + where + ', (int) ' + at + ', ' + remove + ')';
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   if (mode == 'GET' || mode == 'GET_REMOVE') {
     var order = Blockly.FtcJava.ORDER_FUNCTION_CALL;
     // Check if we need to cast the result or even unbox a primitive.
@@ -212,8 +217,14 @@ Blockly.FtcJava['lists_setIndex'] = function(block) {
   if (mode == 'SET' || mode == 'INSERT') {
     Blockly.FtcJava.generateImport_('JavaUtil');
     var insert = (mode == 'SET') ? false : true;
+<<<<<<< HEAD
     var code = 'JavaUtil.inListSet(' + list + ', JavaUtil.AtMode.' + where + ', ' +
         at + ', ' + insert + ', ' + value + ');\n';
+=======
+    var code = 'JavaUtil.inListSet(' + list +
+        ', JavaUtil.AtMode.' + where + ', (int) ' + at + ', ' +
+        insert + ', ' + value + ');\n';
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     return code;
   }
   throw 'Unhandled combination (lists_setIndex).';
@@ -267,8 +278,13 @@ Blockly.FtcJava['lists_getSublist'] = function(block) {
   }
   Blockly.FtcJava.generateImport_('JavaUtil');
   var code = 'JavaUtil.inListGetSublist(' + list +
+<<<<<<< HEAD
       ', JavaUtil.AtMode.' + where1 + ', ' + at1 +
       ', JavaUtil.AtMode.' + where2 + ', ' + at2 + ')';
+=======
+      ', JavaUtil.AtMode.' + where1 + ', (int) ' + at1 +
+      ', JavaUtil.AtMode.' + where2 + ', (int) ' + at2 + ')';
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   return [code, Blockly.FtcJava.ORDER_FUNCTION_CALL];
 };
 

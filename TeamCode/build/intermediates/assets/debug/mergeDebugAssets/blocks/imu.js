@@ -130,10 +130,17 @@ Blockly.Blocks['imu_getRobotOrientation'] = {
         .setAlign(Blockly.ALIGN_RIGHT);
     this.setColour(functionColor);
     this.setTooltip('Returns an Orientation object representing the current orientation of the ' +
+<<<<<<< HEAD
         'robot relative to the robot\'s position the last time that resetYaw was called, as if ' +
         'the robot was perfectly level at that time. The Orientation provides many ways to ' +
         'represent the robot\'s orientation, which is helpful for advanced use cases. Most teams ' +
         'should use getRobotYawPitchRollAngles');
+=======
+        'robot in the Robot Coordinate System, relative to the robot\'s position the last time that ' +
+        'resetYaw was called, as if the robot was perfectly level at that time. The Orientation ' +
+        'provides many ways to represent the robot\'s orientation, which is helpful for advanced ' +
+        'use cases. Most teams should use getRobotYawPitchRollAngles');
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   }
 };
 
@@ -177,9 +184,15 @@ Blockly.Blocks['imu_getProperty_Quaternion'] = {
     var thisBlock = this;
     var TOOLTIPS = [
         ['RobotOrientationAsQuaternion', 'Returns a Quaternion object representing the current ' +
+<<<<<<< HEAD
             'orientation of the robot relative to the robot\'s position the last time that ' +
             'resetYaw was called, as if the robot was perfectly level at that time. Quaternions ' +
             'provide an advanced way to access orientation data that will work well for any ' +
+=======
+            'orientation of the robot in the Robot Coordinate System, relative to the robot\'s position ' +
+            'the last time that resetYaw was called, as if the robot was perfectly level at that time. ' +
+            'Quaternions provide an advanced way to access orientation data that will work well for any ' +
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
             'orientation of the robot, even where other types of orientation data would encounter ' +
             'issues such as gimbal lock.'],
     ];
@@ -215,8 +228,14 @@ Blockly.Blocks['imu_getProperty_YawPitchRollAngles'] = {
     var thisBlock = this;
     var TOOLTIPS = [
         ['RobotYawPitchRollAngles', 'Returns a YawPitchRollAngles object representing the ' +
+<<<<<<< HEAD
             'current orientation of the robot relative to the robot\'s position the last time ' +
             'that resetYaw was called, as if the robot was perfectly level at that time.'],
+=======
+            'current orientation of the robot in the Robot Coordinate System, relative to the ' +
+            'robot\'s position the last time that resetYaw was called, as if the robot was ' +
+            'perfectly level at that time.'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('PROP');

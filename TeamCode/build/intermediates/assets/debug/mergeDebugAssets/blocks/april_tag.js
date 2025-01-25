@@ -196,6 +196,50 @@ Blockly.FtcJava['aprilTagProcessorBuilder_setDrawTagID'] = function(block) {
   return aprilTagProcessorBuilder + '.setDrawTagID(' + drawTagID + ');\n';
 };
 
+<<<<<<< HEAD
+=======
+Blockly.Blocks['aprilTagProcessorBuilder_setCameraPose'] = {
+  init: function() {
+    this.appendDummyInput('FIELD_VARIABLE')
+        .appendField('call')
+        .appendField(new Blockly.FieldVariable('myAprilTagProcessorBuilder', null, ['AprilTagProcessor.Builder'], 'AprilTagProcessor.Builder'),
+            'APRIL_TAG_PROCESSOR_BUILDER')
+        .appendField('.')
+        .appendField(createNonEditableField('setCameraPose'));
+    this.appendValueInput('POSITION').setCheck('Position')
+        .appendField('position').setAlign(Blockly.ALIGN_RIGHT);
+    this.appendValueInput('ORIENTATION').setCheck('YawPitchRollAngles')
+        .appendField('orientation').setAlign(Blockly.ALIGN_RIGHT);
+    this.setInputsInline(false);
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);
+    this.setColour(builderColor);
+    this.setTooltip('Set the camera pose relative to the robot origin.');
+  }
+};
+
+Blockly.JavaScript['aprilTagProcessorBuilder_setCameraPose'] = function(block) {
+  var aprilTagProcessorBuilder = Blockly.JavaScript.variableDB_.getName(
+      block.getFieldValue('APRIL_TAG_PROCESSOR_BUILDER'), Blockly.Variables.NAME_TYPE);
+  var position = Blockly.JavaScript.valueToCode(
+      block, 'POSITION', Blockly.JavaScript.ORDER_COMMA);
+  var orientation = Blockly.JavaScript.valueToCode(
+      block, 'ORIENTATION', Blockly.JavaScript.ORDER_COMMA);
+  return aprilTagIdentifierForJavaScript + '.setCameraPose(' +
+      aprilTagProcessorBuilder + ', ' + position + ', ' + orientation + ');\n';
+};
+
+Blockly.FtcJava['aprilTagProcessorBuilder_setCameraPose'] = function(block) {
+  var aprilTagProcessorBuilder = Blockly.FtcJava.variableDB_.getName(
+      block.getFieldValue('APRIL_TAG_PROCESSOR_BUILDER'), Blockly.Variables.NAME_TYPE);
+  var position = Blockly.FtcJava.valueToCode(
+      block, 'POSITION', Blockly.FtcJava.ORDER_COMMA);
+  var orientation = Blockly.FtcJava.valueToCode(
+      block, 'ORIENTATION', Blockly.FtcJava.ORDER_COMMA);
+  return aprilTagProcessorBuilder + '.setCameraPose(' + position + ', ' + orientation + ');\n';
+};
+
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 Blockly.Blocks['aprilTagProcessorBuilder_setLensIntrinsics'] = {
   init: function() {
     this.appendDummyInput('FIELD_VARIABLE')
@@ -722,6 +766,15 @@ Blockly.Blocks['aprilTagDetection_getProperty_Number'] = {
         ['rawPose.x', 'rawPose.x'],
         ['rawPose.y', 'rawPose.y'],
         ['rawPose.z', 'rawPose.z'],
+<<<<<<< HEAD
+=======
+        ['robotPose.position.x', 'robotPose.position.x'],
+        ['robotPose.position.y', 'robotPose.position.y'],
+        ['robotPose.position.z', 'robotPose.position.z'],
+        ['robotPose.orientation.roll', 'robotPose.orientation.roll'],
+        ['robotPose.orientation.pitch', 'robotPose.orientation.pitch'],
+        ['robotPose.orientation.yaw', 'robotPose.orientation.yaw'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setOutput(true, 'Number');
     this.appendDummyInput()
@@ -760,6 +813,15 @@ Blockly.Blocks['aprilTagDetection_getProperty_Number'] = {
         ['rawPose.x', 'Returns the rawPose.x field of the AprilTagDetection.'],
         ['rawPose.y', 'Returns the rawPose.y field of the AprilTagDetection.'],
         ['rawPose.z', 'Returns the rawPose.z field of the AprilTagDetection.'],
+<<<<<<< HEAD
+=======
+        ['robotPose.position.x', 'Returns the robotPose.position.x field of the AprilTagDetection.'],
+        ['robotPose.position.y', 'Returns the robotPose.position.y field of the AprilTagDetection.'],
+        ['robotPose.position.z', 'Returns the robotPose.position.z field of the AprilTagDetection.'],
+        ['robotPose.orientation.roll', 'Returns the robotPose.orientation.roll field of the AprilTagDetection.'],
+        ['robotPose.orientation.pitch', 'Returns the robotPose.orientation.pitch field of the AprilTagDetection.'],
+        ['robotPose.orientation.yaw', 'Returns the robotPose.orientation.yaw field of the AprilTagDetection.'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('PROP');
@@ -800,6 +862,15 @@ Blockly.Blocks['aprilTagDetection_getProperty_Number'] = {
         case 'rawPose.x':
         case 'rawPose.y':
         case 'rawPose.z':
+<<<<<<< HEAD
+=======
+        case 'robotPose.position.x':
+        case 'robotPose.position.y':
+        case 'robotPose.position.z':
+        case 'robotPose.orientation.roll':
+        case 'robotPose.orientation.pitch':
+        case 'robotPose.orientation.yaw':
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
           return 'double';
         default:
           throw 'Unexpected property ' + property + ' (aprilTagDetection_getProperty_Number getOutputType).';
@@ -821,7 +892,34 @@ Blockly.FtcJava['aprilTagDetection_getProperty_Number'] = function(block) {
   var property = block.getFieldValue('PROP');
   var aprilTagDetection = Blockly.FtcJava.valueToCode(
       block, 'APRIL_TAG_DETECTION', Blockly.FtcJava.ORDER_MEMBER);
+<<<<<<< HEAD
   var code = aprilTagDetection + '.' + property;
+=======
+  var code;
+  switch (property) {
+    case 'robotPose.position.x':
+      code = aprilTagDetection + '.robotPose.getPosition().x';
+      break;
+    case 'robotPose.position.y':
+      code = aprilTagDetection + '.robotPose.getPosition().y';
+      break;
+    case 'robotPose.position.z':
+      code = aprilTagDetection + '.robotPose.getPosition().z';
+      break;
+    case 'robotPose.orientation.roll':
+      code = aprilTagDetection + '.robotPose.getOrientation().getRoll()';
+      break;
+    case 'robotPose.orientation.pitch':
+      code = aprilTagDetection + '.robotPose.getOrientation().getPitch()';
+      break;
+    case 'robotPose.orientation.yaw':
+      code = aprilTagDetection + '.robotPose.getOrientation().getYaw()';
+      break;
+    default:
+      code = aprilTagDetection + '.' + property;
+      break;
+  }
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
@@ -879,6 +977,10 @@ Blockly.Blocks['aprilTagDetection_getProperty_IsNotNull'] = {
         ['metadata', 'metadata'],
         ['ftcPose', 'ftcPose'],
         ['rawPose', 'rawPose'],
+<<<<<<< HEAD
+=======
+        ['robotPose', 'robotPose'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setOutput(true, 'Boolean');
     this.appendDummyInput()
@@ -897,6 +999,10 @@ Blockly.Blocks['aprilTagDetection_getProperty_IsNotNull'] = {
         ['metadata', 'Returns true if the metadata field of the AprilTagDetection is not null.'],
         ['ftcPose', 'Returns true if the ftcPose field of the AprilTagDetection is not null.'],
         ['rawPose', 'Returns true if the rawPose field of the AprilTagDetection is not null.'],
+<<<<<<< HEAD
+=======
+        ['robotPose', 'Returns true if the robotPose field of the AprilTagDetection is not null.'],
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('PROP');
@@ -1077,6 +1183,60 @@ Blockly.FtcJava['aprilTagDetection_getProperty_AprilTagPoseRaw'] = function(bloc
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
+<<<<<<< HEAD
+=======
+Blockly.Blocks['aprilTagDetection_getProperty_AprilTagPoseRobot'] = {
+  init: function() {
+    var PROPERTY_CHOICES = [
+        ['robotPose', 'robotPose'],
+    ];
+    this.setOutput(true, 'AprilTagPoseRobot');
+    this.appendDummyInput()
+        .appendField(createNonEditableField('AprilTagDetection'))
+        .appendField('.')
+        .appendField(new Blockly.FieldDropdown(PROPERTY_CHOICES), 'PROP');
+    this.appendValueInput('APRIL_TAG_DETECTION').setCheck('AprilTagDetection')
+        .appendField('aprilTagDetection')
+        .setAlign(Blockly.ALIGN_RIGHT);
+    this.setColour(getPropertyColor);
+    // Assign 'this' to a variable for use in the closures below.
+    var thisBlock = this;
+    var TOOLTIPS = [
+        ['robotPose', 'Returns the robotPose field of the AprilTagDetection.'],
+    ];
+    this.setTooltip(function() {
+      var key = thisBlock.getFieldValue('PROP');
+      for (var i = 0; i < TOOLTIPS.length; i++) {
+        if (TOOLTIPS[i][0] == key) {
+          return TOOLTIPS[i][1];
+        }
+      }
+      return '';
+    });
+  }
+};
+
+Blockly.JavaScript['aprilTagDetection_getProperty_AprilTagPoseRobot'] = function(block) {
+  var property = block.getFieldValue('PROP');
+  var aprilTagDetection = Blockly.JavaScript.valueToCode(
+      block, 'APRIL_TAG_DETECTION', Blockly.JavaScript.ORDER_MEMBER);
+  var o = aprilTagDetection + '.' + property;
+  var code = aprilTagIdentifierForJavaScript + '.createAprilTagPoseRobot(' +
+      '"GETTER", "AprilTagDetection", "' + property + '", ' +
+      'JSON.stringify(' + o + '))';
+  var wrappedCode = 'evalIfTruthy(' + o + ', \'' + code + '\', null)';
+  return [wrappedCode, Blockly.JavaScript.ORDER_FUNCTION_CALL];
+};
+
+Blockly.FtcJava['aprilTagDetection_getProperty_AprilTagPoseRobot'] = function(block) {
+  var property = block.getFieldValue('PROP');
+  var aprilTagDetection = Blockly.FtcJava.valueToCode(
+      block, 'APRIL_TAG_DETECTION', Blockly.FtcJava.ORDER_MEMBER);
+  var code = aprilTagDetection + '.' + property;
+  return [code, Blockly.FtcJava.ORDER_MEMBER];
+};
+
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 Blockly.Blocks['aprilTagDetection_getProperty_MatrixF'] = {
   init: function() {
     var PROPERTY_CHOICES = [
@@ -1178,6 +1338,33 @@ Blockly.FtcJava['aprilTagGameDatabase_getCenterStageTagLibrary'] = function(bloc
   return [code, Blockly.FtcJava.ORDER_FUNCTION_CALL];
 };
 
+<<<<<<< HEAD
+=======
+Blockly.Blocks['aprilTagGameDatabase_getIntoTheDeepTagLibrary'] = {
+  init: function() {
+    this.setOutput(true, 'AprilTagLibrary');
+    this.appendDummyInput()
+        .appendField('call')
+        .appendField(createNonEditableField('AprilTagGameDatabase'))
+        .appendField('.')
+        .appendField(createNonEditableField('getIntoTheDeepTagLibrary'));
+    this.setColour(functionColor);
+    this.setTooltip('Returns the tag library for the Into The Deep FTC game.');
+  }
+};
+
+Blockly.JavaScript['aprilTagGameDatabase_getIntoTheDeepTagLibrary'] = function(block) {
+  var code = aprilTagIdentifierForJavaScript + '.getIntoTheDeepTagLibrary()';
+  return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
+};
+
+Blockly.FtcJava['aprilTagGameDatabase_getIntoTheDeepTagLibrary'] = function(block) {
+  Blockly.FtcJava.generateImport_('AprilTagGameDatabase');
+  var code = 'AprilTagGameDatabase.getIntoTheDeepTagLibrary()';
+  return [code, Blockly.FtcJava.ORDER_FUNCTION_CALL];
+};
+
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 Blockly.Blocks['aprilTagGameDatabase_getSampleTagLibrary'] = {
   init: function() {
     this.setOutput(true, 'AprilTagLibrary');

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Sat Jan 25 01:35:13 EST 2025
 base.0=/Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/10/classes.dex
@@ -8,6 +9,19 @@ base.5=/Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/int
 base.6=/Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
 base.7=/Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
 base.8=/Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+=======
+#Sat Jan 25 04:58:30 EST 2025
+base.0=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/10/classes.dex
+base.2=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/11/classes.dex
+base.3=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/8/classes.dex
+base.4=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.5=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.6=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+base.7=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
+base.8=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.9=/Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 path.0=classes.dex
 path.1=10/classes.dex
 path.2=11/classes.dex
@@ -17,6 +31,10 @@ path.5=11/classes.dex
 path.6=15/classes.dex
 path.7=3/classes.dex
 path.8=classes2.dex
+<<<<<<< HEAD
+=======
+path.9=classes3.dex
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
@@ -26,3 +44,7 @@ renamed.5=classes6.dex
 renamed.6=classes7.dex
 renamed.7=classes8.dex
 renamed.8=classes9.dex
+<<<<<<< HEAD
+=======
+renamed.9=classes10.dex
+>>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
