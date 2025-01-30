@@ -6,20 +6,16 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
 import java.util.ArrayList;
-//push test
-@TeleOp(name = "MecanumHardware: Teleop!!", group = "MecanumHardware")
+
+@TeleOp(name = "Teleop!", group = "Hardware")
 public class Teleop extends LinearOpMode {
 
     // Declare OpMode members.
     public static final double sensitivity_scalar = 0.15;
-    public double driver_scalar = 0.95; //'public double' might need to be changed, not sure of syntax
+    public double driver_scalar = 0.95; // 'public double' might need to be changed, not sure of syntax
     public static final double driver_rotation_scalar = 0.7;
-
-    //MecanumHardware robot = new MecanumHardware();
-
-//    public double lbarmpos;
-//    public double rbarmpos;
     public double cbarmpos = 0.5;
+
     Hardware robot = new Hardware();
 
     @Override
@@ -29,40 +25,21 @@ public class Teleop extends LinearOpMode {
         // Send telemetry message to signify robot waiting
         telemetry.addData("Hi", "I'm EVE");
 
-        /*robot.FR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.FL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.BL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.BR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-
-        robot.FL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.BL.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.FR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.BR.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-*/
         robot.rf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.lf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.lb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.rb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//        robot.lspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//        robot.rspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
         robot.rf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         robot.lf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         robot.lb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         robot.rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
-//        robot.lspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-//        robot.rspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-
         robot.lspool.setPower(0);
         robot.rspool.setPower(0);
 
-//        robot.cbarm.setPosition(0.5);
-
         telemetry.addData("init cbarm: ", robot.cbarm.getPosition());
         telemetry.update();
-
-//        cbarmpos = robot.cbarm.getPosition();
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -89,27 +66,13 @@ public class Teleop extends LinearOpMode {
                 y1 = 0;
             }
 
-
-            /*telemetry.addData("Wheel powers --> FL, FR, BL, BR: ", driveByMatrix(robot.FL, robot.FR,
-                    robot.BL, robot.BR, x, y, yaw * driver_rotation_scalar, driver_scalar));
-            telemetry.addData("FL: ", robot.FL.getCurrentPosition());
-            telemetry.addData("BL: ", robot.BL.getCurrentPosition());
-            telemetry.addData("FR: ", robot.FR.getCurrentPosition());
-            telemetry.addData("BR: ", robot.BR.getCurrentPosition());
-            telemetry.update();
-
-            // Stop robot
-            robot.FL.setPower(0);
-            robot.BL.setPower(0);
-            robot.FR.setPower(0);
-            robot.BR.setPower(0);*/
-
-            // motors
             driveByMatrix(robot.lf, robot.rf, robot.lb, robot.rb, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar);
 
             // Gamepad 2: controls the linear slides and claw
 
-            //slides
+            // Automatic retraction
+
+            // Slides
             if (gamepad2.left_stick_y > 0) { // Lifts slides
                 robot.lspool.setPower(0.8);
                 robot.rspool.setPower(0.8);
@@ -118,7 +81,7 @@ public class Teleop extends LinearOpMode {
                 robot.rspool.setPower(-0.8);
             }
 
-            //pivot
+            // Pivot
             if (gamepad2.left_trigger > 0) {
                 robot.llinkage.setPower(0.75);
                 robot.rlinkage.setPower(0.75);
@@ -130,76 +93,40 @@ public class Teleop extends LinearOpMode {
                 robot.rlinkage.setPower(0);
             }
 
-            //claw
+            // Claw
             if (gamepad2.x) { // Grab piece
                 robot.claw.setPosition(1);
             } else if (gamepad2.b){
                 robot.claw.setPosition(0);
             }
 
-//            arm up vs down
-//            if (gamepad2.left_bumper){
-//                robot.lbarm.setPosition(lbarmpos);
-//                robot.rbarm.setPosition(rbarmpos);
-//                lbarmpos += 0.01;
-//                rbarmpos += 0.01;
-//            } else if (gamepad2.right_bumper) {
-//                robot.lbarm.setPosition(lbarmpos);
-//                robot.rbarm.setPosition(rbarmpos);
-//                lbarmpos -= 0.01;
-//                rbarmpos -= 0.01;
-//            }
-
-            //claw spin
+            // Claw spin
             if (gamepad2.right_stick_x < 0) {
                 robot.spinclaw.setPower(-0.2);
             } else if (gamepad2.right_stick_x > 0) {
                 robot.spinclaw.setPower(0.2);
             }
 
-            //claw up vs down
+            // Claw up vs down
             if (gamepad2.y) {
                 cbarmpos -= 0.001;
             } else if (gamepad2.a) {
                 cbarmpos += 0.001;
             }
 
+            // Reset arm positions
             if (cbarmpos < 0){
                 cbarmpos = 0;
             } else if (cbarmpos > 1){
                 cbarmpos = 1;
             }
-
             robot.cbarm.setPosition(cbarmpos);
-
-            telemetry.addData("cbarm: ", robot.cbarm.getPosition());
-            telemetry.addData("cbarmpos: ", cbarmpos);
-
-            //test drive motors direction
-//            if (gamepad1.y){
-//                robot.lf.setPower(1);
-//            } else if (gamepad1.b){
-//                robot.lb.setPower(1);
-//            } else if (gamepad1.a){
-//                robot.rb.setPower(1);
-//            } else if (gamepad1.x){
-//                robot.rf.setPower(1);
-//            } else {
-//                robot.lf.setPower(0);
-//                robot.lb.setPower(0);
-//                robot.rb.setPower(0);
-//                robot.rf.setPower(0);
-//            }
-//
 
             robot.rspool.setPower(0);
             robot.lspool.setPower(0);
             robot.llinkage.setPower(0);
             robot.rlinkage.setPower(0);
-//            robot.lbarm.setPower(0);
-//            robot.rbarm.setPower(0);
             robot.spinclaw.setPower(0);
-            telemetry.update();
         }
     }
 
