@@ -24,11 +24,8 @@
 // blocksOpMode
 // telemetry
 
-<<<<<<< HEAD
-=======
 // IMPORTANT!!! All identifiers in this file must be added as reserved words for the JavaScript runtime.
 // This is done in the function addReservedWordsForJavaScriptRuntime in FtcBlocks_common.js.
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 
 var currentBlockLabel = '';
 
@@ -103,15 +100,11 @@ function callJava(miscIdentifierForJavaScript, returnType, accessMethod, convert
   var numNamedArgs = callJava.length;
   var extraParameters = [];
   for (var i = numNamedArgs; i < arguments.length; i++) {
-<<<<<<< HEAD
-    extraParameters[i - numNamedArgs] = arguments[i]
-=======
     if (typeof arguments[i] == 'object') {
       extraParameters[i - numNamedArgs] = getJavaObject(arguments[i]);
     } else {
       extraParameters[i - numNamedArgs] = arguments[i];
     }
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   }
 
   var newRest = Array.prototype.slice.call(extraParameters);
@@ -145,15 +138,11 @@ function callHardware(miscIdentifierForJavaScript, returnType, accessMethod, con
   var numNamedArgs = callHardware.length;
   var extraParameters = [];
   for (var i = numNamedArgs; i < arguments.length; i++) {
-<<<<<<< HEAD
-    extraParameters[i - numNamedArgs] = arguments[i]
-=======
     if (typeof arguments[i] == 'object') {
       extraParameters[i - numNamedArgs] = getJavaObject(arguments[i]);
     } else {
       extraParameters[i - numNamedArgs] = arguments[i];
     }
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   }
 
   var newRest = Array.prototype.slice.call(extraParameters);
@@ -218,8 +207,6 @@ function nullOrJson(s) {
 function evalIfTruthy(o, code, otherwise) {
   return o ? eval(code) : otherwise;
 }
-<<<<<<< HEAD
-=======
 
 var mapJavaToJavaScript = new WeakMap(); // Maps a Java object/array to a JavaScript object/list
 var mapJavaScriptToJava = new WeakMap(); // Maps a JavaScript object/list to a Java object/array
@@ -331,4 +318,3 @@ function colorBlobsSortByAspectRatio(sortOrder, blobs) {
 
 // IMPORTANT!!! All identifiers in this file must be added as reserved words for the JavaScript runtime.
 // This is done in the function addReservedWordsForJavaScriptRuntime in FtcBlocks_common.js.
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

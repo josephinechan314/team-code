@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-3:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/3dc4af1a7738b1ed81177ebae73b01c7/transformed/appcompat-1.2.0/res/values-land/values-land.xml",
-=======
-            "outputFile": "org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-33:/values-land/values-land.xml",
-            "map": [
-                {
-                    "source": "/Users/zoezhang/.gradle/caches/8.9/transforms/3f64819ca51c5dad0c4892fe9938b38b/transformed/appcompat-1.7.0/res/values-land/values-land.xml",
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
+                    "source": "/Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/3f64819ca51c5dad0c4892fe9938b38b/transformed/appcompat-1.7.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

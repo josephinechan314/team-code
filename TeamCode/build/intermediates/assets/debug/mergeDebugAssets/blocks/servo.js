@@ -438,8 +438,6 @@ Blockly.JavaScript['servo_scaleRange_Number'] =
 
 Blockly.FtcJava['servo_scaleRange_Number'] =
     Blockly.FtcJava['servo_scaleRange'];
-<<<<<<< HEAD
-=======
 
 Blockly.Blocks['servo_isPwmEnabled'] = {
   init: function() {
@@ -513,4 +511,3 @@ Blockly.FtcJava['servo_setPwmDisable'] = function(block) {
   var identifier = Blockly.FtcJava.importDeclareAssign_(block, 'IDENTIFIER', 'Servo');
   return identifier + '.setPwmDisable();\n';
 };
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

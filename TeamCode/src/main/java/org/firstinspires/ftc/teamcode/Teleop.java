@@ -16,6 +16,14 @@ public class Teleop extends LinearOpMode {
     public static final double driver_rotation_scalar = 0.7;
     public double cbarmpos = 0.5;
 
+    // Declare states for auto retraction
+    public enum RetractionStates {
+        WAIT,
+        RETRACT,
+    };
+
+    Teleop.RetractionStates retractionState = Teleop.RetractionStates.WAIT;
+
     Hardware robot = new Hardware();
 
     @Override
@@ -50,6 +58,81 @@ public class Teleop extends LinearOpMode {
 
         // Run until the end of the match (driver press STOP)
         while (opModeIsActive()) {
+            // Auto retraction
+            switch (retractionState) {
+                case WAIT:
+                    // Slides
+                    if (gamepad2.left_stick_y > 0) { // Lifts slides
+                        robot.lspool.setPower(0.8);
+                        robot.rspool.setPower(0.8);
+                    } else if (gamepad2.left_stick_y < 0) { // Lowers slides
+                        robot.lspool.setPower(-0.8);
+                        robot.rspool.setPower(-0.8);
+                    }
+
+                    // Pivot
+                    if (gamepad2.left_trigger > 0) {
+                        robot.llinkage.setPower(0.75);
+                        robot.rlinkage.setPower(0.75);
+                    } else if (gamepad2.right_trigger > 0) {
+                        robot.llinkage.setPower(-0.75);
+                        robot.rlinkage.setPower(-0.75);
+                    }
+                    /*
+                     else {
+                        robot.llinkage.setPower(0);
+                        robot.rlinkage.setPower(0);
+                    }
+                     */
+
+                    // Claw
+                    if (gamepad2.x) { // Grab piece
+                        robot.claw.setPosition(1);
+                    } else if (gamepad2.b) {
+                        robot.claw.setPosition(0);
+                    }
+
+                    // Claw spin
+                    if (gamepad2.right_stick_x < 0) {
+                        robot.spinclaw.setPower(-0.2);
+                    } else if (gamepad2.right_stick_x > 0) {
+                        robot.spinclaw.setPower(0.2);
+                    }
+
+                    // Claw up vs down
+                    if (gamepad2.y) {
+                        cbarmpos -= 0.001;
+                    } else if (gamepad2.a) {
+                        cbarmpos += 0.001;
+                    }
+
+                    // Reset arm positions
+                    if (cbarmpos < 0) {
+                        cbarmpos = 0;
+                    } else if (cbarmpos > 1) {
+                        cbarmpos = 1;
+                    }
+                    robot.cbarm.setPosition(cbarmpos);
+
+                    robot.rspool.setPower(0);
+                    robot.lspool.setPower(0);
+                    robot.llinkage.setPower(0);
+                    robot.rlinkage.setPower(0);
+                    robot.spinclaw.setPower(0);
+
+                    if (gamepad1.right_trigger > 0) {
+                        retractionState = Teleop.RetractionStates.RETRACT;
+                    }
+                    break;
+                case RETRACT:
+                    robot.claw.setPosition(1);
+                    //robot.cbarm.setPosition(1);
+                    retractionState = Teleop.RetractionStates.WAIT;
+                    break;
+                default:
+                    // Should never be reached, as liftState should never be null
+                    retractionState = Teleop.RetractionStates.WAIT;
+            }
 
             // Gamepad 1: drives the robot
             double x1 = gamepad1.right_stick_x;
@@ -69,8 +152,6 @@ public class Teleop extends LinearOpMode {
             driveByMatrix(robot.lf, robot.rf, robot.lb, robot.rb, x1, y1, yaw1 * driver_rotation_scalar, driver_scalar);
 
             // Gamepad 2: controls the linear slides and claw
-
-            // Automatic retraction
 
             // Slides
             if (gamepad2.left_stick_y > 0) { // Lifts slides

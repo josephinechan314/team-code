@@ -16,29 +16,18 @@
  */
 
 /**
-<<<<<<< HEAD
- * @fileoverview FTC robot blocks related to RevHubOrientationOnRobot.
-=======
  * @fileoverview FTC robot blocks related to RevHubOrientationOnRobot and Rev9AxisImuOrientationOnRobot.
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
  * @author lizlooney@google.com (Liz Looney)
  */
 
 // The following are generated dynamically in HardwareUtil.fetchJavaScriptForHardware():
 // revHubOrientationOnRobotForJavaScript
-<<<<<<< HEAD
-=======
 // rev9AxisImuOrientationOnRobotForJavaScript
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 // The following are defined in vars.js:
 // createNonEditableField
 // functionColor
 
-<<<<<<< HEAD
-// Functions
-=======
 // RevHubOrientationOnRobot Constructors
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 
 Blockly.Blocks['revHubOrientationOnRobot_create1'] = {
   init: function() {
@@ -150,10 +139,6 @@ Blockly.FtcJava['revHubOrientationOnRobot_create3'] = function(block) {
   return [code, Blockly.FtcJava.ORDER_NEW];
 };
 
-<<<<<<< HEAD
-
-// Enums
-=======
 // RevHubOrientationOnRobot Functions
 
 Blockly.Blocks['revHubOrientationOnRobot_zyxOrientation'] = {
@@ -265,7 +250,6 @@ Blockly.FtcJava['revHubOrientationOnRobot_xyzOrientation'] = function(block) {
 };
 
 // RevHubOrientationOnRobot Enums
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 
 Blockly.Blocks['revHubOrientationOnRobot_typedEnum_logoFacingDirection'] = {
   init: function() {
@@ -365,8 +349,6 @@ Blockly.FtcJava['revHubOrientationOnRobot_typedEnum_usbFacingDirection'] = funct
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
-<<<<<<< HEAD
-=======
 // Rev9AxisImuOrientationOnRobot Constructors
 
 Blockly.Blocks['rev9AxisImuOrientationOnRobot_create1'] = {
@@ -688,4 +670,3 @@ Blockly.FtcJava['rev9AxisImuOrientationOnRobot_typedEnum_i2cPortFacingDirection'
   Blockly.FtcJava.generateImport_('Rev9AxisImuOrientationOnRobot');
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

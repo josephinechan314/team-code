@@ -196,8 +196,6 @@ Blockly.FtcJava['aprilTagProcessorBuilder_setDrawTagID'] = function(block) {
   return aprilTagProcessorBuilder + '.setDrawTagID(' + drawTagID + ');\n';
 };
 
-<<<<<<< HEAD
-=======
 Blockly.Blocks['aprilTagProcessorBuilder_setCameraPose'] = {
   init: function() {
     this.appendDummyInput('FIELD_VARIABLE')
@@ -239,7 +237,6 @@ Blockly.FtcJava['aprilTagProcessorBuilder_setCameraPose'] = function(block) {
   return aprilTagProcessorBuilder + '.setCameraPose(' + position + ', ' + orientation + ');\n';
 };
 
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 Blockly.Blocks['aprilTagProcessorBuilder_setLensIntrinsics'] = {
   init: function() {
     this.appendDummyInput('FIELD_VARIABLE')
@@ -766,15 +763,12 @@ Blockly.Blocks['aprilTagDetection_getProperty_Number'] = {
         ['rawPose.x', 'rawPose.x'],
         ['rawPose.y', 'rawPose.y'],
         ['rawPose.z', 'rawPose.z'],
-<<<<<<< HEAD
-=======
         ['robotPose.position.x', 'robotPose.position.x'],
         ['robotPose.position.y', 'robotPose.position.y'],
         ['robotPose.position.z', 'robotPose.position.z'],
         ['robotPose.orientation.roll', 'robotPose.orientation.roll'],
         ['robotPose.orientation.pitch', 'robotPose.orientation.pitch'],
         ['robotPose.orientation.yaw', 'robotPose.orientation.yaw'],
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setOutput(true, 'Number');
     this.appendDummyInput()
@@ -813,15 +807,12 @@ Blockly.Blocks['aprilTagDetection_getProperty_Number'] = {
         ['rawPose.x', 'Returns the rawPose.x field of the AprilTagDetection.'],
         ['rawPose.y', 'Returns the rawPose.y field of the AprilTagDetection.'],
         ['rawPose.z', 'Returns the rawPose.z field of the AprilTagDetection.'],
-<<<<<<< HEAD
-=======
         ['robotPose.position.x', 'Returns the robotPose.position.x field of the AprilTagDetection.'],
         ['robotPose.position.y', 'Returns the robotPose.position.y field of the AprilTagDetection.'],
         ['robotPose.position.z', 'Returns the robotPose.position.z field of the AprilTagDetection.'],
         ['robotPose.orientation.roll', 'Returns the robotPose.orientation.roll field of the AprilTagDetection.'],
         ['robotPose.orientation.pitch', 'Returns the robotPose.orientation.pitch field of the AprilTagDetection.'],
         ['robotPose.orientation.yaw', 'Returns the robotPose.orientation.yaw field of the AprilTagDetection.'],
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('PROP');
@@ -862,15 +853,12 @@ Blockly.Blocks['aprilTagDetection_getProperty_Number'] = {
         case 'rawPose.x':
         case 'rawPose.y':
         case 'rawPose.z':
-<<<<<<< HEAD
-=======
         case 'robotPose.position.x':
         case 'robotPose.position.y':
         case 'robotPose.position.z':
         case 'robotPose.orientation.roll':
         case 'robotPose.orientation.pitch':
         case 'robotPose.orientation.yaw':
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
           return 'double';
         default:
           throw 'Unexpected property ' + property + ' (aprilTagDetection_getProperty_Number getOutputType).';
@@ -892,9 +880,6 @@ Blockly.FtcJava['aprilTagDetection_getProperty_Number'] = function(block) {
   var property = block.getFieldValue('PROP');
   var aprilTagDetection = Blockly.FtcJava.valueToCode(
       block, 'APRIL_TAG_DETECTION', Blockly.FtcJava.ORDER_MEMBER);
-<<<<<<< HEAD
-  var code = aprilTagDetection + '.' + property;
-=======
   var code;
   switch (property) {
     case 'robotPose.position.x':
@@ -919,7 +904,6 @@ Blockly.FtcJava['aprilTagDetection_getProperty_Number'] = function(block) {
       code = aprilTagDetection + '.' + property;
       break;
   }
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
@@ -977,10 +961,7 @@ Blockly.Blocks['aprilTagDetection_getProperty_IsNotNull'] = {
         ['metadata', 'metadata'],
         ['ftcPose', 'ftcPose'],
         ['rawPose', 'rawPose'],
-<<<<<<< HEAD
-=======
         ['robotPose', 'robotPose'],
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setOutput(true, 'Boolean');
     this.appendDummyInput()
@@ -999,10 +980,7 @@ Blockly.Blocks['aprilTagDetection_getProperty_IsNotNull'] = {
         ['metadata', 'Returns true if the metadata field of the AprilTagDetection is not null.'],
         ['ftcPose', 'Returns true if the ftcPose field of the AprilTagDetection is not null.'],
         ['rawPose', 'Returns true if the rawPose field of the AprilTagDetection is not null.'],
-<<<<<<< HEAD
-=======
         ['robotPose', 'Returns true if the robotPose field of the AprilTagDetection is not null.'],
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     ];
     this.setTooltip(function() {
       var key = thisBlock.getFieldValue('PROP');
@@ -1183,8 +1161,6 @@ Blockly.FtcJava['aprilTagDetection_getProperty_AprilTagPoseRaw'] = function(bloc
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
-<<<<<<< HEAD
-=======
 Blockly.Blocks['aprilTagDetection_getProperty_AprilTagPoseRobot'] = {
   init: function() {
     var PROPERTY_CHOICES = [
@@ -1236,7 +1212,6 @@ Blockly.FtcJava['aprilTagDetection_getProperty_AprilTagPoseRobot'] = function(bl
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
 
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 Blockly.Blocks['aprilTagDetection_getProperty_MatrixF'] = {
   init: function() {
     var PROPERTY_CHOICES = [
@@ -1338,8 +1313,6 @@ Blockly.FtcJava['aprilTagGameDatabase_getCenterStageTagLibrary'] = function(bloc
   return [code, Blockly.FtcJava.ORDER_FUNCTION_CALL];
 };
 
-<<<<<<< HEAD
-=======
 Blockly.Blocks['aprilTagGameDatabase_getIntoTheDeepTagLibrary'] = {
   init: function() {
     this.setOutput(true, 'AprilTagLibrary');
@@ -1364,7 +1337,6 @@ Blockly.FtcJava['aprilTagGameDatabase_getIntoTheDeepTagLibrary'] = function(bloc
   return [code, Blockly.FtcJava.ORDER_FUNCTION_CALL];
 };
 
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 Blockly.Blocks['aprilTagGameDatabase_getSampleTagLibrary'] = {
   init: function() {
     this.setOutput(true, 'AprilTagLibrary');

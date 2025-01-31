@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 org.firstinspires.ftc.teamcode.TeamCode-debug-0 /Users/josephinechan/Documents/robotics_code/team-code/FtcRobotController/build/intermediates/packaged_res/debug/packageDebugResources
 org.firstinspires.ftc.teamcode.TeamCode-pngs-1 /Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/generated/res/pngs/debug
 org.firstinspires.ftc.teamcode.TeamCode-resValues-2 /Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/generated/res/resValues/debug
@@ -7,57 +6,33 @@ org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-4 /Users/josephinech
 org.firstinspires.ftc.teamcode.TeamCode-debug-5 /Users/josephinechan/Documents/robotics_code/team-code/TeamCode/build/intermediates/merged_res/debug/mergeDebugResources
 org.firstinspires.ftc.teamcode.TeamCode-debug-6 /Users/josephinechan/Documents/robotics_code/team-code/TeamCode/src/debug/res
 org.firstinspires.ftc.teamcode.TeamCode-main-7 /Users/josephinechan/Documents/robotics_code/team-code/TeamCode/src/main/res
-org.firstinspires.ftc.teamcode.TeamCode-OnBotJava-9.2.0-8 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/151a0652c7fe61cc4ca6009dacff214a/transformed/OnBotJava-9.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-appcompat-resources-1.2.0-9 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/198f27c4b681bc9cd8d08b2b80201030/transformed/appcompat-resources-1.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-FtcCommon-9.2.0-10 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/1b8934e8ba77b0d6149b5065635e1c5f/transformed/FtcCommon-9.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-opencv-repackaged-bundled-dylibs-4.7.0-A-11 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/1e14ee3625cf9d4624f41c139ff42c76/transformed/opencv-repackaged-bundled-dylibs-4.7.0-A/res
-org.firstinspires.ftc.teamcode.TeamCode-apriltag-2.0.0-12 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/3cbc5fcd542f97dd17650e465913d966/transformed/apriltag-2.0.0/res
-org.firstinspires.ftc.teamcode.TeamCode-appcompat-1.2.0-13 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/3dc4af1a7738b1ed81177ebae73b01c7/transformed/appcompat-1.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-RobotCore-9.2.0-14 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/6d7cc777930c1b10d92c85191bc48ba9/transformed/RobotCore-9.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-dashboard-0.4.14-15 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/9ae549df3e0d3b9b52900e9f243db15e/transformed/dashboard-0.4.14/res
-org.firstinspires.ftc.teamcode.TeamCode-zxing-android-embedded-4.3.0-16 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/a64f50e259a5f46d27790879dabea1b2/transformed/zxing-android-embedded-4.3.0/res
-org.firstinspires.ftc.teamcode.TeamCode-Inspection-9.2.0-17 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/a7ed730eff46ed0c28dc9e7607b8b144/transformed/Inspection-9.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-Blocks-9.2.0-18 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/b96b13b9ec399cce01d2c535741419a4/transformed/Blocks-9.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-Hardware-9.2.0-19 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/bc800c10b55c55efa3064848ecf09232/transformed/Hardware-9.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-core-1.3.0-20 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/dd336b1e6aebd9ae7747257ed0e83dfd/transformed/core-1.3.0/res
-org.firstinspires.ftc.teamcode.TeamCode-RobotServer-9.2.0-21 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/e1f2b0e50818610ec25dd2afa3409e4d/transformed/RobotServer-9.2.0/res
-=======
-org.firstinspires.ftc.teamcode.TeamCode-apriltag-2.1.0-0 /Users/zoezhang/.gradle/caches/8.9/transforms/035dcdb07a2b5a74d1c5a48b1c829cea/transformed/apriltag-2.1.0/res
-org.firstinspires.ftc.teamcode.TeamCode-Blocks-10.1.1-1 /Users/zoezhang/.gradle/caches/8.9/transforms/0f72e6bbfc3b58c066a6e7d0a2cd41d6/transformed/Blocks-10.1.1/res
-org.firstinspires.ftc.teamcode.TeamCode-lifecycle-process-2.6.2-2 /Users/zoezhang/.gradle/caches/8.9/transforms/101a99cbc2329ce4b2567c1ee4a2b87b/transformed/lifecycle-process-2.6.2/res
-org.firstinspires.ftc.teamcode.TeamCode-emoji2-views-helper-1.3.0-3 /Users/zoezhang/.gradle/caches/8.9/transforms/11dc441223cf44eac7309f83f84495d1/transformed/emoji2-views-helper-1.3.0/res
-org.firstinspires.ftc.teamcode.TeamCode-opencv-repackaged-bundled-dylibs-4.10.0-A-4 /Users/zoezhang/.gradle/caches/8.9/transforms/18145794a4ae95e2f21573db13b334e5/transformed/opencv-repackaged-bundled-dylibs-4.10.0-A/res
-org.firstinspires.ftc.teamcode.TeamCode-profileinstaller-1.3.1-5 /Users/zoezhang/.gradle/caches/8.9/transforms/26b5d7e4c8293b902b21d20d118e1d99/transformed/profileinstaller-1.3.1/res
-org.firstinspires.ftc.teamcode.TeamCode-RobotCore-10.1.1-6 /Users/zoezhang/.gradle/caches/8.9/transforms/2abf24930e71deaa38e1e6d49a3c5192/transformed/RobotCore-10.1.1/res
-org.firstinspires.ftc.teamcode.TeamCode-lifecycle-runtime-2.6.2-7 /Users/zoezhang/.gradle/caches/8.9/transforms/3b3644b3c553c82eadf15c6e5d01cf4d/transformed/lifecycle-runtime-2.6.2/res
-org.firstinspires.ftc.teamcode.TeamCode-appcompat-1.7.0-8 /Users/zoezhang/.gradle/caches/8.9/transforms/3f64819ca51c5dad0c4892fe9938b38b/transformed/appcompat-1.7.0/res
-org.firstinspires.ftc.teamcode.TeamCode-OnBotJava-10.1.1-9 /Users/zoezhang/.gradle/caches/8.9/transforms/4256354027e2b84c94fefe7dc13858bf/transformed/OnBotJava-10.1.1/res
-org.firstinspires.ftc.teamcode.TeamCode-savedstate-1.2.1-10 /Users/zoezhang/.gradle/caches/8.9/transforms/510770be192f7f401a928fec8ebce385/transformed/savedstate-1.2.1/res
-org.firstinspires.ftc.teamcode.TeamCode-dashboard-0.4.16-11 /Users/zoezhang/.gradle/caches/8.9/transforms/5d37829fb18b47aba64d81637a31e753/transformed/dashboard-0.4.16/res
-org.firstinspires.ftc.teamcode.TeamCode-startup-runtime-1.1.1-12 /Users/zoezhang/.gradle/caches/8.9/transforms/63f4ce85fe2f0d3cf66579cfb10e44bb/transformed/startup-runtime-1.1.1/res
-org.firstinspires.ftc.teamcode.TeamCode-core-ktx-1.13.0-13 /Users/zoezhang/.gradle/caches/8.9/transforms/674cd163ff255b1647741b044d11b72c/transformed/core-ktx-1.13.0/res
-org.firstinspires.ftc.teamcode.TeamCode-RobotServer-10.1.1-14 /Users/zoezhang/.gradle/caches/8.9/transforms/6cb03b88476a43b2e4b90cd9c1fa57b5/transformed/RobotServer-10.1.1/res
-org.firstinspires.ftc.teamcode.TeamCode-Hardware-10.1.1-15 /Users/zoezhang/.gradle/caches/8.9/transforms/7a6e3e861a4b62f2202b7cdac3b7e829/transformed/Hardware-10.1.1/res
-org.firstinspires.ftc.teamcode.TeamCode-appcompat-resources-1.7.0-16 /Users/zoezhang/.gradle/caches/8.9/transforms/7f1c43352bc1f5acd8af9740e19e61a8/transformed/appcompat-resources-1.7.0/res
-org.firstinspires.ftc.teamcode.TeamCode-fragment-1.5.4-17 /Users/zoezhang/.gradle/caches/8.9/transforms/87537a02a099b0a726555e40de89098f/transformed/fragment-1.5.4/res
-org.firstinspires.ftc.teamcode.TeamCode-lifecycle-viewmodel-2.6.2-18 /Users/zoezhang/.gradle/caches/8.9/transforms/8862448272d648364c0c2b537e506026/transformed/lifecycle-viewmodel-2.6.2/res
-org.firstinspires.ftc.teamcode.TeamCode-lifecycle-viewmodel-savedstate-2.6.2-19 /Users/zoezhang/.gradle/caches/8.9/transforms/8b06816fef06008126856e54eb2fba94/transformed/lifecycle-viewmodel-savedstate-2.6.2/res
-org.firstinspires.ftc.teamcode.TeamCode-FtcCommon-10.1.1-20 /Users/zoezhang/.gradle/caches/8.9/transforms/95d2106c40ecef066824d8e9f8c35262/transformed/FtcCommon-10.1.1/res
-org.firstinspires.ftc.teamcode.TeamCode-zxing-android-embedded-4.3.0-21 /Users/zoezhang/.gradle/caches/8.9/transforms/a64f50e259a5f46d27790879dabea1b2/transformed/zxing-android-embedded-4.3.0/res
-org.firstinspires.ftc.teamcode.TeamCode-lifecycle-livedata-core-2.6.2-22 /Users/zoezhang/.gradle/caches/8.9/transforms/a8221c4a062845a1dc7c70c66d0e4a4e/transformed/lifecycle-livedata-core-2.6.2/res
-org.firstinspires.ftc.teamcode.TeamCode-lifecycle-livedata-2.6.2-23 /Users/zoezhang/.gradle/caches/8.9/transforms/af1ec8159a9125a15e0ff13e4d318e0c/transformed/lifecycle-livedata-2.6.2/res
-org.firstinspires.ftc.teamcode.TeamCode-core-runtime-2.2.0-24 /Users/zoezhang/.gradle/caches/8.9/transforms/b846f2f00b2fb8998e8048ba693200c5/transformed/core-runtime-2.2.0/res
-org.firstinspires.ftc.teamcode.TeamCode-emoji2-1.3.0-25 /Users/zoezhang/.gradle/caches/8.9/transforms/bef537d9baa4b6bb1b6891852b2a4223/transformed/emoji2-1.3.0/res
-org.firstinspires.ftc.teamcode.TeamCode-activity-1.7.0-26 /Users/zoezhang/.gradle/caches/8.9/transforms/c86a6c85c6a43767fea7d45636a24ba3/transformed/activity-1.7.0/res
-org.firstinspires.ftc.teamcode.TeamCode-Inspection-10.1.1-27 /Users/zoezhang/.gradle/caches/8.9/transforms/e943f79f7d86aad9a88ffc3be9d260a6/transformed/Inspection-10.1.1/res
-org.firstinspires.ftc.teamcode.TeamCode-core-1.13.0-28 /Users/zoezhang/.gradle/caches/8.9/transforms/f734d3757685d8d992319f55d6e2d5ac/transformed/core-1.13.0/res
-org.firstinspires.ftc.teamcode.TeamCode-annotation-experimental-1.4.0-29 /Users/zoezhang/.gradle/caches/8.9/transforms/f8e03070b2985cf093c81f6980188369/transformed/annotation-experimental-1.4.0/res
-org.firstinspires.ftc.teamcode.TeamCode-debug-30 /Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/FtcRobotController/build/intermediates/packaged_res/debug/packageDebugResources
-org.firstinspires.ftc.teamcode.TeamCode-pngs-31 /Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/generated/res/pngs/debug
-org.firstinspires.ftc.teamcode.TeamCode-resValues-32 /Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/generated/res/resValues/debug
-org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-33 /Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-34 /Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-org.firstinspires.ftc.teamcode.TeamCode-debug-35 /Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/build/intermediates/merged_res/debug/mergeDebugResources
-org.firstinspires.ftc.teamcode.TeamCode-debug-36 /Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/src/debug/res
-org.firstinspires.ftc.teamcode.TeamCode-main-37 /Users/zoezhang/Documents/robotics/ftc code/IntoTheDeepTeamCode/TeamCode/src/main/res
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
+org.firstinspires.ftc.teamcode.TeamCode-apriltag-2.1.0-8 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/035dcdb07a2b5a74d1c5a48b1c829cea/transformed/apriltag-2.1.0/res
+org.firstinspires.ftc.teamcode.TeamCode-Blocks-10.1.1-9 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/0f72e6bbfc3b58c066a6e7d0a2cd41d6/transformed/Blocks-10.1.1/res
+org.firstinspires.ftc.teamcode.TeamCode-lifecycle-process-2.6.2-10 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/101a99cbc2329ce4b2567c1ee4a2b87b/transformed/lifecycle-process-2.6.2/res
+org.firstinspires.ftc.teamcode.TeamCode-emoji2-views-helper-1.3.0-11 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/11dc441223cf44eac7309f83f84495d1/transformed/emoji2-views-helper-1.3.0/res
+org.firstinspires.ftc.teamcode.TeamCode-opencv-repackaged-bundled-dylibs-4.10.0-A-12 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/18145794a4ae95e2f21573db13b334e5/transformed/opencv-repackaged-bundled-dylibs-4.10.0-A/res
+org.firstinspires.ftc.teamcode.TeamCode-profileinstaller-1.3.1-13 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/26b5d7e4c8293b902b21d20d118e1d99/transformed/profileinstaller-1.3.1/res
+org.firstinspires.ftc.teamcode.TeamCode-RobotCore-10.1.1-14 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/2abf24930e71deaa38e1e6d49a3c5192/transformed/RobotCore-10.1.1/res
+org.firstinspires.ftc.teamcode.TeamCode-lifecycle-runtime-2.6.2-15 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/3b3644b3c553c82eadf15c6e5d01cf4d/transformed/lifecycle-runtime-2.6.2/res
+org.firstinspires.ftc.teamcode.TeamCode-appcompat-1.7.0-16 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/3f64819ca51c5dad0c4892fe9938b38b/transformed/appcompat-1.7.0/res
+org.firstinspires.ftc.teamcode.TeamCode-OnBotJava-10.1.1-17 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/4256354027e2b84c94fefe7dc13858bf/transformed/OnBotJava-10.1.1/res
+org.firstinspires.ftc.teamcode.TeamCode-savedstate-1.2.1-18 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/510770be192f7f401a928fec8ebce385/transformed/savedstate-1.2.1/res
+org.firstinspires.ftc.teamcode.TeamCode-dashboard-0.4.16-19 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/5d37829fb18b47aba64d81637a31e753/transformed/dashboard-0.4.16/res
+org.firstinspires.ftc.teamcode.TeamCode-startup-runtime-1.1.1-20 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/63f4ce85fe2f0d3cf66579cfb10e44bb/transformed/startup-runtime-1.1.1/res
+org.firstinspires.ftc.teamcode.TeamCode-core-ktx-1.13.0-21 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/674cd163ff255b1647741b044d11b72c/transformed/core-ktx-1.13.0/res
+org.firstinspires.ftc.teamcode.TeamCode-RobotServer-10.1.1-22 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/6cb03b88476a43b2e4b90cd9c1fa57b5/transformed/RobotServer-10.1.1/res
+org.firstinspires.ftc.teamcode.TeamCode-Hardware-10.1.1-23 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/7a6e3e861a4b62f2202b7cdac3b7e829/transformed/Hardware-10.1.1/res
+org.firstinspires.ftc.teamcode.TeamCode-appcompat-resources-1.7.0-24 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/7f1c43352bc1f5acd8af9740e19e61a8/transformed/appcompat-resources-1.7.0/res
+org.firstinspires.ftc.teamcode.TeamCode-fragment-1.5.4-25 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/87537a02a099b0a726555e40de89098f/transformed/fragment-1.5.4/res
+org.firstinspires.ftc.teamcode.TeamCode-lifecycle-viewmodel-2.6.2-26 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/8862448272d648364c0c2b537e506026/transformed/lifecycle-viewmodel-2.6.2/res
+org.firstinspires.ftc.teamcode.TeamCode-lifecycle-viewmodel-savedstate-2.6.2-27 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/8b06816fef06008126856e54eb2fba94/transformed/lifecycle-viewmodel-savedstate-2.6.2/res
+org.firstinspires.ftc.teamcode.TeamCode-FtcCommon-10.1.1-28 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/95d2106c40ecef066824d8e9f8c35262/transformed/FtcCommon-10.1.1/res
+org.firstinspires.ftc.teamcode.TeamCode-zxing-android-embedded-4.3.0-29 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/a64f50e259a5f46d27790879dabea1b2/transformed/zxing-android-embedded-4.3.0/res
+org.firstinspires.ftc.teamcode.TeamCode-lifecycle-livedata-core-2.6.2-30 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/a8221c4a062845a1dc7c70c66d0e4a4e/transformed/lifecycle-livedata-core-2.6.2/res
+org.firstinspires.ftc.teamcode.TeamCode-lifecycle-livedata-2.6.2-31 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/af1ec8159a9125a15e0ff13e4d318e0c/transformed/lifecycle-livedata-2.6.2/res
+org.firstinspires.ftc.teamcode.TeamCode-core-runtime-2.2.0-32 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/b846f2f00b2fb8998e8048ba693200c5/transformed/core-runtime-2.2.0/res
+org.firstinspires.ftc.teamcode.TeamCode-emoji2-1.3.0-33 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/bef537d9baa4b6bb1b6891852b2a4223/transformed/emoji2-1.3.0/res
+org.firstinspires.ftc.teamcode.TeamCode-activity-1.7.0-34 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/c86a6c85c6a43767fea7d45636a24ba3/transformed/activity-1.7.0/res
+org.firstinspires.ftc.teamcode.TeamCode-Inspection-10.1.1-35 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/e943f79f7d86aad9a88ffc3be9d260a6/transformed/Inspection-10.1.1/res
+org.firstinspires.ftc.teamcode.TeamCode-core-1.13.0-36 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/f734d3757685d8d992319f55d6e2d5ac/transformed/core-1.13.0/res
+org.firstinspires.ftc.teamcode.TeamCode-annotation-experimental-1.4.0-37 /Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/f8e03070b2985cf093c81f6980188369/transformed/annotation-experimental-1.4.0/res

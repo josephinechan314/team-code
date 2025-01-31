@@ -374,11 +374,7 @@ Blockly.Blocks['visionPortalBuilder_addProcessor'] = {
             'VISION_PORTAL_BUILDER')
         .appendField('.')
         .appendField(createNonEditableField('addProcessor'));
-<<<<<<< HEAD
-    this.appendValueInput('VISION_PROCESSOR').setCheck(['AprilTagProcessor', 'TfodProcessor']);
-=======
     this.appendValueInput('VISION_PROCESSOR').setCheck(['AprilTagProcessor', 'TfodProcessor']); // Note that TfodProcessor is obsolete.
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     this.setInputsInline(true);
     this.setPreviousStatement(true);
     this.setNextStatement(true);
@@ -443,11 +439,7 @@ Blockly.Blocks['visionPortal_easyCreateWithDefaults_oneProcessor'] = {
         .appendField(createNonEditableField('easyCreateWithDefaults'));
     this.appendValueInput('CAMERA').setCheck(['BuiltinCameraDirection', 'WebcamName', 'SwitchableCameraName'])
         .appendField('camera').setAlign(Blockly.ALIGN_RIGHT);
-<<<<<<< HEAD
-    this.appendValueInput('VISION_PROCESSOR').setCheck(['AprilTagProcessor', 'TfodProcessor'])
-=======
     this.appendValueInput('VISION_PROCESSOR').setCheck(['AprilTagProcessor', 'TfodProcessor']) // Note that TfodProcessor is obsolete.
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         .appendField('visionProcessor').setAlign(Blockly.ALIGN_RIGHT);
     this.setColour(functionColor);
     this.setTooltip('Creates a new VisionPortal object, with the given camera and vision ' +
@@ -486,15 +478,9 @@ Blockly.Blocks['visionPortal_easyCreateWithDefaults_twoProcessors'] = {
         .appendField(createNonEditableField('easyCreateWithDefaults'));
     this.appendValueInput('CAMERA').setCheck(['BuiltinCameraDirection', 'WebcamName', 'SwitchableCameraName'])
         .appendField('camera').setAlign(Blockly.ALIGN_RIGHT);
-<<<<<<< HEAD
-    this.appendValueInput('VISION_PROCESSOR_1').setCheck(['AprilTagProcessor', 'TfodProcessor'])
-        .appendField('visionProcessor1').setAlign(Blockly.ALIGN_RIGHT);
-    this.appendValueInput('VISION_PROCESSOR_2').setCheck(['AprilTagProcessor', 'TfodProcessor'])
-=======
     this.appendValueInput('VISION_PROCESSOR_1').setCheck(['AprilTagProcessor', 'TfodProcessor']) // Note that TfodProcessor is obsolete.
         .appendField('visionProcessor1').setAlign(Blockly.ALIGN_RIGHT);
     this.appendValueInput('VISION_PROCESSOR_2').setCheck(['AprilTagProcessor', 'TfodProcessor']) // Note that TfodProcessor is obsolete.
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         .appendField('visionProcessor2').setAlign(Blockly.ALIGN_RIGHT);
     this.setColour(functionColor);
     this.setTooltip('Creates a new VisionPortal object, with the given camera and vision ' +
@@ -537,11 +523,7 @@ Blockly.Blocks['visionPortal_setProcessorEnabled'] = {
     this.appendValueInput('VISION_PORTAL').setCheck('VisionPortal')
         .appendField('visionPortal')
         .setAlign(Blockly.ALIGN_RIGHT);
-<<<<<<< HEAD
-    this.appendValueInput('VISION_PROCESSOR').setCheck(['AprilTagProcessor', 'TfodProcessor'])
-=======
     this.appendValueInput('VISION_PROCESSOR').setCheck(['AprilTagProcessor', 'TfodProcessor']) // Note that TfodProcessor is obsolete.
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         .appendField('visionProcessor')
         .setAlign(Blockly.ALIGN_RIGHT);
     this.appendValueInput('ENABLED').setCheck('Boolean')
@@ -586,11 +568,7 @@ Blockly.Blocks['visionPortal_getProcessorEnabled'] = {
     this.appendValueInput('VISION_PORTAL').setCheck('VisionPortal')
         .appendField('visionPortal')
         .setAlign(Blockly.ALIGN_RIGHT);
-<<<<<<< HEAD
-    this.appendValueInput('VISION_PROCESSOR').setCheck(['AprilTagProcessor', 'TfodProcessor'])
-=======
     this.appendValueInput('VISION_PROCESSOR').setCheck(['AprilTagProcessor', 'TfodProcessor']) // Note that TfodProcessor is obsolete.
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         .appendField('visionProcessor')
         .setAlign(Blockly.ALIGN_RIGHT);
     this.setColour(functionColor);
