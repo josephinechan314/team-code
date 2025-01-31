@@ -127,6 +127,12 @@ public class Teleop extends LinearOpMode {
                 case RETRACT:
                     robot.claw.setPosition(1);
                     //robot.cbarm.setPosition(1);
+
+                    //robot.llinkage.setPower(0.75);
+                    //robot.rlinkage.setPower(0.75);
+                    //sleep(100);
+                    //robot.llinkage.setPower(0);
+                    //robot.rlinkage.setPower(0);
                     retractionState = Teleop.RetractionStates.WAIT;
                     break;
                 default:
