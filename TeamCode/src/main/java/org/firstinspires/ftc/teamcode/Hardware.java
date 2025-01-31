@@ -9,7 +9,8 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 public class Hardware{
     // Declare OpMode members
-    public DcMotorEx lf, lb, rf, rb, llinkage, rlinkage, lspool, rspool = null;
+    public DcMotorEx lf, lb, rf, rb, llinkage, rlinkage = null;
+    public DcMotor lspool, rspool = null;
     public Servo cbarm, claw, lbarm, rbarm= null;
     public CRServo spinclaw = null;
 
@@ -26,13 +27,10 @@ public class Hardware{
         lb = hwMap.get(DcMotorEx.class, "leftBack");
         rf = hwMap.get(DcMotorEx.class, "rightFront");
         rb = hwMap.get(DcMotorEx.class, "rightBack");
-
         llinkage = hwMap.get(DcMotorEx.class, "LeftLinkageMotor");
         rlinkage = hwMap.get(DcMotorEx.class, "RightLinkageMotor");
-
-        lspool = hwMap.get(DcMotorEx.class,"LeftSpoolMotor");
-        rspool = hwMap.get(DcMotorEx.class,"RightSpoolMotor");
-
+        lspool = hwMap.get(DcMotor.class,"LeftSpoolMotor");
+        rspool = hwMap.get(DcMotor.class,"RightSpoolMotor");
         lbarm = hwMap.get(Servo.class,"LeftArmServo");
         rbarm = hwMap.get(Servo.class,"RightArmServo");
         cbarm = hwMap.get(Servo.class,"CenterArmServo");
@@ -41,22 +39,18 @@ public class Hardware{
         claw = hwMap.get(Servo.class,"ClawServo");
 
         // Set direction of the motor. Set direction to REVERSE if using AndyMark motors
-        lf.setDirection(DcMotorEx.Direction.REVERSE);
-        lb.setDirection(DcMotorEx.Direction.REVERSE);
-        rf.setDirection(DcMotorEx.Direction.FORWARD);
+        lf.setDirection(DcMotorEx.Direction.FORWARD);
+        lb.setDirection(DcMotorEx.Direction.FORWARD);
+        rf.setDirection(DcMotorEx.Direction.REVERSE);
         rb.setDirection(DcMotorEx.Direction.REVERSE);
-
         lspool.setDirection(DcMotorEx.Direction.FORWARD);
-        rspool.setDirection(DcMotorEx.Direction.FORWARD);
-
-        lbarm.setDirection(Servo.Direction.FORWARD);
-        rbarm.setDirection(Servo.Direction.FORWARD);
-        cbarm.setDirection(Servo.Direction.FORWARD);
-
-        spinclaw.setDirection(CRServo.Direction.FORWARD);
-        claw.setDirection(Servo.Direction.FORWARD);
-
-        llinkage.setDirection(DcMotorEx.Direction.FORWARD);
+        rspool.setDirection(DcMotorEx.Direction.REVERSE);
+//        lbarm.setDirection(Servo.Direction.FORWARD);
+//        rbarm.setDirection(Servo.Direction.FORWARD);
+//        cbarm.setDirection(Servo.Direction.FORWARD);
+//        spinclaw.setDirection(CRServo.Direction.FORWARD);
+//        claw.setDirection(Servo.Direction.FORWARD);
+        llinkage.setDirection(DcMotorEx.Direction.REVERSE);
         rlinkage.setDirection(DcMotorEx.Direction.FORWARD);
 
         // Set all motors to zero power so they start turned off
@@ -64,17 +58,15 @@ public class Hardware{
         lb.setPower(0);
         rf.setPower(0);
         rb.setPower(0);
-
         llinkage.setPower(0);
         rlinkage.setPower(0);
-
         lspool.setPower(0);
         rspool.setPower(0);
-
-        cbarm.setPosition(0);
-
-        spinclaw.setPower(0);
-        claw.setPosition(0);
+//
+//        cbarm.setPosition(0);
+//
+//        spinclaw.setPower(0);
+//        claw.setPosition(0);
 
         // Turn off encoders
         lf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
@@ -82,12 +74,12 @@ public class Hardware{
         rf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
-        lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+//        lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+//        rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
         // Revisit this
-        llinkage.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        rlinkage.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+//        llinkage.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+//        rlinkage.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         // After stopping, the motor brakes, actively resisting any external attempts to move the motor
         lf.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
