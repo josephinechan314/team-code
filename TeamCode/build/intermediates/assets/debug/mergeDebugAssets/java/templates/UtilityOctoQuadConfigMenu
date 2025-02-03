@@ -446,11 +446,7 @@ public class UtilityOctoQuadConfigMenu extends LinearOpMode
             StringBuilder builder = new StringBuilder();
             builder.append("<font color='#119af5' face=monospace>");
             builder.append("Navigate items.....dpad up/down\n")
-<<<<<<< HEAD
-                    .append("Select.............X\n")
-=======
                     .append("Select.............X or Square\n")
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
                     .append("Edit option........dpad left/right\n")
                     .append("Up one level.......left bumper\n");
             builder.append("</font>");
@@ -618,11 +614,7 @@ public class UtilityOctoQuadConfigMenu extends LinearOpMode
             @Override
             public void onClick()
             {
-<<<<<<< HEAD
-                onRightInput();
-=======
                 //onRightInput();
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
             }
 
             @Override
@@ -677,11 +669,7 @@ public class UtilityOctoQuadConfigMenu extends LinearOpMode
             @Override
             public void onClick()
             {
-<<<<<<< HEAD
-                onRightInput();
-=======
                 //onRightInput();
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
             }
 
             @Override

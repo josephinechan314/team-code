@@ -19,7 +19,7 @@ public class Hardware{
 
     // Initialize standard Hardware interfaces
     public void init(HardwareMap ahwMap) {
-//         Save reference to Hardware map
+        // Save reference to Hardware map
         hwMap = ahwMap;
 
         // Define and initialize everything

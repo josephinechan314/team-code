@@ -59,11 +59,7 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </value>
 <value name="TEXT">
 <shadow type="text" id="^u5_oh+s(.Vs1Kk;$yw9">
-<<<<<<< HEAD
-<field name="TEXT">Touch Play to start OpMode</field>
-=======
 <field name="TEXT">Touch START to start OpMode</field>
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 </shadow>
 </value>
 <next>

@@ -360,8 +360,6 @@ Blockly.JavaScript['crServo_typedEnum_direction'] =
 
 Blockly.FtcJava['crServo_typedEnum_direction'] =
     Blockly.FtcJava['crServo_enum_direction'];
-<<<<<<< HEAD
-=======
 
 // Functions
 
@@ -437,4 +435,3 @@ Blockly.FtcJava['crServo_setPwmDisable'] = function(block) {
   var identifier = Blockly.FtcJava.importDeclareAssign_(block, 'IDENTIFIER', 'CRServo');
   return identifier + '.setPwmDisable();\n';
 };
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

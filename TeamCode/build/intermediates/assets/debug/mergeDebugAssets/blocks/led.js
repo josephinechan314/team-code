@@ -106,8 +106,6 @@ Blockly.FtcJava['led_isLightOn'] = function(block) {
   var code = identifier + '.isLightOn()';
   return [code, Blockly.FtcJava.ORDER_FUNCTION_CALL];
 };
-<<<<<<< HEAD
-=======
 
 Blockly.Blocks['led_on'] = {
   init: function() {
@@ -156,4 +154,3 @@ Blockly.FtcJava['led_off'] = function(block) {
   var identifier = Blockly.FtcJava.importDeclareAssign_(block, 'IDENTIFIER', 'LED');
   return identifier + '.off();\n';
 };
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

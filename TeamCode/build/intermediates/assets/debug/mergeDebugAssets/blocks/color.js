@@ -931,8 +931,6 @@ Blockly.FtcJava['color_showColor'] = function(block) {
   Blockly.FtcJava.generateImport_('JavaUtil');
   return 'JavaUtil.showColor(hardwareMap.appContext, ' + color + ');\n';
 };
-<<<<<<< HEAD
-=======
 
 Blockly.Blocks['color_constant_Number'] = {
   init: function() {
@@ -997,4 +995,3 @@ Blockly.FtcJava['color_constant_Number'] = function(block) {
   Blockly.FtcJava.generateImport_('Color');
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

@@ -21,12 +21,9 @@ Blockly.Blocks['distanceSensor_getDistance'] = {
         .setAlign(Blockly.ALIGN_RIGHT);
     this.setColour(functionColor);
     this.setTooltip('Get the distance reported by the sensor in the provided unit.');
-<<<<<<< HEAD
-=======
     this.getFtcJavaOutputType = function() {
       return 'double';
     };
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   }
 };
 

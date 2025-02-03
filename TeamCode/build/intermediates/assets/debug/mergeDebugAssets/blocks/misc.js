@@ -167,8 +167,6 @@ Blockly.FtcJava['misc_atan2'] = function(block) {
   return [code, Blockly.FtcJava.ORDER_MULTIPLICATION];
 };
 
-<<<<<<< HEAD
-=======
 Blockly.Blocks['misc_minmax'] = {
   init: function() {
     var FUNC_CHOICES = [
@@ -234,7 +232,6 @@ Blockly.FtcJava['misc_minmax'] = function(block) {
   return [code, Blockly.FtcJava.ORDER_FUNCTION_CALL];
 };
 
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 Blockly.Blocks['misc_formatNumber'] = {
   init: function() {
     this.setOutput(true, 'String');
@@ -361,12 +358,9 @@ Blockly.Blocks['misc_roundDecimal'] = {
       }
       return '';
     };
-<<<<<<< HEAD
-=======
     this.getFtcJavaOutputType = function() {
       return 'double';
     };
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   }
 };
 
@@ -540,8 +534,6 @@ Blockly.FtcJava['misc_setAndGetVariable'] = function(block) {
   return [code, Blockly.FtcJava.ORDER_ATOMIC];
 };
 
-<<<<<<< HEAD
-=======
 Blockly.Blocks['misc_evaluateButIgnoreResult'] = {
   init: function() {
     this.appendValueInput('VALUE')
@@ -566,7 +558,6 @@ Blockly.FtcJava['misc_evaluateButIgnoreResult'] = function(block) {
       block, 'VALUE', Blockly.FtcJava.ORDER_NONE);
   return value + ';\n';
 };
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 
 //................................................................................
 // MyBlocks
@@ -1173,7 +1164,3 @@ Blockly.JavaScript['misc_callHardware_noReturn'] = function(block) {
 Blockly.FtcJava['misc_callHardware_noReturn'] = function(block) {
   return generateFtcJavaCallHardware(block) + ';\n';
 };
-<<<<<<< HEAD
-
-=======
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

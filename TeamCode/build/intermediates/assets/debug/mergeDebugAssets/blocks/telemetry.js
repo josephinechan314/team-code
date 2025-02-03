@@ -53,12 +53,7 @@ Blockly.JavaScript['telemetry_addNumericData'] = function(block) {
       block, 'KEY', Blockly.JavaScript.ORDER_COMMA);
   var number = Blockly.JavaScript.valueToCode(
       block, 'NUMBER', Blockly.JavaScript.ORDER_COMMA);
-<<<<<<< HEAD
-  // Convert the number to a String in JavaScript so a number like 123 doesn't show up as 123.0.
-  return telemetryIdentifierForJavaScript + '.addTextData(' + key + ', String(' + number + '));\n';
-=======
   return telemetryIdentifierForJavaScript + '.addNumericData(' + key + ', ' + number + ');\n';
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 };
 
 Blockly.FtcJava['telemetry_addNumericData'] = function(block) {
@@ -321,8 +316,6 @@ Blockly.FtcJava['telemetry_setDisplayFormat'] = function(block) {
   return 'telemetry.setDisplayFormat(' + displayFormat + ');\n';
 };
 
-<<<<<<< HEAD
-=======
 Blockly.Blocks['telemetry_setNumDecimalPlaces'] = {
   init: function() {
     this.appendDummyInput()
@@ -367,7 +360,6 @@ Blockly.FtcJava['telemetry_setNumDecimalPlaces'] = function(block) {
      return 'telemetry.setNumDecimalPlaces(' + min + ', ' + max + ');\n';
 };
 
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 // Enums
 
 Blockly.Blocks['telemetry_typedEnum_displayFormat'] = {
@@ -412,8 +404,6 @@ Blockly.FtcJava['telemetry_typedEnum_displayFormat'] = function(block) {
   Blockly.FtcJava.generateImport_('Telemetry');
   return [code, Blockly.FtcJava.ORDER_MEMBER];
 };
-<<<<<<< HEAD
-=======
 
 // Properties
 
@@ -525,4 +515,3 @@ Blockly.FtcJava['telemetry_getProperty_Number'] = function(block) {
   return [code, Blockly.FtcJava.ORDER_FUNCTION_CALL];
 };
 
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609

@@ -36,10 +36,7 @@ int array app_theme_tokens 0x0
 int array choice_array_legacy_module 0x0
 int array lynx_module_options_array 0x0
 int array networkTypes 0x0
-<<<<<<< HEAD
-=======
 int array servo_hub_options_array 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int array wifi_direct_channels 0x0
 int attr actionBarDivider 0x0
 int attr actionBarItemBackground 0x0
@@ -59,10 +56,7 @@ int attr actionMenuTextAppearance 0x0
 int attr actionMenuTextColor 0x0
 int attr actionModeBackground 0x0
 int attr actionModeCloseButtonStyle 0x0
-<<<<<<< HEAD
-=======
 int attr actionModeCloseContentDescription 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int attr actionModeCloseDrawable 0x0
 int attr actionModeCopyDrawable 0x0
 int attr actionModeCutDrawable 0x0
@@ -73,10 +67,7 @@ int attr actionModeSelectAllDrawable 0x0
 int attr actionModeShareDrawable 0x0
 int attr actionModeSplitBackground 0x0
 int attr actionModeStyle 0x0
-<<<<<<< HEAD
-=======
 int attr actionModeTheme 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int attr actionModeWebSearchDrawable 0x0
 int attr actionOverflowButtonStyle 0x0
 int attr actionOverflowMenuStyle 0x0
@@ -128,12 +119,9 @@ int attr buttonStyleSmall 0x0
 int attr buttonTint 0x0
 int attr buttonTintMode 0x0
 int attr camera_id 0x0
-<<<<<<< HEAD
-=======
 int attr checkMarkCompat 0x0
 int attr checkMarkTint 0x0
 int attr checkMarkTintMode 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int attr checkboxStyle 0x0
 int attr checkedTextViewStyle 0x0
 int attr closeIcon 0x0
@@ -193,10 +181,7 @@ int attr editTextBackground 0x0
 int attr editTextColor 0x0
 int attr editTextStyle 0x0
 int attr elevation 0x0
-<<<<<<< HEAD
-=======
 int attr emojiCompatEnabled 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int attr expandActivityOverflowButtonDrawable 0x0
 int attr feedbackBackground 0x0
 int attr feedbackBorder 0x0
@@ -230,10 +215,7 @@ int attr initialActivityCount 0x0
 int attr isLightTheme 0x0
 int attr itemPadding 0x0
 int attr keylines 0x0
-<<<<<<< HEAD
-=======
 int attr lStar 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int attr lastBaselineToBottomHeight 0x0
 int attr layout 0x0
 int attr layout_anchor 0x0
@@ -462,11 +444,8 @@ int color bright_teal 0x0
 int color button_material_dark 0x0
 int color button_material_light 0x0
 int color c_gray 0x0
-<<<<<<< HEAD
-=======
 int color call_notification_answer_color 0x0
 int color call_notification_decline_color 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int color d_gray 0x0
 int color dark_blue 0x0
 int color dark_green 0x0
@@ -474,10 +453,7 @@ int color dark_orange 0x0
 int color dark_purple 0x0
 int color dark_red 0x0
 int color dark_teal 0x0
-<<<<<<< HEAD
-=======
 int color dashboardColor 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int color dim_foreground_disabled_material_dark 0x0
 int color dim_foreground_disabled_material_light 0x0
 int color dim_foreground_material_dark 0x0
@@ -651,12 +627,9 @@ int dimen abc_search_view_preferred_width 0x0
 int dimen abc_seekbar_track_background_height_material 0x0
 int dimen abc_seekbar_track_progress_height_material 0x0
 int dimen abc_select_dialog_padding_start_material 0x0
-<<<<<<< HEAD
-=======
 int dimen abc_star_big 0x0
 int dimen abc_star_medium 0x0
 int dimen abc_star_small 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int dimen abc_switch_padding 0x0
 int dimen abc_text_size_body_1_material 0x0
 int dimen abc_text_size_body_2_material 0x0
@@ -786,22 +759,13 @@ int drawable abc_seekbar_tick_mark_material 0x0
 int drawable abc_seekbar_track_material 0x0
 int drawable abc_spinner_mtrl_am_alpha 0x0
 int drawable abc_spinner_textfield_background_material 0x0
-<<<<<<< HEAD
-=======
 int drawable abc_star_black_48dp 0x0
 int drawable abc_star_half_black_48dp 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int drawable abc_switch_thumb_material 0x0
 int drawable abc_switch_track_mtrl_alpha 0x0
 int drawable abc_tab_indicator_material 0x0
 int drawable abc_tab_indicator_mtrl_alpha 0x0
 int drawable abc_text_cursor_material 0x0
-<<<<<<< HEAD
-int drawable abc_text_select_handle_left_mtrl_dark 0x0
-int drawable abc_text_select_handle_left_mtrl_light 0x0
-int drawable abc_text_select_handle_middle_mtrl_dark 0x0
-int drawable abc_text_select_handle_middle_mtrl_light 0x0
-=======
 int drawable abc_text_select_handle_left_mtrl 0x0
 int drawable abc_text_select_handle_left_mtrl_dark 0x0
 int drawable abc_text_select_handle_left_mtrl_light 0x0
@@ -809,7 +773,6 @@ int drawable abc_text_select_handle_middle_mtrl 0x0
 int drawable abc_text_select_handle_middle_mtrl_dark 0x0
 int drawable abc_text_select_handle_middle_mtrl_light 0x0
 int drawable abc_text_select_handle_right_mtrl 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int drawable abc_text_select_handle_right_mtrl_dark 0x0
 int drawable abc_text_select_handle_right_mtrl_light 0x0
 int drawable abc_textfield_activated_mtrl_alpha 0x0
@@ -832,25 +795,19 @@ int drawable centerstage_background 0x0
 int drawable feedback_shape_orange 0x0
 int drawable freightfrenzy_background 0x0
 int drawable ic_arrow_back_black_24dp 0x0
-<<<<<<< HEAD
-=======
 int drawable ic_call_answer 0x0
 int drawable ic_call_answer_low 0x0
 int drawable ic_call_answer_video 0x0
 int drawable ic_call_answer_video_low 0x0
 int drawable ic_call_decline 0x0
 int drawable ic_call_decline_low 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int drawable ic_check_circle 0x0
 int drawable ic_error 0x0
 int drawable ic_launcher 0x0
 int drawable ic_warning 0x0
 int drawable icon_menu 0x0
 int drawable icon_robotcontroller 0x0
-<<<<<<< HEAD
-=======
 int drawable intothedeep_background 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int drawable notification_action_background 0x0
 int drawable notification_bg 0x0
 int drawable notification_bg_low 0x0
@@ -859,20 +816,14 @@ int drawable notification_bg_low_pressed 0x0
 int drawable notification_bg_normal 0x0
 int drawable notification_bg_normal_pressed 0x0
 int drawable notification_icon_background 0x0
-<<<<<<< HEAD
-=======
 int drawable notification_oversize_large_icon_bg 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int drawable notification_template_icon_bg 0x0
 int drawable notification_template_icon_low_bg 0x0
 int drawable notification_tile_bg 0x0
 int drawable notify_panel_notification_icon_bg 0x0
 int drawable powerplay_background 0x0
 int drawable skystone_background 0x0
-<<<<<<< HEAD
-=======
 int drawable test_level_drawable 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int drawable tooltip_frame_dark 0x0
 int drawable tooltip_frame_light 0x0
 int drawable ultimategoal_background 0x0
@@ -1008,18 +959,12 @@ int id dropdown_layout 0x0
 int id editTextResult 0x0
 int id edit_controller_btn 0x0
 int id edit_query 0x0
-<<<<<<< HEAD
-int id empty_filelist 0x0
-int id end 0x0
-int id entire_screen 0x0
-=======
 int id edit_text_id 0x0
 int id empty_filelist 0x0
 int id end 0x0
 int id entire_screen 0x0
 int id ethernetDeviceIpAddress 0x0
 int id ethernetDeviceName 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int id expand_activities_button 0x0
 int id expanded_menu 0x0
 int id explanationText 0x0
@@ -1046,10 +991,7 @@ int id groupList 0x0
 int id group_divider 0x0
 int id header 0x0
 int id header_error_message 0x0
-<<<<<<< HEAD
-=======
 int id hide_ime_id 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int id holds_buttons 0x0
 int id home 0x0
 int id horizontalButtons 0x0
@@ -1072,10 +1014,7 @@ int id infoButton 0x0
 int id info_btn 0x0
 int id inspectionRootLayout 0x0
 int id invalidQr 0x0
-<<<<<<< HEAD
-=======
 int id ipAddressExplanationLabel 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int id isDSInstalled 0x0
 int id isDefaultPassword 0x0
 int id isDefaultPassword_img 0x0
@@ -1143,10 +1082,7 @@ int id progress_horizontal 0x0
 int id radio 0x0
 int id rcPasswordLayout 0x0
 int id readOnlyExplanation 0x0
-<<<<<<< HEAD
-=======
 int id report_drawn 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int id right 0x0
 int id right_icon 0x0
 int id right_side 0x0
@@ -1247,10 +1183,7 @@ int id unchecked 0x0
 int id uniform 0x0
 int id up 0x0
 int id view_tree_lifecycle_owner 0x0
-<<<<<<< HEAD
-=======
 int id view_tree_on_back_pressed_dispatcher_owner 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int id view_tree_saved_state_registry_owner 0x0
 int id view_tree_view_model_store_owner 0x0
 int id visible_removing_fragment_view_tag 0x0
@@ -1345,10 +1278,7 @@ int layout digital_device 0x0
 int layout digital_device_lynx 0x0
 int layout digital_devices 0x0
 int layout empty 0x0
-<<<<<<< HEAD
-=======
 int layout ethernet_device 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int layout feedback 0x0
 int layout file_info 0x0
 int layout fragment_wifi_mute 0x0
@@ -1356,11 +1286,8 @@ int layout gray_line 0x0
 int layout header 0x0
 int layout i2c_device 0x0
 int layout i2cs 0x0
-<<<<<<< HEAD
-=======
 int layout ime_base_split_test_activity 0x0
 int layout ime_secondary_split_test_activity 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int layout info_button 0x0
 int layout item_list_parent 0x0
 int layout loading_indicator_overlay 0x0
@@ -1577,8 +1504,6 @@ int string buttonNameScan 0x0
 int string buttonNameSwap 0x0
 int string buttonWirelessApSettingsLabel 0x0
 int string bytesPerSecondLabel 0x0
-<<<<<<< HEAD
-=======
 int string call_notification_answer_action 0x0
 int string call_notification_answer_video_action 0x0
 int string call_notification_decline_action 0x0
@@ -1586,7 +1511,6 @@ int string call_notification_hang_up_action 0x0
 int string call_notification_incoming_text 0x0
 int string call_notification_ongoing_text 0x0
 int string call_notification_screening_text 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int string captionAvailableSwapDevices 0x0
 int string captionAvailableUsbDevices 0x0
 int string ch_updater_not_supported 0x0
@@ -1690,10 +1614,7 @@ int string counted_lynx_module_name 0x0
 int string counted_lynx_usb_device_name 0x0
 int string counted_motor_controller_name 0x0
 int string counted_servo_controller_name 0x0
-<<<<<<< HEAD
-=======
 int string counted_servo_hub_name 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int string currentApLabel 0x0
 int string defaultOpModeName 0x0
 int string defaultPasswordContext 0x0
@@ -1728,10 +1649,7 @@ int string edit_analog_input_devices_activity_lynx 0x0
 int string edit_controller 0x0
 int string edit_digital_devices_activity 0x0
 int string edit_digital_devices_activity_lynx 0x0
-<<<<<<< HEAD
-=======
 int string edit_ethernet_devices_activity 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int string edit_i2c_devices_activity 0x0
 int string edit_lynx_module_controller_activity 0x0
 int string edit_lynx_usb_device_activity 0x0
@@ -1776,10 +1694,7 @@ int string input_name_hint 0x0
 int string input_name_label 0x0
 int string inspection_activity 0x0
 int string inspection_mode_menu_item 0x0
-<<<<<<< HEAD
-=======
 int string ip_address_prompt_text 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int string launch_wifi_settings 0x0
 int string led_description 0x0
 int string library_zxingandroidembedded_author 0x0
@@ -2057,11 +1972,8 @@ int string restart_robot_menu_item 0x0
 int string restore_settings 0x0
 int string rev_20_hd_hex_name 0x0
 int string rev_40_hd_hex_name 0x0
-<<<<<<< HEAD
-=======
 int string rev_9_axis_imu_description 0x0
 int string rev_9_axis_imu_name 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int string rev_blinkin_description 0x0
 int string rev_blinkin_name 0x0
 int string rev_color_sensor_v3_description 0x0
@@ -2123,11 +2035,8 @@ int string setWifiChannelFailure 0x0
 int string setWifiChannelSuccess 0x0
 int string settings_activity 0x0
 int string settings_menu_item 0x0
-<<<<<<< HEAD
-=======
 int string sparkfun_led_stick_description 0x0
 int string sparkfun_led_stick_name 0x0
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int string sparkfun_optical_odometry_description 0x0
 int string sparkfun_optical_odometry_name 0x0
 int string standard_servo_description 0x0
@@ -2703,10 +2612,7 @@ int styleable AnimatedStateListDrawableTransition_android_drawable 0
 int styleable AnimatedStateListDrawableTransition_android_fromId 1
 int styleable AnimatedStateListDrawableTransition_android_reversible 2
 int styleable AnimatedStateListDrawableTransition_android_toId 3
-<<<<<<< HEAD
-=======
 int[] styleable AppCompatEmojiHelper {  }
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int[] styleable AppCompatImageView { 0x1010119, 0x0, 0x0, 0x0 }
 int styleable AppCompatImageView_android_src 0
 int styleable AppCompatImageView_srcCompat 1
@@ -2725,11 +2631,7 @@ int styleable AppCompatTextHelper_android_drawableRight 3
 int styleable AppCompatTextHelper_android_drawableStart 4
 int styleable AppCompatTextHelper_android_drawableTop 5
 int styleable AppCompatTextHelper_android_textAppearance 6
-<<<<<<< HEAD
-int[] styleable AppCompatTextView { 0x1010034, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
-=======
 int[] styleable AppCompatTextView { 0x1010034, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int styleable AppCompatTextView_android_textAppearance 0
 int styleable AppCompatTextView_autoSizeMaxTextSize 1
 int styleable AppCompatTextView_autoSizeMinTextSize 2
@@ -2744,16 +2646,6 @@ int styleable AppCompatTextView_drawableStartCompat 10
 int styleable AppCompatTextView_drawableTint 11
 int styleable AppCompatTextView_drawableTintMode 12
 int styleable AppCompatTextView_drawableTopCompat 13
-<<<<<<< HEAD
-int styleable AppCompatTextView_firstBaselineToTopHeight 14
-int styleable AppCompatTextView_fontFamily 15
-int styleable AppCompatTextView_fontVariationSettings 16
-int styleable AppCompatTextView_lastBaselineToBottomHeight 17
-int styleable AppCompatTextView_lineHeight 18
-int styleable AppCompatTextView_textAllCaps 19
-int styleable AppCompatTextView_textLocale 20
-int[] styleable AppCompatTheme { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x10100ae, 0x1010057, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
-=======
 int styleable AppCompatTextView_emojiCompatEnabled 14
 int styleable AppCompatTextView_firstBaselineToTopHeight 15
 int styleable AppCompatTextView_fontFamily 16
@@ -2763,7 +2655,6 @@ int styleable AppCompatTextView_lineHeight 19
 int styleable AppCompatTextView_textAllCaps 20
 int styleable AppCompatTextView_textLocale 21
 int[] styleable AppCompatTheme { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x10100ae, 0x1010057, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int styleable AppCompatTheme_actionBarDivider 0
 int styleable AppCompatTheme_actionBarItemBackground 1
 int styleable AppCompatTheme_actionBarPopupTheme 2
@@ -2781,116 +2672,6 @@ int styleable AppCompatTheme_actionMenuTextAppearance 13
 int styleable AppCompatTheme_actionMenuTextColor 14
 int styleable AppCompatTheme_actionModeBackground 15
 int styleable AppCompatTheme_actionModeCloseButtonStyle 16
-<<<<<<< HEAD
-int styleable AppCompatTheme_actionModeCloseDrawable 17
-int styleable AppCompatTheme_actionModeCopyDrawable 18
-int styleable AppCompatTheme_actionModeCutDrawable 19
-int styleable AppCompatTheme_actionModeFindDrawable 20
-int styleable AppCompatTheme_actionModePasteDrawable 21
-int styleable AppCompatTheme_actionModePopupWindowStyle 22
-int styleable AppCompatTheme_actionModeSelectAllDrawable 23
-int styleable AppCompatTheme_actionModeShareDrawable 24
-int styleable AppCompatTheme_actionModeSplitBackground 25
-int styleable AppCompatTheme_actionModeStyle 26
-int styleable AppCompatTheme_actionModeWebSearchDrawable 27
-int styleable AppCompatTheme_actionOverflowButtonStyle 28
-int styleable AppCompatTheme_actionOverflowMenuStyle 29
-int styleable AppCompatTheme_activityChooserViewStyle 30
-int styleable AppCompatTheme_alertDialogButtonGroupStyle 31
-int styleable AppCompatTheme_alertDialogCenterButtons 32
-int styleable AppCompatTheme_alertDialogStyle 33
-int styleable AppCompatTheme_alertDialogTheme 34
-int styleable AppCompatTheme_android_windowAnimationStyle 35
-int styleable AppCompatTheme_android_windowIsFloating 36
-int styleable AppCompatTheme_autoCompleteTextViewStyle 37
-int styleable AppCompatTheme_borderlessButtonStyle 38
-int styleable AppCompatTheme_buttonBarButtonStyle 39
-int styleable AppCompatTheme_buttonBarNegativeButtonStyle 40
-int styleable AppCompatTheme_buttonBarNeutralButtonStyle 41
-int styleable AppCompatTheme_buttonBarPositiveButtonStyle 42
-int styleable AppCompatTheme_buttonBarStyle 43
-int styleable AppCompatTheme_buttonStyle 44
-int styleable AppCompatTheme_buttonStyleSmall 45
-int styleable AppCompatTheme_checkboxStyle 46
-int styleable AppCompatTheme_checkedTextViewStyle 47
-int styleable AppCompatTheme_colorAccent 48
-int styleable AppCompatTheme_colorBackgroundFloating 49
-int styleable AppCompatTheme_colorButtonNormal 50
-int styleable AppCompatTheme_colorControlActivated 51
-int styleable AppCompatTheme_colorControlHighlight 52
-int styleable AppCompatTheme_colorControlNormal 53
-int styleable AppCompatTheme_colorError 54
-int styleable AppCompatTheme_colorPrimary 55
-int styleable AppCompatTheme_colorPrimaryDark 56
-int styleable AppCompatTheme_colorSwitchThumbNormal 57
-int styleable AppCompatTheme_controlBackground 58
-int styleable AppCompatTheme_dialogCornerRadius 59
-int styleable AppCompatTheme_dialogPreferredPadding 60
-int styleable AppCompatTheme_dialogTheme 61
-int styleable AppCompatTheme_dividerHorizontal 62
-int styleable AppCompatTheme_dividerVertical 63
-int styleable AppCompatTheme_dropDownListViewStyle 64
-int styleable AppCompatTheme_dropdownListPreferredItemHeight 65
-int styleable AppCompatTheme_editTextBackground 66
-int styleable AppCompatTheme_editTextColor 67
-int styleable AppCompatTheme_editTextStyle 68
-int styleable AppCompatTheme_homeAsUpIndicator 69
-int styleable AppCompatTheme_imageButtonStyle 70
-int styleable AppCompatTheme_listChoiceBackgroundIndicator 71
-int styleable AppCompatTheme_listChoiceIndicatorMultipleAnimated 72
-int styleable AppCompatTheme_listChoiceIndicatorSingleAnimated 73
-int styleable AppCompatTheme_listDividerAlertDialog 74
-int styleable AppCompatTheme_listMenuViewStyle 75
-int styleable AppCompatTheme_listPopupWindowStyle 76
-int styleable AppCompatTheme_listPreferredItemHeight 77
-int styleable AppCompatTheme_listPreferredItemHeightLarge 78
-int styleable AppCompatTheme_listPreferredItemHeightSmall 79
-int styleable AppCompatTheme_listPreferredItemPaddingEnd 80
-int styleable AppCompatTheme_listPreferredItemPaddingLeft 81
-int styleable AppCompatTheme_listPreferredItemPaddingRight 82
-int styleable AppCompatTheme_listPreferredItemPaddingStart 83
-int styleable AppCompatTheme_panelBackground 84
-int styleable AppCompatTheme_panelMenuListTheme 85
-int styleable AppCompatTheme_panelMenuListWidth 86
-int styleable AppCompatTheme_popupMenuStyle 87
-int styleable AppCompatTheme_popupWindowStyle 88
-int styleable AppCompatTheme_radioButtonStyle 89
-int styleable AppCompatTheme_ratingBarStyle 90
-int styleable AppCompatTheme_ratingBarStyleIndicator 91
-int styleable AppCompatTheme_ratingBarStyleSmall 92
-int styleable AppCompatTheme_searchViewStyle 93
-int styleable AppCompatTheme_seekBarStyle 94
-int styleable AppCompatTheme_selectableItemBackground 95
-int styleable AppCompatTheme_selectableItemBackgroundBorderless 96
-int styleable AppCompatTheme_spinnerDropDownItemStyle 97
-int styleable AppCompatTheme_spinnerStyle 98
-int styleable AppCompatTheme_switchStyle 99
-int styleable AppCompatTheme_textAppearanceLargePopupMenu 100
-int styleable AppCompatTheme_textAppearanceListItem 101
-int styleable AppCompatTheme_textAppearanceListItemSecondary 102
-int styleable AppCompatTheme_textAppearanceListItemSmall 103
-int styleable AppCompatTheme_textAppearancePopupMenuHeader 104
-int styleable AppCompatTheme_textAppearanceSearchResultSubtitle 105
-int styleable AppCompatTheme_textAppearanceSearchResultTitle 106
-int styleable AppCompatTheme_textAppearanceSmallPopupMenu 107
-int styleable AppCompatTheme_textColorAlertDialogListItem 108
-int styleable AppCompatTheme_textColorSearchUrl 109
-int styleable AppCompatTheme_toolbarNavigationButtonStyle 110
-int styleable AppCompatTheme_toolbarStyle 111
-int styleable AppCompatTheme_tooltipForegroundColor 112
-int styleable AppCompatTheme_tooltipFrameBackground 113
-int styleable AppCompatTheme_viewInflaterClass 114
-int styleable AppCompatTheme_windowActionBar 115
-int styleable AppCompatTheme_windowActionBarOverlay 116
-int styleable AppCompatTheme_windowActionModeOverlay 117
-int styleable AppCompatTheme_windowFixedHeightMajor 118
-int styleable AppCompatTheme_windowFixedHeightMinor 119
-int styleable AppCompatTheme_windowFixedWidthMajor 120
-int styleable AppCompatTheme_windowFixedWidthMinor 121
-int styleable AppCompatTheme_windowMinWidthMajor 122
-int styleable AppCompatTheme_windowMinWidthMinor 123
-int styleable AppCompatTheme_windowNoTitle 124
-=======
 int styleable AppCompatTheme_actionModeCloseContentDescription 17
 int styleable AppCompatTheme_actionModeCloseDrawable 18
 int styleable AppCompatTheme_actionModeCopyDrawable 19
@@ -3001,7 +2782,6 @@ int styleable AppCompatTheme_windowFixedWidthMinor 123
 int styleable AppCompatTheme_windowMinWidthMajor 124
 int styleable AppCompatTheme_windowMinWidthMinor 125
 int styleable AppCompatTheme_windowNoTitle 126
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int[] styleable ButtonBarLayout { 0x0 }
 int styleable ButtonBarLayout_allowStacking 0
 int[] styleable CameraBridgeViewBase { 0x0, 0x0 }
@@ -3010,14 +2790,6 @@ int styleable CameraBridgeViewBase_show_fps 1
 int[] styleable Capability { 0x0, 0x0 }
 int styleable Capability_queryPatterns 0
 int styleable Capability_shortcutMatchRequired 1
-<<<<<<< HEAD
-int[] styleable ColorListPreference { 0x0 }
-int styleable ColorListPreference_colors 0
-int[] styleable ColorStateListItem { 0x0, 0x101031f, 0x10101a5 }
-int styleable ColorStateListItem_alpha 0
-int styleable ColorStateListItem_android_alpha 1
-int styleable ColorStateListItem_android_color 2
-=======
 int[] styleable CheckedTextView { 0x1010108, 0x0, 0x0, 0x0 }
 int styleable CheckedTextView_android_checkMark 0
 int styleable CheckedTextView_checkMarkCompat 1
@@ -3031,7 +2803,6 @@ int styleable ColorStateListItem_android_alpha 1
 int styleable ColorStateListItem_android_color 2
 int styleable ColorStateListItem_android_lStar 3
 int styleable ColorStateListItem_lStar 4
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 int[] styleable CompoundButton { 0x1010107, 0x0, 0x0, 0x0 }
 int styleable CompoundButton_android_button 0
 int styleable CompoundButton_buttonCompat 1

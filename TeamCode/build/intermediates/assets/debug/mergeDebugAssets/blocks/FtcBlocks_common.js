@@ -380,10 +380,7 @@ function initializeSplit() {
 
 // Initialize global variables & blockly itself
 function initializeBlockly() {
-<<<<<<< HEAD
-=======
   addReservedWordsForJavaScriptRuntime();
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
   addReservedWordsForJavaScript();
   addReservedWordsForFtcJava();
   addReservedWordsForFtcJavaObsolete();
@@ -529,8 +526,6 @@ function initializeBlockly() {
   });
 }
 
-<<<<<<< HEAD
-=======
 function addReservedWordsForJavaScriptRuntime() {
   Blockly.JavaScript.addReservedWords('orientation'); // Fixes ftc_sdk issue #2779.
 
@@ -563,7 +558,6 @@ function addReservedWordsForJavaScriptRuntime() {
   Blockly.JavaScript.addReservedWords('colorBlobsSortByAspectRatio');
 }
 
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 function resizeBlocklyArea() {
   // Compute the absolute coordinates and dimensions of blocklyArea.
   var x = 0;
@@ -826,12 +820,6 @@ function checkBlock(block) {
             'work correctly.\n\n' +
             'Please replace or remove this block, or restore the Java method it refers to.');
       }
-<<<<<<< HEAD
-    } else if (isTfod(block)) {
-      warningText = addWarning(warningText,
-          'This block is deprecated and will be removed in v10.0.');
-=======
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     }
 
     // If warningText is null, the following will clear a previous warning.
@@ -854,40 +842,6 @@ function checkBlock(block) {
   return warningBits;
 }
 
-<<<<<<< HEAD
-// TODO(lizlooney): for v10.0:
-//   Move tfod_recognition.js and tensor_flow.js to obsolete subdirectory.
-//   In obsolete.js:
-//     Add the conditions from isTfod (below) to isObsolete.
-//     Move types from HardwareUtil.buildReservedWordsForFtcJava to addReservedWordsForFtcJavaObsolete.
-//     Move types from vars.js knownTypeToClassName to knownTypeToClassNameObsolete.
-//     Add more types to importDeclareAssignObsolete.
-//     Add createTfodCurrentGameLabelDropdown.
-//     Add TFOD_CURRENT_GAME_LABEL_TOOLTIPS.
-//   In toolbox/vision.xml: remove TensorFlow category (including subcategories).
-//   In toolbox/*: remove blocks that use myTfodProcessor, myTfodProcessorBuilder, myTfodRecognition.
-//   In this file: Remove isTfod (below) and the call to it in checkBlock (above).
-//   In java code: Move TensorFlowAccess.java to obsolete subdirectory and replace method bodies with handleObsoleteBlockExecution.
-//   Remove tfod and tensorflow references from sdk/apps/FtcRobotController/build.dependencies.gradle
-//   Remove tfod and tensorflow references from sdk/apps/FtcRobotController/TeamCode/build.debug.gradle
-//   Remove tfod and tensorflow references from sdk/libs/RobotCore/build.gradle
-//   Remove sdk/libs/RobotCore/src/main/java/org/firstinspires/ftc/robotcore/external/tfod/*
-//   Remove sdk/libs/RobotCore/src/main/java/org/firstinspires/ftc/robotcore/internal/tfod/*
-//   Remove sdk/libs/Tfod/...
-//   Grep the remaining code for tfod, tensorflow, etc.
-
-function isTfod(block) {
-  if (block.type.startsWith('tfodRecognition_') ||
-      block.type.startsWith('tfodProcessorBuilder_') ||
-      block.type.startsWith('tfodProcessor_') ||
-      block.type == 'tfod_typedEnum_label') {
-    return true;
-  }
-  return false;
-}
-
-=======
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
 function addWarning(warningText, textToAdd) {
   if (warningText == null) {
     warningText = '';

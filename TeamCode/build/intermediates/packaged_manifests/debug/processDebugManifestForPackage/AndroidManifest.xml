@@ -98,15 +98,12 @@
         android:name="android.hardware.wifi"
         android:required="false" />
 
-<<<<<<< HEAD
-=======
     <permission
         android:name="com.qualcomm.ftcrobotcontroller.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.qualcomm.ftcrobotcontroller.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <application
         android:name="org.firstinspires.ftc.robotcore.internal.system.RobotApplication"
         android:allowBackup="true"
@@ -314,15 +311,12 @@
             android:configChanges="orientation|screenSize"
             android:label="@string/edit_i2c_devices_activity"
             android:windowSoftInputMode="stateHidden|adjustResize" >
-<<<<<<< HEAD
-=======
         </activity>
         <activity
             android:name="com.qualcomm.ftccommon.configuration.EditEthernetOverUsbActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/edit_ethernet_devices_activity"
             android:windowSoftInputMode="stateHidden|adjustResize" >
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         </activity> <!-- A service that will auto-restart the robot controller if it crashes (if it's supposed to) -->
         <service
             android:name="org.firstinspires.ftc.ftccommon.internal.FtcRobotControllerWatchdogService"
@@ -382,8 +376,6 @@
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme"
             android:windowSoftInputMode="stateAlwaysHidden" />
-<<<<<<< HEAD
-=======
 
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -419,7 +411,6 @@
                 <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
             </intent-filter>
         </receiver>
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     </application>
 
 </manifest>

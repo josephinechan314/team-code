@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <dimen name="notification_right_side_padding_top">4dp</dimen>
-=======
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
     <style name="TextAppearance.AppCompat.Tooltip">
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textSize">14sp</item>

@@ -88,11 +88,7 @@ public class ConceptAprilTag extends LinearOpMode {
 
         // Wait for the DS start button to be touched.
         telemetry.addData("DS preview on/off", "3 dots, Camera Stream");
-<<<<<<< HEAD
-        telemetry.addData(">", "Touch Play to start OpMode");
-=======
         telemetry.addData(">", "Touch START to start OpMode");
->>>>>>> 9f8fc098fe336a26d1742b707fbd3407d2b0c609
         telemetry.update();
         waitForStart();
 

@@ -13,7 +13,7 @@ public class RetractionStateMachine extends LinearOpMode {
         RETRACT,
     };
 
-    RetractionStates retractionState = RetractionStates.WAIT; // Check later if this should be STOP
+    RetractionStates retractionState = RetractionStates.WAIT;
 
     Hardware robot = new Hardware();
 
