@@ -11,8 +11,8 @@ public class Hardware{
     // Declare OpMode members
     public DcMotorEx lf, lb, rf, rb, llinkage, rlinkage = null;
     public DcMotor lspool, rspool = null;
-    public Servo cbarm, claw, lbarm, rbarm= null;
-    public CRServo spinclaw = null;
+    public Servo cbarm, claw, lbarm, rbarm, testspinclaw= null;
+//    public CRServo spinclaw = null;
 
     // HardwareMap, which connects motors in program to real ones on the robot
     HardwareMap hwMap = null;
@@ -35,7 +35,8 @@ public class Hardware{
         rbarm = hwMap.get(Servo.class,"RightArmServo");
         cbarm = hwMap.get(Servo.class,"CenterArmServo");
 
-        spinclaw = hwMap.get(CRServo.class,"SpinServo");
+//        spinclaw = hwMap.get(CRServo.class,"SpinServo");
+        testspinclaw = hwMap.get(Servo.class, "SpinServo");
         claw = hwMap.get(Servo.class,"ClawServo");
 
         // Set direction of the motor. Set direction to REVERSE if using AndyMark motors

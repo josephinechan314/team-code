@@ -19,7 +19,11 @@ public class FtcTeleOp extends LinearOpMode {
     public double rbarmpos = 0;
     int count = 0;
     public double cbarmpos;
-    public double manual = 0;
+    public double manual = 1;
+
+    public double lspoolencoder;
+    public double rspoolencoder;
+
     Hardware robot = new Hardware();
 
     @Override
@@ -36,8 +40,8 @@ public class FtcTeleOp extends LinearOpMode {
 //        robot.lspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 //        robot.rspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-//        robot.lspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-//        robot.rspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.lspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.rspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
 //        robot.lspool.setPower(0);
 //        robot.rspool.setPower(0);
@@ -46,10 +50,14 @@ public class FtcTeleOp extends LinearOpMode {
 
         telemetry.addData("lspool: ", robot.lspool.getCurrentPosition());
         telemetry.addData("rspool: ", robot.rspool.getCurrentPosition());
+
+//        lspoolencoder = robot.lspool.getCurrentPosition();
+//        rspoolencoder = robot.rspool.getCurrentPosition();
+
         telemetry.update();
 
-        robot.lbarm.setPosition(1);
-        robot.rbarm.setPosition(0);
+//        robot.lbarm.setPosition(1);
+//        robot.rbarm.setPosition(0);
 
 //        cbarmpos = robot.cbarm.getPosition();
 
@@ -85,11 +93,15 @@ public class FtcTeleOp extends LinearOpMode {
 
             //slides
             if (gamepad2.left_stick_y > 0) { // Lifts slides
-                robot.lspool.setPower(0.5);
-                robot.rspool.setPower(-0.5);
+                robot.lspool.setPower(0.9);
+                robot.rspool.setPower(-0.9);
+                telemetry.addData("lspool: ", robot.lspool.getCurrentPosition());
+                telemetry.addData("rspool: ", robot.rspool.getCurrentPosition());
             } else if (gamepad2.left_stick_y < 0) { // Lowers slides
                 robot.lspool.setPower(-0.5);
                 robot.rspool.setPower(0.5);
+                telemetry.addData("lspool: ", robot.lspool.getCurrentPosition());
+                telemetry.addData("rspool: ", robot.rspool.getCurrentPosition());
             } else {
                 robot.lspool.setPower(0);
                 robot.rspool.setPower(0);
@@ -146,31 +158,20 @@ public class FtcTeleOp extends LinearOpMode {
 
             if (gamepad2.y && manual == 1){
                 lbarmpos += 0.003;
-                rbarmpos -= 0.003;
-                robot.lbarm.setPosition(lbarmpos);
-                robot.rbarm.setPosition(rbarmpos);
+                rbarmpos = lbarmpos - 0.2;
+                robot.lbarm.setPosition(lbarmpos); //check
+                robot.rbarm.setPosition(1-rbarmpos);
             } else if (gamepad2.a && manual == 1){
                 lbarmpos -= 0.003;
-                rbarmpos += 0.003;
-                robot.lbarm.setPosition(lbarmpos);
-                robot.rbarm.setPosition(rbarmpos);
+                rbarmpos = lbarmpos - 0.2;
+                robot.lbarm.setPosition(lbarmpos); //check
+                robot.rbarm.setPosition(1-rbarmpos);
             }
 
-//            if (gamepad2.left_bumper){
-//                robot.lbarm.setPosition(lbarmpos);
-//                robot.rbarm.setPosition(rbarmpos);
-//                lbarmpos += 0.01;
-//                rbarmpos += 0.01;
-//            } else if (gamepad2.right_bumper) {
-//                robot.lbarm.setPosition(lbarmpos);
-//                robot.rbarm.setPosition(rbarmpos);
-//                lbarmpos -= 0.01;
-//                rbarmpos -= 0.01;
-//            }
             if (lbarmpos > 1){
                 lbarmpos = 1;
-            } else if (lbarmpos < 0) {
-                lbarmpos = 0;
+            } else if (lbarmpos < 0.4) {
+                lbarmpos = 0.4;
             }
             if (rbarmpos > 1){
                 rbarmpos = 1;
@@ -185,12 +186,14 @@ public class FtcTeleOp extends LinearOpMode {
 ;
             //claw spin
             if (gamepad2.dpad_left) {
-                robot.spinclaw.setPower(-0.3);
+//                robot.spinclaw.setPower(-0.3);
+                robot.testspinclaw.setPosition(0.5);
             } else if (gamepad2.dpad_right) {
-                robot.spinclaw.setPower(0.3);
-            } else {
-                robot.spinclaw.setPower(0);
-            }
+//                robot.spinclaw.setPower(0.3);
+                robot.testspinclaw.setPosition(0);
+            } //else {
+//                robot.spinclaw.setPower(0);
+//            }
 
             //claw up vs down
             if (gamepad2.right_stick_y > 0) {
@@ -209,34 +212,6 @@ public class FtcTeleOp extends LinearOpMode {
                 cbarmpos = 1;
             }
 
-//            robot.cbarm.setPosition(cbarmpos);
-//            telemetry.addData("cbarmpos: ", cbarmpos);
-//            telemetry.addData("cbarm: ", robot.cbarm.getPosition());
-
-            //test drive motors direction
-//            if (gamepad1.y){
-//                robot.lf.setPower(1);
-//            } else if (gamepad1.b){
-//                robot.lb.setPower(1);
-//            } else if (gamepad1.a){
-//                robot.rb.setPower(1);
-//            } else if (gamepad1.x){
-//                robot.rf.setPower(1);
-//            } else {
-//                robot.lf.setPower(0);
-//                robot.lb.setPower(0);
-//                robot.rb.setPower(0);
-//                robot.rf.setPower(0);
-//            }
-
-
-//            robot.rspool.setPower(0);
-//            robot.lspool.setPower(0);
-//            robot.llinkage.setPower(0);
-//            robot.rlinkage.setPower(0);
-//            robot.lbarm.setPower(0);
-//            robot.rbarm.setPower(0);
-//            robot.spinclaw.setPower(0);
             telemetry.update();
         }
     }
