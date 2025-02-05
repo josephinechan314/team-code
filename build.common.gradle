@@ -115,5 +115,6 @@ android {
 }
 
 repositories {
+    mavenCentral() // Added this for PIDF_Arm
 }
 
