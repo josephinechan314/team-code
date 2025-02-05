@@ -41,7 +41,7 @@ public class PIDF_Arm extends OpMode { // https://gm0.org/en/latest/docs/softwar
         PID_Controller(robot.lspool, p_left, i_left, d_left, f_left, target_left);
         PID_Controller(robot.rspool, p_right, i_right, d_right, f_right, target_right);
     }
-
+//changed this
     public void PID_Controller(DcMotor motor, double P, double I, double D, double F, double target) {
         controller.setPID(P, I, D);
 
