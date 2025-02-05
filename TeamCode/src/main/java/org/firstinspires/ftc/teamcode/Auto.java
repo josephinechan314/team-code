@@ -25,8 +25,8 @@ public class  Auto extends LinearOpMode {
         robot.llinkage.setPower(0);
         robot.rlinkage.setPower(0);
 
-        robot.lspool.setPower(0.9); //extends slides
-        robot.rspool.setPower(-0.9);
+//        robot.lspool.setPower(-0.9); //extends slides
+//        robot.rspool.setPower(0.9);
 
         robot.lf.setPower(1); //drives forward
         robot.lb.setPower(1);
@@ -45,13 +45,13 @@ public class  Auto extends LinearOpMode {
         robot.rf.setPower(0);
         robot.rb.setPower(0);
 
-        robot.lbarm.setPosition(1);
-        robot.rbarm.setPosition(0);
+        robot.lbarm.setPosition(0); //arm
+        robot.rbarm.setPosition(1);
 
         sleep(750);
 
-        robot.lspool.setPower(-0.75); //extends slides
-        robot.rspool.setPower(0.75);
+//        robot.lspool.setPower(-0.75); //extends slides
+//        robot.rspool.setPower(0.75);
 
         robot.cbarm.setPosition(1);
 

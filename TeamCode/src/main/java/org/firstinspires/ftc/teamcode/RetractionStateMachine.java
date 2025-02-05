@@ -13,7 +13,7 @@ public class RetractionStateMachine extends LinearOpMode {
         RETRACT,
     };
 
-    RetractionStates retractionState = RetractionStates.WAIT;
+    RetractionStates retractionState = RetractionStates.RETRACT;
 
     Hardware robot = new Hardware();
 
@@ -28,6 +28,7 @@ public class RetractionStateMachine extends LinearOpMode {
         while (opModeIsActive()) {
             switch (retractionState) {
                 case WAIT:
+                    telemetry.addData("case:", "wait");
                     // Slides
                     if (gamepad2.left_stick_y > 0) { // Lifts slides
                         robot.lspool.setPower(0.8);
@@ -61,9 +62,11 @@ public class RetractionStateMachine extends LinearOpMode {
 
                     // Claw spin
                     if (gamepad2.right_stick_x < 0) {
-                        robot.spinclaw.setPower(-0.2);
+//                        robot.spinclaw.setPower(-0.2);
+                        robot.testspinclaw.setPosition(0.5);
                     } else if (gamepad2.right_stick_x > 0) {
-                        robot.spinclaw.setPower(0.2);
+//                        robot.spinclaw.setPower(0.2);
+                        robot.testspinclaw.setPosition(0);
                     }
 
                     // Claw up vs down
@@ -85,7 +88,9 @@ public class RetractionStateMachine extends LinearOpMode {
                     robot.lspool.setPower(0);
                     robot.llinkage.setPower(0);
                     robot.rlinkage.setPower(0);
-                    robot.spinclaw.setPower(0);
+//                    robot.spinclaw.setPower(0);
+
+                    telemetry.update();
 
                     if (gamepad1.right_trigger > 0) {
                         retractionState = RetractionStates.RETRACT;
@@ -93,12 +98,45 @@ public class RetractionStateMachine extends LinearOpMode {
                     break;
                 case RETRACT:
                     robot.claw.setPosition(1);
+
+                    telemetry.addData("case:", "retract");
                     //robot.cbarm.setPosition(1);
-                    retractionState = RetractionStates.WAIT;
+
+                    if (gamepad2.dpad_up) { //high bucket
+                        robot.lbarm.setPosition(1);
+                        robot.rbarm.setPosition(0);
+                        sleep(100);
+                        robot.llinkage.setPower(-0.9);
+                        robot.rlinkage.setPower(-0.9);
+                        sleep(1500);
+                        robot.llinkage.setPower(0);
+                        robot.rlinkage.setPower(0);
+                        robot.claw.setPosition(1);
+                    } else if (gamepad2.dpad_down){
+                        robot.claw.setPosition(0);
+                        robot.lbarm.setPosition(0.7);
+                        robot.rbarm.setPosition(0.3);
+                        sleep(100);
+                        robot.llinkage.setPower(0.9);
+                        robot.rlinkage.setPower(0.9);
+                        sleep(1500);
+                        robot.llinkage.setPower(0);
+                        robot.rlinkage.setPower(0);
+                    } else {
+                        robot.llinkage.setPower(0);
+                        robot.rlinkage.setPower(0);
+                    }
+
+                    telemetry.update();
+
+                    if (gamepad1.right_trigger > 0){
+                        retractionState = RetractionStates.WAIT;
+                    }
+
                     break;
                 default:
                     // Should never be reached, as liftState should never be null
-                    retractionState = RetractionStates.WAIT;
+                    retractionState = RetractionStates.RETRACT;
             }
         }
     }

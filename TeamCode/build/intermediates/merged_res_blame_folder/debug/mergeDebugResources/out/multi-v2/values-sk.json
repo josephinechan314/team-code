@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-3:/values-sk/values-sk.xml",
+            "outputFile": "org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-33:/values-sk/values-sk.xml",
             "map": [
                 {
-                    "source": "/Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/3f64819ca51c5dad0c4892fe9938b38b/transformed/appcompat-1.7.0/res/values-sk/values-sk.xml",
+                    "source": "/Users/zoezhang/.gradle/caches/8.9/transforms/a64f50e259a5f46d27790879dabea1b2/transformed/zxing-android-embedded-4.3.0/res/values-sk/values-sk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,315",
+                        "endColumns": "58,46,153,120",
+                        "endOffsets": "109,156,310,431"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "3738,3797,3844,3998",
+                        "endColumns": "58,46,153,120",
+                        "endOffsets": "3792,3839,3993,4114"
+                    }
+                },
+                {
+                    "source": "/Users/zoezhang/.gradle/caches/8.9/transforms/3f64819ca51c5dad0c4892fe9938b38b/transformed/appcompat-1.7.0/res/values-sk/values-sk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/f734d3757685d8d992319f55d6e2d5ac/transformed/core-1.13.0/res/values-sk/values-sk.xml",
+                    "source": "/Users/zoezhang/.gradle/caches/8.9/transforms/f734d3757685d8d992319f55d6e2d5ac/transformed/core-1.13.0/res/values-sk/values-sk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2817,2913,3015,3116,3214,3324,3432,3637",
                         "endColumns": "95,101,100,97,109,107,121,100",
                         "endOffsets": "2908,3010,3111,3209,3319,3427,3549,3733"
-                    }
-                },
-                {
-                    "source": "/Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/a64f50e259a5f46d27790879dabea1b2/transformed/zxing-android-embedded-4.3.0/res/values-sk/values-sk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,114,161,315",
-                        "endColumns": "58,46,153,120",
-                        "endOffsets": "109,156,310,431"
-                    },
-                    "to": {
-                        "startLines": "38,39,40,41",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "3738,3797,3844,3998",
-                        "endColumns": "58,46,153,120",
-                        "endOffsets": "3792,3839,3993,4114"
                     }
                 }
             ]

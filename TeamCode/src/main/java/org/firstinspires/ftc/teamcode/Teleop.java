@@ -93,11 +93,11 @@ public class Teleop extends LinearOpMode {
                     }
 
                     // Claw spin
-                    if (gamepad2.right_stick_x < 0) {
-                        robot.spinclaw.setPower(-0.2);
-                    } else if (gamepad2.right_stick_x > 0) {
-                        robot.spinclaw.setPower(0.2);
-                    }
+//                    if (gamepad2.right_stick_x < 0) {
+//                        robot.spinclaw.setPower(-0.2);
+//                    } else if (gamepad2.right_stick_x > 0) {
+//                        robot.spinclaw.setPower(0.2);
+//                    }
 
                     // Claw up vs down
                     if (gamepad2.y) {
@@ -118,7 +118,7 @@ public class Teleop extends LinearOpMode {
                     robot.lspool.setPower(0);
                     robot.llinkage.setPower(0);
                     robot.rlinkage.setPower(0);
-                    robot.spinclaw.setPower(0);
+//                    robot.spinclaw.setPower(0);
 
                     if (gamepad1.right_trigger > 0) {
                         retractionState = Teleop.RetractionStates.RETRACT;
@@ -188,11 +188,11 @@ public class Teleop extends LinearOpMode {
             }
 
             // Claw spin
-            if (gamepad2.right_stick_x < 0) {
-                robot.spinclaw.setPower(-0.2);
-            } else if (gamepad2.right_stick_x > 0) {
-                robot.spinclaw.setPower(0.2);
-            }
+//            if (gamepad2.right_stick_x < 0) {
+//                robot.spinclaw.setPower(-0.2);
+//            } else if (gamepad2.right_stick_x > 0) {
+//                robot.spinclaw.setPower(0.2);
+//            }
 
             // Claw up vs down
             if (gamepad2.y) {
@@ -213,7 +213,7 @@ public class Teleop extends LinearOpMode {
             robot.lspool.setPower(0);
             robot.llinkage.setPower(0);
             robot.rlinkage.setPower(0);
-            robot.spinclaw.setPower(0);
+//            robot.spinclaw.setPower(0);
         }
     }
 

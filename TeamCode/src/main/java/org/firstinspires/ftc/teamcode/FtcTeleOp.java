@@ -21,8 +21,8 @@ public class FtcTeleOp extends LinearOpMode {
     public double cbarmpos;
     public double manual = 1;
 
-    public double lspoolencoder;
-    public double rspoolencoder;
+    public int lspoolencoder = 0;
+    public int rspoolencoder = 0;
 
     Hardware robot = new Hardware();
 
@@ -37,11 +37,11 @@ public class FtcTeleOp extends LinearOpMode {
 //        robot.lf.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 //        robot.lb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 //        robot.rb.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//        robot.lspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//        robot.rspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.lspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rspool.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-        robot.lspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        robot.rspool.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        robot.lspool.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        robot.rspool.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
 //        robot.lspool.setPower(0);
 //        robot.rspool.setPower(0);
@@ -92,20 +92,40 @@ public class FtcTeleOp extends LinearOpMode {
             // Gamepad 2: controls the linear slides and claw
 
             //slides
-            if (gamepad2.left_stick_y > 0) { // Lifts slides
+            if (gamepad2.left_stick_y > 0){// && (robot.lspool.getCurrentPosition() > -3000 && robot.rspool.getCurrentPosition() < 3000)) { // Lifts slides
+//                lspoolencoder += 10;
+//                rspoolencoder -= 10;
+//                robot.lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+//                robot.rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+                telemetry.addData("check: ", robot.lspool.getCurrentPosition() > -3000 && robot.rspool.getCurrentPosition() < 3000);
                 robot.lspool.setPower(0.9);
                 robot.rspool.setPower(-0.9);
-                telemetry.addData("lspool: ", robot.lspool.getCurrentPosition());
-                telemetry.addData("rspool: ", robot.rspool.getCurrentPosition());
-            } else if (gamepad2.left_stick_y < 0) { // Lowers slides
+            } else if (gamepad2.left_stick_y < 0){// && (robot.lspool.getCurrentPosition() < 0 && robot.rspool.getCurrentPosition() > 0)) { // Lowers slides
+//                lspoolencoder -= 10;''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+//                rspoolencoder += 10;
+//                robot.lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+//                robot.rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+                telemetry.addData("check: ", robot.lspool.getCurrentPosition() < 0 && robot.rspool.getCurrentPosition() > 0);
                 robot.lspool.setPower(-0.5);
                 robot.rspool.setPower(0.5);
-                telemetry.addData("lspool: ", robot.lspool.getCurrentPosition());
-                telemetry.addData("rspool: ", robot.rspool.getCurrentPosition());
             } else {
                 robot.lspool.setPower(0);
                 robot.rspool.setPower(0);
             }
+
+//            if (robot.lspool.getCurrentPosition() <= -3600 || robot.rspool.getCurrentPosition() > 9000){
+//                spoolup = 1;
+//            } else {
+//                spoolup = 0;
+//            }
+//            if (robot.lspool.getCurrentPosition() >= 0 || robot.rspool.getCurrentPosition() < 0){
+//                spooldown = 1;
+//            } else {
+//                spooldown = 0;
+//            }
+
+            telemetry.addData("lspool", robot.lspool.getCurrentPosition());
+            telemetry.addData("rspool", robot.rspool.getCurrentPosition());
 
             //pivot
             if (gamepad2.left_trigger > 0) {

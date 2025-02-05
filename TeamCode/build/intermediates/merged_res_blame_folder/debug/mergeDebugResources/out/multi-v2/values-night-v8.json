@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-3:/values-night-v8/values-night-v8.xml",
+            "outputFile": "org.firstinspires.ftc.teamcode.TeamCode-mergeDebugResources-33:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/josephinechan/Downloads/ftc/ftc_code/webcam_pid_code/caches/8.9/transforms/3f64819ca51c5dad0c4892fe9938b38b/transformed/appcompat-1.7.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/zoezhang/.gradle/caches/8.9/transforms/3f64819ca51c5dad0c4892fe9938b38b/transformed/appcompat-1.7.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
