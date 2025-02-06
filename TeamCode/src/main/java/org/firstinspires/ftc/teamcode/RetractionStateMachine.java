@@ -112,10 +112,10 @@ public class RetractionStateMachine extends LinearOpMode {
                         robot.llinkage.setPower(0);
                         robot.rlinkage.setPower(0);
                         robot.claw.setPosition(1);
-                    } else if (gamepad2.dpad_down){
+                    } else if (gamepad2.dpad_down){ //down from high bucket
                         robot.claw.setPosition(0);
-                        robot.lbarm.setPosition(0.7);
-                        robot.rbarm.setPosition(0.3);
+                        robot.lbarm.setPosition(0.5);
+                        robot.rbarm.setPosition(0.7);
                         sleep(100);
                         robot.llinkage.setPower(0.9);
                         robot.rlinkage.setPower(0.9);
