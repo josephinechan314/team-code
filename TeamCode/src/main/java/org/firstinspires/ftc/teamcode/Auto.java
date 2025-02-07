@@ -2,7 +2,7 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-
+// test
 @Autonomous(name = "autooooo", group = "mecanum hardware")
 public class  Auto extends LinearOpMode {
     Hardware robot = new Hardware();
