@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 public class Hardware{
     // Declare OpMode members
-    //hello, how yall doing?
+
     public DcMotorEx lf, lb, rf, rb, llinkage, rlinkage = null;
     public DcMotor lspool, rspool = null;
     public Servo cbarm, claw, lbarm, rbarm, testspinclaw = null;
