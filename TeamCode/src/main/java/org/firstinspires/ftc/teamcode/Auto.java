@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 @Autonomous(name = "autooooo", group = "mecanum hardware")
 public class  Auto extends LinearOpMode {
     Hardware robot = new Hardware();
-//hello there67676767
+
     @Override
     public void runOpMode(){
         robot.init(hardwareMap);
