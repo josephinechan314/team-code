@@ -23,6 +23,12 @@ Still confused? That's completely fine! GitHub can take a while to get used to. 
 Watch the video for information about tuning PIDF_Arm:
  * https://youtu.be/E6H6Nqe6qJo?si=ojAswWv2bt4FqFwM
 
+# Terminal Help
+ * ls --> list out all the folders/files in current location
+ * cd [insert name] --> change directories (aka folders) into a different location
+ * pwd --> print working directory (aka current location in computer)
+ * cd .. --> go back to higher nested directory
+
 # Closing Remarks
 That's all for now! I know we will do amazing things as a team, and I hope that GitHub helps us get there!
 
