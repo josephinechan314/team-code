@@ -19,6 +19,10 @@ Still confused? That's completely fine! GitHub can take a while to get used to. 
  * https://youtu.be/ueQs5pQ8ZMM?si=DsrzVcW27cHL04Xn
  * https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
 
+# PID Resources
+Watch the video for information about tuning PIDF_Arm:
+ * https://youtu.be/E6H6Nqe6qJo?si=ojAswWv2bt4FqFwM
+
 # Closing Remarks
 That's all for now! I know we will do amazing things as a team, and I hope that GitHub helps us get there!
 
