@@ -13,16 +13,18 @@ public class PID_arm extends LinearOpMode { // https://gm0.org/en/latest/docs/so
     ElapsedTime timer = new ElapsedTime();
 
     // Feedback components for left motor
-    public static double pl = 0;
-    public static double il = 0;
-    public static double dl = 0;
-    public static double fl = 0; // Tune first!! Then p, then i, then d
+    public static double pl = 0.99;
+    public static double il = 0.099;
+    public static double dl = 0.0099;
+    public static double fl = 9.9; // Tune first!! Then p, then i, then d
+//    public double positionl = 5.0;
 
     // Feedback components for right motor
-    public static double pr = 0;
-    public static double ir = 0;
-    public static double dr = 0;
-    public static double fr = 0;
+    public static double pr = 0.99;
+    public static double ir = 0.099;
+    public static double dr = 0.0099;
+    public static double fr = 9.9;
+//    public double positionr = 5.0;
 
     public double integral_sum = 0;
 
@@ -33,19 +35,29 @@ public class PID_arm extends LinearOpMode { // https://gm0.org/en/latest/docs/so
     public void runOpMode() {
         robot.init(hardwareMap);
 
-        // Calls the controller for right and left
-        if (gamepad2.left_stick_y > 0) { // Goes to max height
-            int l_height = PID_Controller(robot.lspool, pl, il, dl, fl, 200);
-            robot.lspool.setTargetPosition(l_height);
+        waitForStart();
 
-            int r_height = PID_Controller(robot.rspool, pr, ir, dr, fr, 200);
-            robot.rspool.setTargetPosition(r_height);
-        } else if (gamepad2.left_stick_y < 0) { // Goes to low height
-            int l_height = PID_Controller(robot.lspool, pl, il, dl, fl, 0);
-            robot.lspool.setTargetPosition(l_height);
+        while(opModeIsActive()) {
 
-            int r_height = PID_Controller(robot.rspool, pr, ir, dr, fr, 0);
-            robot.rspool.setTargetPosition(r_height);
+            // Calls the controller for right and left
+            if (gamepad2.left_stick_y > 0) { // Goes to max height
+                int l_height = PID_Controller(robot.lspool, pl, il, dl, fl, 2000);
+                robot.lspool.setTargetPosition(l_height);
+//                robot.lspool.setPower(l_height);
+
+                int r_height = PID_Controller(robot.rspool, pr, ir, dr, fr, -2000);
+                robot.rspool.setTargetPosition(r_height);
+//                robot.rspool.setPower(r_height);
+            } else if (gamepad2.left_stick_y < 0) { // Goes to low height
+                int l_height = PID_Controller(robot.lspool, pl, il, dl, fl, 0);
+//                robot.lspool.setTargetPosition(l_height);
+                robot.lspool.setPower(l_height);
+
+                int r_height = PID_Controller(robot.rspool, pr, ir, dr, fr, 0);
+                robot.rspool.setTargetPosition(r_height);
+//                robot.rspool.setPower(r_height);
+
+            }
         }
     }
 

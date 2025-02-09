@@ -33,6 +33,9 @@ public class  Auto extends LinearOpMode {
         robot.rf.setPower(1);
         robot.rb.setPower(1);
 
+//        robot.lspool.setPower(0.6);
+//        robot.rspool.setPower(0.6);
+
         sleep(500); //timer for slides
 
         robot.lspool.setPower(0); //stops slides
@@ -65,8 +68,8 @@ public class  Auto extends LinearOpMode {
 
         sleep(50);
 
-        robot.lspool.setPower(0.9);
-        robot.rspool.setPower(-0.9);
+//        robot.lspool.setPower(0.9);
+//        robot.rspool.setPower(-0.9);
 
         robot.lf.setPower(0);
         robot.lb.setPower(0);

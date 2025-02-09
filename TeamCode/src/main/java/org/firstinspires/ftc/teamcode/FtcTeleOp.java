@@ -93,21 +93,13 @@ public class FtcTeleOp extends LinearOpMode {
 
             //slides
             if (gamepad2.left_stick_y > 0){// && (robot.lspool.getCurrentPosition() > -3000 && robot.rspool.getCurrentPosition() < 3000)) { // Lifts slides
-//                lspoolencoder += 10;
-//                rspoolencoder -= 10;
-//                robot.lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-//                robot.rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-                telemetry.addData("check: ", robot.lspool.getCurrentPosition() > -3000 && robot.rspool.getCurrentPosition() < 3000);
-                robot.lspool.setPower(0.9);
-                robot.rspool.setPower(-0.9);
+//                telemetry.addData("check: ", robot.lspool.getCurrentPosition() > -3000 && robot.rspool.getCurrentPosition() < 3000);
+                robot.lspool.setPower(-0.9);
+                robot.rspool.setPower(0.9);
             } else if (gamepad2.left_stick_y < 0){// && (robot.lspool.getCurrentPosition() < 0 && robot.rspool.getCurrentPosition() > 0)) { // Lowers slides
-//                lspoolencoder -= 10;''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-//                rspoolencoder += 10;
-//                robot.lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-//                robot.rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-                telemetry.addData("check: ", robot.lspool.getCurrentPosition() < 0 && robot.rspool.getCurrentPosition() > 0);
-                robot.lspool.setPower(-0.5);
-                robot.rspool.setPower(0.5);
+//                telemetry.addData("check: ", robot.lspool.getCurrentPosition() < 0 && robot.rspool.getCurrentPosition() > 0);
+                robot.lspool.setPower(0.5);
+                robot.rspool.setPower(-0.5);
             } else {
                 robot.lspool.setPower(0);
                 robot.rspool.setPower(0);
@@ -207,19 +199,19 @@ public class FtcTeleOp extends LinearOpMode {
             //claw spin
             if (gamepad2.dpad_left) {
 //                robot.spinclaw.setPower(-0.3);
-                robot.testspinclaw.setPosition(0.5);
+                robot.testspinclaw.setPosition(0.45);
             } else if (gamepad2.dpad_right) {
 //                robot.spinclaw.setPower(0.3);
-                robot.testspinclaw.setPosition(0);
+                robot.testspinclaw.setPosition(0.1);
             } //else {
 //                robot.spinclaw.setPower(0);
 //            }
 
             //claw up vs down
-            if (gamepad2.right_stick_y > 0) {
+            if (gamepad2.right_stick_y < 0) {
                 cbarmpos -= 0.005;
                 robot.cbarm.setPosition(cbarmpos);
-            } else if (gamepad2.right_stick_y < 0) {
+            } else if (gamepad2.right_stick_y > 0) {
                 cbarmpos += 0.005;
                 robot.cbarm.setPosition(cbarmpos);
             }

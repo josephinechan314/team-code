@@ -13,7 +13,7 @@ public class Hardware{
     public DcMotorEx lf, lb, rf, rb, llinkage, rlinkage = null;
     public DcMotor lspool, rspool = null;
     public Servo cbarm, claw, lbarm, rbarm, testspinclaw = null;
-    public CRServo spinclaw = null;
+//    public CRServo spinclaw = null;
 
     // HardwareMap, which connects motors in program to real ones on the robot
     HardwareMap hwMap = null;
@@ -36,7 +36,7 @@ public class Hardware{
         rbarm = hwMap.get(Servo.class,"RightArmServo");
         cbarm = hwMap.get(Servo.class,"CenterArmServo");
 
-        spinclaw = hwMap.get(CRServo.class,"SpinServo");
+//        spinclaw = hwMap.get(CRServo.class,"SpinServo");
         testspinclaw = hwMap.get(Servo.class, "SpinServo");
         claw = hwMap.get(Servo.class,"ClawServo");
 
@@ -45,8 +45,8 @@ public class Hardware{
         lb.setDirection(DcMotorEx.Direction.FORWARD);
         rf.setDirection(DcMotorEx.Direction.REVERSE);
         rb.setDirection(DcMotorEx.Direction.REVERSE);
-        lspool.setDirection(DcMotorEx.Direction.FORWARD);
-        rspool.setDirection(DcMotorEx.Direction.REVERSE);
+        lspool.setDirection(DcMotorEx.Direction.REVERSE);
+        rspool.setDirection(DcMotorEx.Direction.FORWARD);
 //        lbarm.setDirection(Servo.Direction.FORWARD);
 //        rbarm.setDirection(Servo.Direction.FORWARD);
 //        cbarm.setDirection(Servo.Direction.FORWARD);
@@ -76,8 +76,8 @@ public class Hardware{
         rf.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
         rb.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
 
-//        lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-//        rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        lspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        rspool.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
         // Revisit this
 //        llinkage.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
